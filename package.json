@@ -1,0 +1,58 @@
+{
+  "name": "hmpps-manage-a-workforce-ui-e2e-tests",
+  "version": "1.0.0",
+  "description": "e2e tests repo for ui in playwright ts",
+  "main": "index.js",
+  "scripts": {
+    "clean:reports": "npx rimraf allure-results allure-report test-results playwright-report",
+    "pretest": "npm run clean:reports",
+    "report": "npx playwright show-report",
+    "codegen": "npx playwright codegen",
+    "test": "npx playwright test",
+    "test:smoke:chrome": "npm run clean:reports && npx playwright test --project=chromium --reporter=allure-playwright -g smoke",
+    "test:regression:chrome": "npm run clean:reports && npx playwright test --project=chromium --reporter=allure-playwright -g regression",
+    "test:chrome": "npm run clean:reports && npx playwright test --project=chromium --reporter=allure-playwright",
+    "test:firefox": "npm run clean:reports && npx playwright test --project=firefox --reporter=allure-playwright",
+    "test:webkit": "npm run clean:reports && npx playwright test --project=webkit --reporter=allure-playwright",
+    "test:chrome:headed": "npm run clean:reports && npx playwright test --project=chromium --headed --reporter=allure-playwright",
+    "test:firefox:headed": "npm run clean:reports && npx playwright test --project=firefox --headed --reporter=allure-playwright",
+    "test:webkit:headed": "npm run clean:reports && npx playwright test --project=webkit --headed --reporter=allure-playwright",
+    "test:all": "npx playwright test --reporter=allure-playwright",
+    "test:all:headed": "npx playwright test --headed --reporter=allure-playwright",
+    "test:debug": "npx playwright test --project=chromium --headed --debug",
+    "test:ci": "npx playwright test --reporter=dot --reporter=junit --output=test_results/",
+    "test:ci:html": "npx playwright test --reporter=dot --reporter=html --output=test_results/",
+    "test:ci:allure": "npx playwright test --reporter=dot --reporter=@playwright/test-allure --output=test_results/",
+    "allure:generate": "allure generate --clean",
+    "allure:open": "allure open",
+    "allure:serve": "allure serve",
+    "posttest:ci": "npm run report",
+    "posttest:ci:html": "npm run report",
+    "posttest:ci:allure": "npm run report && npm run allure:generate",
+    "lint": "npx eslint . --ext .ts",
+    "lint:fix": "npx eslint . --ext .ts --fix",
+    "prepare": "npx playwright install",
+    "prepare:ci": "npx playwright install --with-deps",
+    "build": "tsc",
+    "start": "node ./dist/index.js",
+    "dev": "tsc --watch",
+    "postinstall": "npm run prepare"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ministryofjustice/hmpps-manage-a-workforce-ui-e2e-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ministryofjustice/hmpps-manage-a-workforce-ui-e2e-tests/issues"
+  },
+  "homepage": "https://github.com/ministryofjustice/hmpps-manage-a-workforce-ui-e2e-tests#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.3.1",
+    "allure-playwright": "^3.4.1"
+  }
+}
