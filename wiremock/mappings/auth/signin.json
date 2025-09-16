@@ -1,6 +1,8 @@
 {
   "mappings": [
     {
+      "scenarioName": "Scenario favicon",
+      "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPattern": "/favicon.ico"
@@ -10,6 +12,19 @@
       }
     },
     {
+      "scenarioName": "Scenario ping",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "GET",
+        "urlPattern": "/auth/health/ping"
+      },
+      "response": {
+        "status": 200
+      }
+    },
+    {
+      "scenarioName": "Scenario redirect",
+      "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPattern": "/auth/oauth/authorize\\?response_type=code&redirect_uri=.+?&state=.+?&client_id=clientid"
@@ -24,6 +39,8 @@
       }
     },
     {
+      "scenarioName": "Scenario signout",
+      "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPattern": "/auth/sign-out.*"
@@ -37,6 +54,8 @@
       }
     },
     {
+      "scenarioName": "Scenario token",
+      "requiredScenarioState": "Started",
       "id": "ddd92112-5010-4dc3-8f5b-57b4f15d02d5",
       "request": {
         "urlPattern": "/auth/oauth/token",
