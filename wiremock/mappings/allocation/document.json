@@ -1,0 +1,19 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "getDocument",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "GET",
+        "urlPattern": "/cases/unallocated/${crn}/documents/${documentId}"
+      },
+      "response": {
+        "status": "200",
+        "headers": {
+          "Content-Type": "application/json;charset=UTF-8"
+        },
+        "jsonBody": []
+      }
+    }
+  ]
+}
