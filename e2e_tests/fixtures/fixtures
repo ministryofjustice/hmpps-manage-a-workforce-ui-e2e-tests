@@ -1,0 +1,1 @@
+# Contains setup hooks and shared context (e.g. login states, mock servers) used across tests.
