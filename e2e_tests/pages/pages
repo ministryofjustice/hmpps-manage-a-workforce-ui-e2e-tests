@@ -1,0 +1,1 @@
+# Implements the Page Object Model, encapsulating UI selectors and actions for maintainable test abstraction.

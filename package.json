@@ -24,7 +24,6 @@
     "test:ci:html": "npx playwright test --reporter=dot --reporter=html --output=test_results/",
     "test:ci:allure": "npx playwright test --reporter=dot --reporter=@playwright/test-allure --output=test_results/",
     "allure:generate": "allure generate --clean",
-    "allure:open": "allure open",
     "allure:serve": "allure serve",
     "posttest:ci": "npm run report",
     "posttest:ci:html": "npm run report",

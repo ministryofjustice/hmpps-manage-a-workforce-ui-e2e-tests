@@ -1,5 +1,4 @@
 # hmpps-manage-a-workforce-ui-e2e-tests
-Automation e2e tests repo for APoP-manage-a-workforce UI in playwright ts
 
 This repository contains automated E2E UI tests for the hmpps-manage-a-workforce-ui service. The tests are written in TypeScript and use the Playwright testing library.
 
@@ -9,6 +8,7 @@ This repository contains automated E2E UI tests for the hmpps-manage-a-workforce
 
     Node.js
     npm
+    playwright with ts - npm init playwright@latest
 
 ### Installation:
 
@@ -18,38 +18,29 @@ This repository contains automated E2E UI tests for the hmpps-manage-a-workforce
 
 ### Install the dependencies:
     npm ci
-    create .env file under the project level
+    create .env file under the main project folder - hmpps-manage-a-workforce-ui-e2e-tests
 
 ### Running the Tests:
 
     All the below scpritps are in package.json
 
-    To run the tests, use the following command:
+    To run the tests, use the following command: 
+    This test repo supports multiple browsers for running the tests - in case if you would like to run in 'firefox' or 'webkit' please replcae 'chrome' in the below commands.
 
     npm run build                               - To build the project(tsconfig.json) - This will compile your .ts files
                                                   into the dist folder as specified in your tsconfig.json. 
 
-    npm run test:chrome                         -   Runs tests only in Chromium headless and Cleans old reports
-                                                    Generates fresh Allure results 
-                                                    
-    npm run test:firfox                         -   To run the tests on firefox headless and uses the list reporter, which 
-                                                    outputs test results in a clean, readable format.
+    npm run test:chrome                         - Runs tests only in Chromium headless and Cleans old reports
+                                                  Generates fresh Allure results 
+ 
+    npm run test:chrome:headed                  - Runs tests only in Chromium headed mode and Cleans old reports 
+                                                  Generates fresh Allure results
 
-    npm run test:webkit                         -   To run the tests on webkit headless and uses the list reporter, which
-                                                    outputs test results in a clean, readable format. 
+    npm run test --headed                       - To run the tests on all browsers in headed mode
 
-    npm run test:chrome:headed                  -  To run the tests on chrome in headed mode and uses the list reporter, which 
-                                                   outputs test results in a clean, readable format.
+    npm run report                              - To view the HTML report
 
-    npm run test:firefox:headed                 - To run the tests on firefox in headed mode and uses the list reporter, which 
-                                                  outputs test results in a clean, readable format.
-
-    npm run test:webkit:headed"                 - To run the tests on webkit in headed mode and uses the list reporter, which 
-                                                  outputs test results in a clean, readable format.
-
-    npm run test --headed                       -   To run the tests on all browsers in headed mode
-
-    npm run report                              -   To view the HTML report
+    npm run allure:serve                        - To view the allure report
 
     npm run codegen                             - It launches a browser window and starts recording your actions—clicks,
                                                   typing, navigation, etc.—and generates the equivalent Playwright test code in real time.    
@@ -62,4 +53,4 @@ This repository contains automated E2E UI tests for the hmpps-manage-a-workforce
     npx playwright test tests/eg.spec.ts        - Run a Specific Test File, Replace tests/eg.spec.ts with the path to your 
                                                   actual test file.
 
-    test:smoke:chrome                           - Run a Specific Test Case by Name - this is to run the smoke test.
+    npm run test:smoke:chrome                   - Run a Specific Test Case by Name - this is to run the smoke test.
