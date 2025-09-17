@@ -1,6 +1,8 @@
 {
   "mappings": [
     {
+      "scenarioName": "Scenario getAllRegions",
+      "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPattern": "/regions"
@@ -26,6 +28,116 @@
             "name": "B Region"
           }
         ]
+      }
+    },
+    {
+      "scenarioName": "Scenario getRegionDetails",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "GET",
+        "urlPattern": "/region/RG1"
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {
+          "code": "RG1",
+          "name": "A Region",
+          "probationDeliveryUnits": [
+            {
+              "code": "PDU1",
+              "name": "A Probation Delivery Unit"
+            },
+            {
+              "code": "PDU4",
+              "name": "D Probation Delivery Unit"
+            },
+            {
+              "code": "PDU3",
+              "name": "C Probation Delivery Unit"
+            },
+            {
+              "code": "PDU2",
+              "name": "B Probation Delivery Unit"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "scenarioName": "Scenario getAllEstateByRegionCode",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "GET",
+        "urlPattern": "/all/region/RG1",
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {
+          "PDU1": {
+            "name": "First Probation Delivery Unit",
+            "ldus": {
+              "LDU1": {
+                "name": "First Local Admin Unit",
+                "teams": [
+                  {
+                    "code": "TM1",
+                    "name": "First Team"
+                  },
+                  {
+                    "code": "TM2",
+                    "name": "Second Team"
+                  }
+                ]
+              },
+              "LDU2": {
+                "name": "Second Local Admin Unit",
+                "teams": [
+                  {
+                    "code": "TM3",
+                    "name": "Third Team"
+                  },
+                  {
+                    "code": "TM4",
+                    "name": "Fourth Team"
+                  }
+                ]
+              }
+            }
+          },
+          "PDU2": {
+            "name": "Second Probation Delivery Unit",
+            "ldus": {
+              "LDU3": {
+                "name": "Third Local Admin Unit",
+                "teams": [
+                  {
+                    "code": "TM5",
+                    "name": "Fifth Team"
+                  },
+                  {
+                    "code": "TM6",
+                    "name": "Sixth Team"
+                  }
+                ]
+              },
+              "LDU4": {
+                "name": "Fourth Local Admin Unit",
+                "teams": [
+                  {
+                    "code": "TM7",
+                    "name": "Seventh Team"
+                  },
+                  {
+                    "code": "TM8",
+                    "name": "Eighth Team"
+                  }
+                ]
+              }
+            }
+          }
+        }
       }
     }
   ]

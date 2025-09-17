@@ -1,6 +1,8 @@
 {
   "mappings": [
     {
+      "scenarioName": "Scenario getTeamsByCodes",
+      "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPattern": "/team/search\\?codes=TM1"
@@ -12,6 +14,28 @@
           {
             "code": "TM1",
             "name": "Team 1"
+          }
+        ]
+      }
+    },
+    {
+      "scenarioName": "Scenario getTeamDetails",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "GET",
+        "urlPattern": "/team/TM1"
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": [
+          {
+            "code": "TM1",
+            "name": "Team 1",
+            "probationDeliveryUnit": {
+              "code": "PDU1",
+              "name": "A Probation Delivery Unit"
+            }
           }
         ]
       }
