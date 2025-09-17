@@ -1,6 +1,5 @@
 {
   "mappings": [
-    ,
     {
       "scenarioName": "Scenario caseAllocationHistory",
       "requiredScenarioState": "Started",

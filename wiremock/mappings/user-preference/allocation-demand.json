@@ -1,6 +1,8 @@
 {
   "mappings": [
     {
+      "scenarioName": "Scenario getUserPreferenceTeams",
+      "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPattern": "/users/USER1/preferences/allocation-teams"
@@ -14,6 +16,65 @@
       }
     },
     {
+      "scenarioName": "Scenario putUserPreferenceTeams",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "PUT",
+        "urlPattern": "/users/USER1/preferences/allocation-teams",
+        "bodyPatterns": [
+          {
+            "equalToJson": {
+              "staffCodes": ["TM1"]
+            }
+          }
+        ]
+      },
+      "response": {
+        "status": 201,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {
+          "items": ["TM1"]
+        }
+      }
+    },
+    {
+      "scenarioName": "Scenario getUserPreferenceTeamsError",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "GET",
+        "urlPattern": "/users/USER1/preferences/allocation-teams"
+      },
+      "response": {
+        "status": 500,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {}
+      }
+    },
+    {
+      "scenarioName": "Scenario putUserPreferenceTeamsError",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "PUT",
+        "urlPattern": "/users/USER1/preferences/allocation-teams",
+        "bodyPatterns": [
+          {
+            "equalToJson": {
+              "staffCodes": ["TM1"]
+            }
+          }
+        ]
+      },
+      "response": {
+        "status": 201,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {
+          "items": ["TM1"]
+        }
+      }
+    },
+    {
+      "scenarioName": "Scenario getUserPreferencePdu",
+      "requiredScenarioState": "Started",
       "request": {
         "urlPattern": "/users/USER1/preferences/allocation-pdu",
         "method": "GET"
@@ -27,6 +88,63 @@
       }
     },
     {
+      "scenarioName": "Scenario putUserPreferencePdu",
+      "requiredScenarioState": "Started",
+      "request": {
+        "urlPattern": "/users/USER1/preferences/allocation-pdu",
+        "method": "PUT",
+        "bodyPatterns": [
+          {
+            "equalToJson": {
+              "staffCodes": ["TM1"]
+            }
+          }
+        ]
+      },
+      "response": {
+        "status": 201,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {
+          "items": ["PDU1"]
+        }
+      }
+    },
+    {
+      "scenarioName": "Scenario getUserPreferencePduError",
+      "requiredScenarioState": "Started",
+      "request": {
+        "urlPattern": "/users/USER1/preferences/allocation-pdu",
+        "method": "GET"
+      },
+      "response": {
+        "status": 500,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {}
+      }
+    },
+    {
+      "scenarioName": "Scenario putUserPreferencePduError",
+      "requiredScenarioState": "Started",
+      "request": {
+        "urlPattern": "/users/USER1/preferences/allocation-pdu",
+        "method": "PUT",
+        "bodyPatterns": [
+          {
+            "equalToJson": {
+              "staffCodes": ["TM1"]
+            }
+          }
+        ]
+      },
+      "response": {
+        "status": 500,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {}
+      }
+    },
+    {
+      "scenarioName": "Scenario getUserPreferenceDemand",
+      "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPattern": "/users/USER1/preferences/allocation-demand"
@@ -37,6 +155,47 @@
         "jsonBody": {
           "items": ["{ \"pdu\": \"PDU1\", \"ldu\": \"LDU1\", \"team\": \"TM1\" }"]
         }
+      }
+    },
+    {
+      "scenarioName": "Scenario putUserPreferenceDemand",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "PUT",
+        "urlPattern": "/users/USER1/preferences/allocation-demand"
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {
+          "items": ["{ \"pdu\": \"PDU1\", \"ldu\": \"LDU1\", \"team\": \"TM1\" }"]
+        }
+      }
+    },
+    {
+      "scenarioName": "Scenario getUserPreferenceDemandError",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "GET",
+        "urlPattern": "/users/USER1/preferences/allocation-demand"
+      },
+      "response": {
+        "status": 500,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {}
+      }
+    },
+    {
+      "scenarioName": "Scenario putUserPreferenceDemandError",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "PUT",
+        "urlPattern": "/users/USER1/preferences/allocation-demand"
+      },
+      "response": {
+        "status": 500,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {}
       }
     }
   ]
