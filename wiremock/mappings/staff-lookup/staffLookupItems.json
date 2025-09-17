@@ -1,0 +1,62 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "Scenario staffLookupItems",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "GET",
+        "urlPattern": "/staff/search?.*"
+      },
+      "response": {
+        "status": "200",
+        "headers": {
+          "Content-Type": "application/json;charset=UTF-8"
+        },
+        "jsonBody": [
+          {
+            "firstName": "First",
+            "lastName": "Name",
+            "fullName": "First Name",
+            "email": "first@justice.gov.uk"
+          },
+          {
+            "firstName": "Second",
+            "lastName": "Name",
+            "fullName": "Second Name",
+            "email": "second@justice.gov.uk"
+          }
+        ]
+      }
+    },
+    {
+      "scenarioName": "Scenario noItems",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "GET",
+        "urlPattern": "/staff/search?.*"
+      },
+      "response": {
+        "status": "200",
+        "headers": {
+          "Content-Type": "application/json;charset=UTF-8"
+        },
+        "jsonBody": []
+      }
+    },
+    {
+      "scenarioName": "Scenario error",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "GET",
+        "urlPattern": "/staff/search?.*"
+      },
+      "response": {
+        "status": "500",
+        "headers": {
+          "Content-Type": "application/json;charset=UTF-8"
+        },
+        "jsonBody": []
+      }
+    }
+  ]
+}
