@@ -69,7 +69,7 @@
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
-        "urlPattern": "/all/region/RG1",
+        "urlPattern": "/all/region/RG1"
       },
       "response": {
         "status": 200,

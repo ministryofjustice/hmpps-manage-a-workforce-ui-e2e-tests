@@ -5,7 +5,7 @@
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
-        "urlPattern": "/user/${userId}/region/${region}/is-allowed"
+        "urlPattern": "/user/USER1/region/RG1/is-allowed"
       },
       "response": {
         "status": "200",
@@ -20,7 +20,7 @@
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
-        "urlPattern": "/user/${userId}/region/${region}/is-allowed"
+        "urlPattern": "/user/USER1/region/RG1/is-allowed"
       },
       "response": {
         "status": "403",

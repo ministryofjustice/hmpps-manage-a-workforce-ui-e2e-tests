@@ -5,7 +5,7 @@
       "requiredScenarioState": "Started",
       "request": {
         "method": "POST",
-        "urlPattern": "/cases/unallocated/${crn}/restrictions",
+        "urlPattern": "/cases/unallocated/J678910/restrictions",
         "bodyPatterns": [
           {
             "equalToJson": {
@@ -43,7 +43,7 @@
       "requiredScenarioState": "Started",
       "request": {
         "method": "POST",
-        "urlPattern": "/cases/unallocated/${crn}/restrictions",
+        "urlPattern": "/cases/unallocated/J678910/restrictions",
         "bodyPatterns": [
           {
             "equalToJson": {

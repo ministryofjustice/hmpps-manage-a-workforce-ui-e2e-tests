@@ -5,7 +5,7 @@
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
-        "urlPattern": "/cases/unallocated/${crn}/documents"
+        "urlPattern": "/cases/unallocated/J678910/documents"
       },
       "response": {
         "status": "200",
@@ -95,7 +95,7 @@
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
-        "urlPattern": "/cases/unallocated/${crn}/documents"
+        "urlPattern": "/cases/unallocated/J678910/documents"
       },
       "response": {
         "status": "200",

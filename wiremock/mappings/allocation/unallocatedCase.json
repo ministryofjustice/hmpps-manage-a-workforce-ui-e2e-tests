@@ -5,7 +5,7 @@
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
-        "urlPattern": "/cases/unallocated/${crn}/convictions/${convictionNumber}"
+        "urlPattern": "/cases/unallocated/J678910/convictions/1"
       },
       "response": {
         "status": "200",

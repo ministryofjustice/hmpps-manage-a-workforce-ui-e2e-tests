@@ -5,7 +5,7 @@
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
-        "urlPattern": "/cases/unallocated/${crn}/record/exclude-conviction/${convictionNumber}"
+        "urlPattern": "/cases/unallocated/J678910/record/exclude-conviction/1"
       },
       "response": {
         "status": "200",
@@ -16,7 +16,7 @@
           "name": "Dylan Adam Armstrong",
           "crn": "${crn}",
           "tier": "C1",
-          "convictionNumber": "${convictionNumber}",
+          "convictionNumber": "1",
           "active": [
             {
               "description": "Adult Custody < 12m",
@@ -81,7 +81,7 @@
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
-        "urlPattern": "/cases/unallocated/${crn}/record/exclude-conviction/${convictionNumber}"
+        "urlPattern": "/cases/unallocated/J678910/record/exclude-conviction/2"
       },
       "response": {
         "status": "200",
@@ -92,7 +92,7 @@
           "name": "Dylan Adam Armstrong",
           "crn": "${crn}",
           "tier": "C1",
-          "convictionNumber": "${convictionNumber}",
+          "convictionNumber": "2",
           "active": [],
           "previous": []
         }

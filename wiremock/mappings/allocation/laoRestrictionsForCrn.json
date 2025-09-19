@@ -5,7 +5,7 @@
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
-        "urlPattern": "/cases/${crn}/restrictions"
+        "urlPattern": "/cases/J678910/restrictions"
       },
       "response": {
         "status": "200",
@@ -13,7 +13,7 @@
           "Content-Type": "application/json;charset=UTF-8"
         },
         "jsonBody": {
-          "crn": "${crn}",
+          "crn": "J678910",
           "isRestricted": false,
           "isRedacted": false
         }
@@ -24,7 +24,7 @@
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
-        "urlPattern": "/cases/${crn}/restrictions"
+        "urlPattern": "/cases/J678910/restrictions"
       },
       "response": {
         "status": "200",
@@ -32,7 +32,7 @@
           "Content-Type": "application/json;charset=UTF-8"
         },
         "jsonBody": {
-          "crn": "${crn}",
+          "crn": "J678910",
           "isRestricted": true,
           "isRedacted": false
         }
@@ -43,7 +43,7 @@
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
-        "urlPattern": "/cases/${crn}/restrictions"
+        "urlPattern": "/cases/J678910/restrictions"
       },
       "response": {
         "status": "200",
@@ -51,7 +51,7 @@
           "Content-Type": "application/json;charset=UTF-8"
         },
         "jsonBody": {
-          "crn": "${crn}",
+          "crn": "J678910",
           "isRestricted": true,
           "isRedacted": true
         }

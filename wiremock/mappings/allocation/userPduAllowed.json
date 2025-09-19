@@ -5,7 +5,7 @@
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
-        "urlPattern": "/user/${userId}/pdu/${pdu}//is-allowed"
+        "urlPattern": "/user/USER1/pdu/PDU1/is-allowed"
       },
       "response": {
         "status": "200",
@@ -20,7 +20,7 @@
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
-        "urlPattern": "/user/${userId}/pdu/${pdu}//is-allowed"
+        "urlPattern": "/user/USER1/pdu/PDU/is-allowed"
       },
       "response": {
         "status": "403",

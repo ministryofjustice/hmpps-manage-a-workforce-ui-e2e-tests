@@ -5,7 +5,7 @@
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
-        "urlPattern": "/team/${teamCode}/cases/unallocated"
+        "urlPattern": "/team/TM1/cases/unallocated"
       },
       "response": {
         "status": "200",
@@ -14,8 +14,8 @@
         },
         "jsonBody": [
           {
-            "teamCode": "${teamCode}",
-            "caseCount": "${caseCount}"
+            "teamCode": "TM1",
+            "caseCount": "10"
           }
         ]
       }
@@ -25,7 +25,7 @@
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
-        "urlPattern": "/cases/${crn}/restrictions"
+        "urlPattern": "/cases/J678910/restrictions"
       },
       "response": {
         "status": "200",
@@ -34,7 +34,7 @@
         },
         "jsonBody": [
           {
-            "teamCode": "${teamCode}",
+            "teamCode": "TM1",
             "caseCount": 100
           }
         ]

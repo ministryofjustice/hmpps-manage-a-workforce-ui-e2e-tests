@@ -5,7 +5,7 @@
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
-        "urlPattern": "/user/${userId}/crn/${crn}/conviction/${convictionNumber}/is-allowed"
+        "urlPattern": "/user/USER1/crn/J678910/conviction/1/is-allowed"
       },
       "response": {
         "status": "200",
@@ -20,7 +20,7 @@
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
-        "urlPattern": "/user/${userId}/crn/${crn}/conviction/${convictionNumber}/is-allowed"
+        "urlPattern": "/user/USER1/crn/J678910/conviction/1/is-allowed"
       },
       "response": {
         "status": "403",

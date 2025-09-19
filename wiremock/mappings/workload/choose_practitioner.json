@@ -11,10 +11,10 @@
             "equalTo": "J678910"
           },
           "teamCodes": {
-            "equalTo": ["N03F01", "N03F02"]
+            "matches": "N03F01|N03F02"
           },
           "grades": {
-            "equalTo": ["PSO", "PQiP", "PO"]
+            "matches": "PSO|PQiP|PO"
           }
         }
       },
@@ -74,10 +74,10 @@
             "equalTo": "J678910"
           },
           "teamCodes": {
-            "equalTo": ["N03F01", "N03F02"]
+            "matches": "N03F01|N03F02"
           },
           "grades": {
-            "equalTo": ["PSO", "PQiP", "PO"]
+            "matches": "PSO|PQiP|PO"
           }
         }
       },
@@ -128,10 +128,10 @@
             "equalTo": "J678910"
           },
           "teamCodes": {
-            "equalTo": ["N03F01", "N03F02"]
+            "matches": "N03F01|N03F02"
           },
           "grades": {
-            "equalTo": ["PSO", "PQiP", "PO"]
+            "matches": "PSO|PQiP|PO"
           }
         }
       },
@@ -182,10 +182,10 @@
             "equalTo": "J678910"
           },
           "teamCodes": {
-            "equalTo": ["N03F01", "N03F02"]
+            "matches": "N03F01|N03F02"
           },
           "grades": {
-            "equalTo": ["PSO", "PQiP", "PO"]
+            "matches": "PSO|PQiP|PO"
           }
         }
       },
@@ -245,10 +245,10 @@
             "equalTo": "J678910"
           },
           "teamCodes": {
-            "equalTo": "N03F01,N03F02"
+            "matches": "N03F01|N03F02"
           },
           "grades": {
-            "equalTo": "PSO,PQiP,PO"
+            "matches": "PSO|PQiP|PO"
           }
         }
       },
@@ -337,10 +337,10 @@
             "equalTo": "J678910"
           },
           "teamCodes": {
-            "equalTo": "N03F01,N03F02"
+            "matches": "N03F01|N03F02"
           },
           "grades": {
-            "equalTo": "PSO,PQiP,PO"
+            "matches": "PSO|PQiP|PO"
           }
         }
       },

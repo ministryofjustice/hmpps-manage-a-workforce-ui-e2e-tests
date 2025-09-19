@@ -5,7 +5,7 @@
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
-        "urlPattern": "/user/${staffId}/regions"
+        "urlPattern": "/user/231232/regions"
       },
       "response": {
         "status": "200",
@@ -22,7 +22,7 @@
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
-        "urlPattern": "/user/${staffId}/regions"
+        "urlPattern": "/user/231232/regions"
       },
       "response": {
         "status": "200",
@@ -39,7 +39,7 @@
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
-        "urlPattern": "/user/${staffId}/regions"
+        "urlPattern": "/user/231232/regions"
       },
       "response": {
         "status": "200",
