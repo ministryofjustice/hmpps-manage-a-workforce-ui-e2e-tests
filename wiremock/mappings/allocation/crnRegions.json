@@ -2,7 +2,8 @@
   "mappings": [
     {
       "scenarioName": "allRegions",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "allRegions",
+      "newScenarioState": "allRegions",
       "request": {
         "method": "GET",
         "urlPattern": "/user/231232/regions"
@@ -19,7 +20,8 @@
     },
     {
       "scenarioName": "oneRegion",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "oneRegion",
+      "newScenarioState": "oneRegion",
       "request": {
         "method": "GET",
         "urlPattern": "/user/231232/regions"
@@ -36,7 +38,8 @@
     },
     {
       "scenarioName": "noRegions",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "noRegions",
+      "newScenarioState": "noRegions",
       "request": {
         "method": "GET",
         "urlPattern": "/user/231232/regions"

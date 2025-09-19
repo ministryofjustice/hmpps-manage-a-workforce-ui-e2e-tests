@@ -1,8 +1,8 @@
 {
   "mappings": [
     {
-      "scenarioName": "Scenario getPDUDetails",
-      "requiredScenarioState": "Started",
+      "scenarioName": "getPDUDetails",
+      "requiredScenarioState": "getPDUDetails",
       "request": {
         "method": "GET",
         "urlPattern": "/probationDeliveryUnit/PDU1"

@@ -2,7 +2,7 @@
   "mappings": [
     {
       "scenarioName": "unrestricted",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "unrestricted",
       "request": {
         "method": "GET",
         "urlPattern": "/cases/J678910/restrictions"
@@ -21,7 +21,7 @@
     },
     {
       "scenarioName": "restricted",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "restricted",
       "request": {
         "method": "GET",
         "urlPattern": "/cases/J678910/restrictions"
@@ -40,7 +40,7 @@
     },
     {
       "scenarioName": "redacted",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "redacted",
       "request": {
         "method": "GET",
         "urlPattern": "/cases/J678910/restrictions"

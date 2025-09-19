@@ -2,7 +2,7 @@
   "mappings": [
     {
       "scenarioName": "getCaseCountByTeamCodes",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "getCaseCountByTeamCodes",
       "request": {
         "method": "GET",
         "urlPattern": "/team/TM1/cases/unallocated"
@@ -22,7 +22,7 @@
     },
     {
       "scenarioName": "getCaseCountByTeamCodes100",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "getCaseCountByTeamCodes100",
       "request": {
         "method": "GET",
         "urlPattern": "/cases/J678910/restrictions"

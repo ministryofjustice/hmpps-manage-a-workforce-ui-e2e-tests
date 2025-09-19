@@ -2,14 +2,14 @@
   "mappings": [
     {
       "scenarioName": "unrestricted",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "unrestricted",
       "request": {
         "method": "POST",
         "urlPattern": "/cases/restrictions/crn/list",
         "bodyPatterns": [
           {
             "equalToJson": {
-              "crns": ["${crn1}", "${crn2}"]
+              "crns": ["J678910", "J678911"]
             }
           }
         ]
@@ -37,14 +37,14 @@
     },
     {
       "scenarioName": "restrictions",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "restrictions",
       "request": {
         "method": "POST",
         "urlPattern": "/cases/restrictions/crn/list",
         "bodyPatterns": [
           {
             "equalToJson": {
-              "crns": ["${crn1}", "${crn2}"]
+              "crns": ["J678910", "J678911"]
             }
           }
         ]
@@ -57,12 +57,12 @@
         "jsonBody": {
           "access": [
             {
-              "crn": "${crn1}",
+              "crn": "J678910",
               "userRestricted": false,
               "userExcluded": true
             },
             {
-              "crn": "${crn2}",
+              "crn": "J678911",
               "userRestricted": true,
               "userExcluded": false
             }

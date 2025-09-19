@@ -1,8 +1,8 @@
 {
   "mappings": [
     {
-      "scenarioName": "Scenario getTeamsByCodes",
-      "requiredScenarioState": "Started",
+      "scenarioName": "getTeamsByCodes",
+      "requiredScenarioState": "getTeamsByCodes",
       "request": {
         "method": "GET",
         "urlPattern": "/team/search\\?codes=TM1"
@@ -19,8 +19,8 @@
       }
     },
     {
-      "scenarioName": "Scenario getTeamDetails",
-      "requiredScenarioState": "Started",
+      "scenarioName": "getTeamDetails",
+      "requiredScenarioState": "getTeamDetails",
       "request": {
         "method": "GET",
         "urlPattern": "/team/TM1"

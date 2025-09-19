@@ -1,8 +1,8 @@
 {
   "mappings": [
     {
-      "scenarioName": "Scenario getCurrentlyManagedCaseForChoosePractitioner",
-      "requiredScenarioState": "Started",
+      "scenarioName": "getCurrentlyManagedCaseForChoosePractitioner",
+      "requiredScenarioState": "getCurrentlyManagedCaseForChoosePractitioner",
       "request": {
         "method": "GET",
         "urlPath": "/team/choose-practitioner",
@@ -64,8 +64,8 @@
       }
     },
     {
-      "scenarioName": "Scenario getCurrentlyManagedNoOffenderManagerCaseForChoosePractitioner",
-      "requiredScenarioState": "Started",
+      "scenarioName": "getCurrentlyManagedNoOffenderManagerCaseForChoosePractitioner",
+      "requiredScenarioState": "getCurrentlyManagedNoOffenderManagerCaseForChoosePractitioner",
       "request": {
         "method": "GET",
         "urlPath": "/team/choose-practitioner",
@@ -118,8 +118,8 @@
       }
     },
     {
-      "scenarioName": "Scenario getPreviouslyManagedNoOffenderManagerCaseForChoosePractitioner",
-      "requiredScenarioState": "Started",
+      "scenarioName": "getPreviouslyManagedNoOffenderManagerCaseForChoosePractitioner",
+      "requiredScenarioState": "getPreviouslyManagedNoOffenderManagerCaseForChoosePractitioner",
       "request": {
         "method": "GET",
         "urlPath": "/team/choose-practitioner",
@@ -172,8 +172,8 @@
       }
     },
     {
-      "scenarioName": "Scenario getNewToProbationCaseForChoosePractitioner",
-      "requiredScenarioState": "Started",
+      "scenarioName": "getNewToProbationCaseForChoosePractitioner",
+      "requiredScenarioState": "getNewToProbationCaseForChoosePractitioner",
       "request": {
         "method": "GET",
         "urlPath": "/team/choose-practitioner",
@@ -235,8 +235,8 @@
       }
     },
     {
-      "scenarioName": "Scenario choosePractitioners",
-      "requiredScenarioState": "Started",
+      "scenarioName": "choosePractitioners",
+      "requiredScenarioState": "choosePractitioners",
       "request": {
         "method": "GET",
         "urlPath": "/team/choose-practitioner",
@@ -327,8 +327,8 @@
       }
     },
     {
-      "scenarioName": "Scenario choosePractitionersWithEmails",
-      "requiredScenarioState": "Started",
+      "scenarioName": "choosePractitionersWithEmails",
+      "requiredScenarioState": "choosePractitionersWithEmails",
       "request": {
         "method": "GET",
         "urlPath": "/team/choose-practitioner",

@@ -1,8 +1,8 @@
 {
   "mappings": [
     {
-      "scenarioName": "Scenario 1",
-      "requiredScenarioState": "Started",
+      "scenarioName": "Scenario1",
+      "requiredScenarioState": "Scenario1",
       "request": {
         "method": "GET",
         "urlPattern": "/cases/unallocated/J678910/convictions/1/risks"
@@ -122,7 +122,7 @@
     },
     {
       "scenarioName": "Unavailable",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "Unavailable",
       "request": {
         "method": "GET",
         "urlPattern": "/cases/unallocated/J678910/convictions/1/risks"

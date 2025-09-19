@@ -1,8 +1,8 @@
 {
   "mappings": [
     {
-      "scenarioName": "Scenario forManageUsers",
-      "requiredScenarioState": "Started",
+      "scenarioName": "forManageUsers",
+      "requiredScenarioState": "forManageUsers",
       "request": {
         "method": "GET",
         "urlPattern": "/users/me"

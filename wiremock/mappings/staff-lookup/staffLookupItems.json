@@ -1,8 +1,8 @@
 {
   "mappings": [
     {
-      "scenarioName": "Scenario staffLookupItems",
-      "requiredScenarioState": "Started",
+      "scenarioName": "staffLookupItems",
+      "requiredScenarioState": "staffLookupItems",
       "request": {
         "method": "GET",
         "urlPattern": "/staff/search?.*"
@@ -29,8 +29,8 @@
       }
     },
     {
-      "scenarioName": "Scenario noItems",
-      "requiredScenarioState": "Started",
+      "scenarioName": "noItems",
+      "requiredScenarioState": "noItems",
       "request": {
         "method": "GET",
         "urlPattern": "/staff/search?.*"
@@ -44,8 +44,8 @@
       }
     },
     {
-      "scenarioName": "Scenario error",
-      "requiredScenarioState": "Started",
+      "scenarioName": "error",
+      "requiredScenarioState": "error",
       "request": {
         "method": "GET",
         "urlPattern": "/staff/search?.*"

@@ -1,8 +1,8 @@
 {
   "mappings": [
     {
-      "scenarioName": "Scenario getPotentialOffenderManagerWorkloadOverCapacity",
-      "requiredScenarioState": "Started",
+      "scenarioName": "getPotentialOffenderManagerWorkloadOverCapacity",
+      "requiredScenarioState": "getPotentialOffenderManagerWorkloadOverCapacity",
       "request": {
         "method": "GET",
         "urlPattern": "/team/TM2/offenderManager/OM2/impact/person/J678910"
@@ -33,8 +33,8 @@
       }
     },
     {
-      "scenarioName": "Scenario getPotentialOffenderManagerWorkload",
-      "requiredScenarioState": "Started",
+      "scenarioName": "getPotentialOffenderManagerWorkload",
+      "requiredScenarioState": "getPotentialOffenderManagerWorkload",
       "request": {
         "method": "GET",
         "urlPattern": "/team/TM2}/offenderManager/OM2/impact/person/J678910"
@@ -65,8 +65,8 @@
       }
     },
     {
-      "scenarioName": "Scenario getPotentialOffenderManagerWorkloadOverCapacitySamePoP",
-      "requiredScenarioState": "Started",
+      "scenarioName": "getPotentialOffenderManagerWorkloadOverCapacitySamePoP",
+      "requiredScenarioState": "getPotentialOffenderManagerWorkloadOverCapacitySamePoP",
       "request": {
         "method": "GET",
         "urlPattern": "/team/TM2/offenderManager/OM2/impact/person/J678910"

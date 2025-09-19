@@ -2,7 +2,7 @@
   "mappings": [
     {
       "scenarioName": "teamCountOneTeam",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "teamCountOneTeam",
       "request": {
         "method": "GET",
         "urlPattern": "/cases/unallocated/teamCount?teams=TM1"
@@ -22,7 +22,7 @@
     },
     {
       "scenarioName": "teamCountZeroCount",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "teamCountZeroCount",
       "request": {
         "method": "GET",
         "urlPattern": "/cases/unallocated/teamCount?teams=TM1"
@@ -42,7 +42,7 @@
     },
     {
       "scenarioName": "teamCountTwoTeams",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "teamCountTwoTeams",
       "request": {
         "method": "GET",
         "urlPattern": "/cases/unallocated/teamCount?teams=TM1,TM2"
