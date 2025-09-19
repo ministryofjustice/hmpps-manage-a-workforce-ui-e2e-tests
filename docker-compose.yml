@@ -1,0 +1,22 @@
+version: '3.1'
+services:
+  redis:
+    image: 'redis/redis-stack-server:7.2.0-v18'
+    networks:
+      - hmpps_int
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    ports:
+      - '6379:6379'
+
+  wiremock:
+    image: wiremock/wiremock
+    networks:
+      - hmpps_int
+    restart: always
+    ports:
+      - '9090:8080'
+    volumes:
+      - ./wiremock/mappings:/home/wiremock/mappings
+networks:
+  hmpps_int:

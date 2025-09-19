@@ -2,10 +2,10 @@
   "mappings": [
     {
       "scenarioName": "probationRecord",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "probationRecord",
       "request": {
         "method": "GET",
-        "urlPattern": "/cases/unallocated/${crn}/record/exclude-conviction/${convictionNumber}"
+        "urlPattern": "/cases/unallocated/J678910/record/exclude-conviction/1"
       },
       "response": {
         "status": "200",
@@ -14,9 +14,9 @@
         },
         "jsonBody": {
           "name": "Dylan Adam Armstrong",
-          "crn": "${crn}",
+          "crn": "J678910",
           "tier": "C1",
-          "convictionNumber": "${convictionNumber}",
+          "convictionNumber": "1",
           "active": [
             {
               "description": "Adult Custody < 12m",
@@ -78,10 +78,10 @@
     },
     {
       "scenarioName": "probationRecordNoOffences",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "probationRecordNoOffences",
       "request": {
         "method": "GET",
-        "urlPattern": "/cases/unallocated/${crn}/record/exclude-conviction/${convictionNumber}"
+        "urlPattern": "/cases/unallocated/J678910/record/exclude-conviction/2"
       },
       "response": {
         "status": "200",
@@ -90,9 +90,9 @@
         },
         "jsonBody": {
           "name": "Dylan Adam Armstrong",
-          "crn": "${crn}",
+          "crn": "J678910",
           "tier": "C1",
-          "convictionNumber": "${convictionNumber}",
+          "convictionNumber": "2",
           "active": [],
           "previous": []
         }

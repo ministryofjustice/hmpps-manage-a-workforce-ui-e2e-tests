@@ -1,8 +1,8 @@
 {
   "mappings": [
     {
-      "scenarioName": "Scenario forTeamWorkload",
-      "requiredScenarioState": "Started",
+      "scenarioName": "forTeamWorkload",
+      "requiredScenarioState": "forTeamWorkload",
       "request": {
         "method": "GET",
         "urlPattern": "/team/practitioner-workloadcases\\?teamCode=.*"
@@ -216,8 +216,8 @@
       }
     },
     {
-      "scenarioName": "Scenario forTeamWorkloadOverCapacity",
-      "requiredScenarioState": "Started",
+      "scenarioName": "forTeamWorkloadOverCapacity",
+      "requiredScenarioState": "forTeamWorkloadOverCapacity",
       "request": {
         "method": "GET",
         "urlPattern": "/team/practitioner-workloadcases\\?teamCode=.*"
@@ -229,8 +229,8 @@
       }
     },
     {
-      "scenarioName": "Scenario forTeamWorkloadZeroCapacities",
-      "requiredScenarioState": "Started",
+      "scenarioName": "forTeamWorkloadZeroCapacities",
+      "requiredScenarioState": "forTeamWorkloadZeroCapacities",
       "request": {
         "method": "GET",
         "urlPattern": "/team/practitioner-workloadcases\\?teamCode=.*"

@@ -2,10 +2,10 @@
   "mappings": [
     {
       "scenarioName": "getUnallocatedCase",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "getUnallocatedCase",
       "request": {
         "method": "GET",
-        "urlPattern": "/cases/unallocated/${crn}/convictions/${convictionNumber}"
+        "urlPattern": "/cases/unallocated/J678910/convictions/1"
       },
       "response": {
         "status": "200",
@@ -14,7 +14,7 @@
         },
         "jsonBody": {
           "name": "Dylan Adam Armstrong",
-          "crn": "${crn}",
+          "crn": "J678910",
           "tier": "C1",
           "sentenceDate": "2021-09-01",
           "gender": "Male",

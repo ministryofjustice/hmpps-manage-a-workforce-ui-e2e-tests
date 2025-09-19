@@ -1,8 +1,8 @@
 {
   "mappings": [
     {
-      "scenarioName": "Scenario getCurrentlyManagedCaseForChoosePractitioner",
-      "requiredScenarioState": "Started",
+      "scenarioName": "getCurrentlyManagedCaseForChoosePractitioner",
+      "requiredScenarioState": "getCurrentlyManagedCaseForChoosePractitioner",
       "request": {
         "method": "GET",
         "urlPath": "/team/choose-practitioner",
@@ -11,10 +11,10 @@
             "equalTo": "J678910"
           },
           "teamCodes": {
-            "equalTo": ["N03F01", "N03F02"]
+            "matches": "N03F01|N03F02"
           },
           "grades": {
-            "equalTo": ["PSO", "PQiP", "PO"]
+            "matches": "PSO|PQiP|PO"
           }
         }
       },
@@ -64,8 +64,8 @@
       }
     },
     {
-      "scenarioName": "Scenario getCurrentlyManagedNoOffenderManagerCaseForChoosePractitioner",
-      "requiredScenarioState": "Started",
+      "scenarioName": "getCurrentlyManagedNoOffenderManagerCaseForChoosePractitioner",
+      "requiredScenarioState": "getCurrentlyManagedNoOffenderManagerCaseForChoosePractitioner",
       "request": {
         "method": "GET",
         "urlPath": "/team/choose-practitioner",
@@ -74,10 +74,10 @@
             "equalTo": "J678910"
           },
           "teamCodes": {
-            "equalTo": ["N03F01", "N03F02"]
+            "matches": "N03F01|N03F02"
           },
           "grades": {
-            "equalTo": ["PSO", "PQiP", "PO"]
+            "matches": "PSO|PQiP|PO"
           }
         }
       },
@@ -118,8 +118,8 @@
       }
     },
     {
-      "scenarioName": "Scenario getPreviouslyManagedNoOffenderManagerCaseForChoosePractitioner",
-      "requiredScenarioState": "Started",
+      "scenarioName": "getPreviouslyManagedNoOffenderManagerCaseForChoosePractitioner",
+      "requiredScenarioState": "getPreviouslyManagedNoOffenderManagerCaseForChoosePractitioner",
       "request": {
         "method": "GET",
         "urlPath": "/team/choose-practitioner",
@@ -128,10 +128,10 @@
             "equalTo": "J678910"
           },
           "teamCodes": {
-            "equalTo": ["N03F01", "N03F02"]
+            "matches": "N03F01|N03F02"
           },
           "grades": {
-            "equalTo": ["PSO", "PQiP", "PO"]
+            "matches": "PSO|PQiP|PO"
           }
         }
       },
@@ -172,8 +172,8 @@
       }
     },
     {
-      "scenarioName": "Scenario getNewToProbationCaseForChoosePractitioner",
-      "requiredScenarioState": "Started",
+      "scenarioName": "getNewToProbationCaseForChoosePractitioner",
+      "requiredScenarioState": "getNewToProbationCaseForChoosePractitioner",
       "request": {
         "method": "GET",
         "urlPath": "/team/choose-practitioner",
@@ -182,10 +182,10 @@
             "equalTo": "J678910"
           },
           "teamCodes": {
-            "equalTo": ["N03F01", "N03F02"]
+            "matches": "N03F01|N03F02"
           },
           "grades": {
-            "equalTo": ["PSO", "PQiP", "PO"]
+            "matches": "PSO|PQiP|PO"
           }
         }
       },
@@ -235,8 +235,8 @@
       }
     },
     {
-      "scenarioName": "Scenario choosePractitioners",
-      "requiredScenarioState": "Started",
+      "scenarioName": "choosePractitioners",
+      "requiredScenarioState": "choosePractitioners",
       "request": {
         "method": "GET",
         "urlPath": "/team/choose-practitioner",
@@ -245,10 +245,10 @@
             "equalTo": "J678910"
           },
           "teamCodes": {
-            "equalTo": "N03F01,N03F02"
+            "matches": "N03F01|N03F02"
           },
           "grades": {
-            "equalTo": "PSO,PQiP,PO"
+            "matches": "PSO|PQiP|PO"
           }
         }
       },
@@ -327,8 +327,8 @@
       }
     },
     {
-      "scenarioName": "Scenario choosePractitionersWithEmails",
-      "requiredScenarioState": "Started",
+      "scenarioName": "choosePractitionersWithEmails",
+      "requiredScenarioState": "choosePractitionersWithEmails",
       "request": {
         "method": "GET",
         "urlPath": "/team/choose-practitioner",
@@ -337,10 +337,10 @@
             "equalTo": "J678910"
           },
           "teamCodes": {
-            "equalTo": "N03F01,N03F02"
+            "matches": "N03F01|N03F02"
           },
           "grades": {
-            "equalTo": "PSO,PQiP,PO"
+            "matches": "PSO|PQiP|PO"
           }
         }
       },

@@ -32,6 +32,7 @@
     "lint:fix": "npx eslint . --ext .ts --fix",
     "prepare": "npx playwright install",
     "prepare:ci": "npx playwright install --with-deps",
+    "record-build-info": "node ./utils/record-build-info",
     "build": "tsc",
     "start": "node ./dist/index.js",
     "dev": "tsc --watch",
@@ -52,6 +53,7 @@
   "devDependencies": {
     "@playwright/test": "^1.55.0",
     "@types/node": "^24.3.1",
-    "allure-playwright": "^3.4.1"
+    "allure-playwright": "^3.4.1",
+    "axios":"1.12.2"
   }
 }

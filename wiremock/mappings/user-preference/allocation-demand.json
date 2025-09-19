@@ -1,8 +1,8 @@
 {
   "mappings": [
     {
-      "scenarioName": "Scenario getUserPreferenceTeams",
-      "requiredScenarioState": "Started",
+      "scenarioName": "getUserPreferenceTeams",
+      "requiredScenarioState": "getUserPreferenceTeams",
       "request": {
         "method": "GET",
         "urlPattern": "/users/USER1/preferences/allocation-teams"
@@ -16,8 +16,8 @@
       }
     },
     {
-      "scenarioName": "Scenario putUserPreferenceTeams",
-      "requiredScenarioState": "Started",
+      "scenarioName": "putUserPreferenceTeams",
+      "requiredScenarioState": "putUserPreferenceTeams",
       "request": {
         "method": "PUT",
         "urlPattern": "/users/USER1/preferences/allocation-teams",
@@ -38,8 +38,8 @@
       }
     },
     {
-      "scenarioName": "Scenario getUserPreferenceTeamsError",
-      "requiredScenarioState": "Started",
+      "scenarioName": "getUserPreferenceTeamsError",
+      "requiredScenarioState": "getUserPreferenceTeamsError",
       "request": {
         "method": "GET",
         "urlPattern": "/users/USER1/preferences/allocation-teams"
@@ -51,8 +51,8 @@
       }
     },
     {
-      "scenarioName": "Scenario putUserPreferenceTeamsError",
-      "requiredScenarioState": "Started",
+      "scenarioName": "putUserPreferenceTeamsError",
+      "requiredScenarioState": "putUserPreferenceTeamsError",
       "request": {
         "method": "PUT",
         "urlPattern": "/users/USER1/preferences/allocation-teams",
@@ -73,8 +73,8 @@
       }
     },
     {
-      "scenarioName": "Scenario getUserPreferencePdu",
-      "requiredScenarioState": "Started",
+      "scenarioName": "getUserPreferencePdu",
+      "requiredScenarioState": "getUserPreferencePdu",
       "request": {
         "urlPattern": "/users/USER1/preferences/allocation-pdu",
         "method": "GET"
@@ -88,8 +88,8 @@
       }
     },
     {
-      "scenarioName": "Scenario putUserPreferencePdu",
-      "requiredScenarioState": "Started",
+      "scenarioName": "putUserPreferencePdu",
+      "requiredScenarioState": "putUserPreferencePdu",
       "request": {
         "urlPattern": "/users/USER1/preferences/allocation-pdu",
         "method": "PUT",
@@ -110,8 +110,8 @@
       }
     },
     {
-      "scenarioName": "Scenario getUserPreferencePduError",
-      "requiredScenarioState": "Started",
+      "scenarioName": "getUserPreferencePduError",
+      "requiredScenarioState": "getUserPreferencePduError",
       "request": {
         "urlPattern": "/users/USER1/preferences/allocation-pdu",
         "method": "GET"
@@ -123,8 +123,8 @@
       }
     },
     {
-      "scenarioName": "Scenario putUserPreferencePduError",
-      "requiredScenarioState": "Started",
+      "scenarioName": "putUserPreferencePduError",
+      "requiredScenarioState": "putUserPreferencePduError",
       "request": {
         "urlPattern": "/users/USER1/preferences/allocation-pdu",
         "method": "PUT",
@@ -143,8 +143,8 @@
       }
     },
     {
-      "scenarioName": "Scenario getUserPreferenceDemand",
-      "requiredScenarioState": "Started",
+      "scenarioName": "getUserPreferenceDemand",
+      "requiredScenarioState": "getUserPreferenceDemand",
       "request": {
         "method": "GET",
         "urlPattern": "/users/USER1/preferences/allocation-demand"
@@ -158,8 +158,8 @@
       }
     },
     {
-      "scenarioName": "Scenario putUserPreferenceDemand",
-      "requiredScenarioState": "Started",
+      "scenarioName": "putUserPreferenceDemand",
+      "requiredScenarioState": "putUserPreferenceDemand",
       "request": {
         "method": "PUT",
         "urlPattern": "/users/USER1/preferences/allocation-demand"
@@ -173,8 +173,8 @@
       }
     },
     {
-      "scenarioName": "Scenario getUserPreferenceDemandError",
-      "requiredScenarioState": "Started",
+      "scenarioName": "getUserPreferenceDemandError",
+      "requiredScenarioState": "getUserPreferenceDemandError",
       "request": {
         "method": "GET",
         "urlPattern": "/users/USER1/preferences/allocation-demand"
@@ -186,8 +186,8 @@
       }
     },
     {
-      "scenarioName": "Scenario putUserPreferenceDemandError",
-      "requiredScenarioState": "Started",
+      "scenarioName": "putUserPreferenceDemandError",
+      "requiredScenarioState": "putUserPreferenceDemandError",
       "request": {
         "method": "PUT",
         "urlPattern": "/users/USER1/preferences/allocation-demand"

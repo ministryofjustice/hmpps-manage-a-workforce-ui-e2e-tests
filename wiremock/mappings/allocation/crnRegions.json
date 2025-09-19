@@ -2,10 +2,11 @@
   "mappings": [
     {
       "scenarioName": "allRegions",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "allRegions",
+      "newScenarioState": "allRegions",
       "request": {
         "method": "GET",
-        "urlPattern": "/user/${staffId}/regions"
+        "urlPattern": "/user/231232/regions"
       },
       "response": {
         "status": "200",
@@ -19,10 +20,11 @@
     },
     {
       "scenarioName": "oneRegion",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "oneRegion",
+      "newScenarioState": "oneRegion",
       "request": {
         "method": "GET",
-        "urlPattern": "/user/${staffId}/regions"
+        "urlPattern": "/user/231232/regions"
       },
       "response": {
         "status": "200",
@@ -36,10 +38,11 @@
     },
     {
       "scenarioName": "noRegions",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "noRegions",
+      "newScenarioState": "noRegions",
       "request": {
         "method": "GET",
-        "urlPattern": "/user/${staffId}/regions"
+        "urlPattern": "/user/231232/regions"
       },
       "response": {
         "status": "200",

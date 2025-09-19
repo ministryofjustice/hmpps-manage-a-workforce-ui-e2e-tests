@@ -2,10 +2,10 @@
   "mappings": [
     {
       "scenarioName": "staffRestrictionsByCrn",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "staffRestrictionsByCrn",
       "request": {
         "method": "POST",
-        "urlPattern": "/cases/unallocated/${crn}/restrictions",
+        "urlPattern": "/cases/unallocated/J678910/restrictions",
         "bodyPatterns": [
           {
             "equalToJson": {
@@ -20,7 +20,7 @@
           "Content-Type": "application/json;charset=UTF-8"
         },
         "jsonBody": {
-          "crn": "${crn}",
+          "crn": "restrictions",
           "staffRestrictions": [
             {
               "staffCode": "OM1",
@@ -40,10 +40,10 @@
     },
     {
       "scenarioName": "noStaffRestrictionsByCrn",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "noStaffRestrictionsByCrn",
       "request": {
         "method": "POST",
-        "urlPattern": "/cases/unallocated/${crn}/restrictions",
+        "urlPattern": "/cases/unallocated/J678910/restrictions",
         "bodyPatterns": [
           {
             "equalToJson": {
@@ -58,7 +58,7 @@
           "Content-Type": "application/json;charset=UTF-8"
         },
         "jsonBody": {
-          "crn": "${crn}",
+          "crn": "J678910",
           "staffRestrictions": [
             {
               "staffCode": "OM1",

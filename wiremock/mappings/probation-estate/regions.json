@@ -1,8 +1,8 @@
 {
   "mappings": [
     {
-      "scenarioName": "Scenario getAllRegions",
-      "requiredScenarioState": "Started",
+      "scenarioName": "getAllRegions",
+      "requiredScenarioState": "getAllRegions",
       "request": {
         "method": "GET",
         "urlPattern": "/regions"
@@ -31,8 +31,8 @@
       }
     },
     {
-      "scenarioName": "Scenario getRegionDetails",
-      "requiredScenarioState": "Started",
+      "scenarioName": "getRegionDetails",
+      "requiredScenarioState": "getRegionDetails",
       "request": {
         "method": "GET",
         "urlPattern": "/region/RG1"
@@ -65,11 +65,11 @@
       }
     },
     {
-      "scenarioName": "Scenario getAllEstateByRegionCode",
-      "requiredScenarioState": "Started",
+      "scenarioName": "getAllEstateByRegionCode",
+      "requiredScenarioState": "getAllEstateByRegionCode",
       "request": {
         "method": "GET",
-        "urlPattern": "/all/region/RG1",
+        "urlPattern": "/all/region/RG1"
       },
       "response": {
         "status": 200,

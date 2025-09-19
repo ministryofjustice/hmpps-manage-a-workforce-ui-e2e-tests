@@ -1,11 +1,11 @@
 {
   "mappings": [
     {
-      "scenarioName": "Scenario 1",
-      "requiredScenarioState": "Started",
+      "scenarioName": "Scenario1",
+      "requiredScenarioState": "Scenario1",
       "request": {
         "method": "GET",
-        "urlPattern": "/cases/unallocated/${crn}/convictions/${convictionNumber}/risks"
+        "urlPattern": "/cases/unallocated/J678910/convictions/1/risks"
       },
       "response": {
         "status": "200",
@@ -14,7 +14,7 @@
         },
         "jsonBody": {
           "name": "Dylan Adam Armstrong",
-          "crn": "${crn}",
+          "crn": "J678910",
           "tier": "C1",
           "activeRegistrations": [
             {
@@ -94,7 +94,7 @@
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
-        "urlPattern": "/cases/unallocated/${crn}/convictions/${convictionNumber}/risks"
+        "urlPattern": "/cases/unallocated/J678910/convictions/1/risks"
       },
       "response": {
         "status": "200",
@@ -103,7 +103,7 @@
         },
         "jsonBody": {
           "name": "Dylan Adam Armstrong",
-          "crn": "${crn}",
+          "crn": "J678910",
           "tier": "C1",
           "activeRegistrations": [],
           "inactiveRegistrations": [],
@@ -115,17 +115,17 @@
             "level": "NOT_FOUND",
             "percentage": -2147483648
           },
-          "convictionNumber": "${convictionNumber}",
+          "convictionNumber": "1",
           "laoCase": false
         }
       }
     },
     {
       "scenarioName": "Unavailable",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "Unavailable",
       "request": {
         "method": "GET",
-        "urlPattern": "/cases/unallocated/${crn}/convictions/${convictionNumber}/risks"
+        "urlPattern": "/cases/unallocated/J678910/convictions/1/risks"
       },
       "response": {
         "status": "200",
@@ -134,7 +134,7 @@
         },
         "jsonBody": {
           "name": "Dylan Adam Armstrong",
-          "crn": "${crn}",
+          "crn": "J678910",
           "tier": "C1",
           "activeRegistrations": [],
           "inactiveRegistrations": [],
@@ -146,7 +146,7 @@
             "level": "UNAVAILABLE",
             "percentage": -2147483648
           },
-          "convictionNumber": "${convictionNumber}",
+          "convictionNumber": "1",
           "laoCase": false
         }
       }

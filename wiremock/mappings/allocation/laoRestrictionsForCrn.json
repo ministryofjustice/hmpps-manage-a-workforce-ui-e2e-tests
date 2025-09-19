@@ -2,10 +2,10 @@
   "mappings": [
     {
       "scenarioName": "unrestricted",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "unrestricted",
       "request": {
         "method": "GET",
-        "urlPattern": "/cases/${crn}/restrictions"
+        "urlPattern": "/cases/J678910/restrictions"
       },
       "response": {
         "status": "200",
@@ -13,7 +13,7 @@
           "Content-Type": "application/json;charset=UTF-8"
         },
         "jsonBody": {
-          "crn": "${crn}",
+          "crn": "J678910",
           "isRestricted": false,
           "isRedacted": false
         }
@@ -21,10 +21,10 @@
     },
     {
       "scenarioName": "restricted",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "restricted",
       "request": {
         "method": "GET",
-        "urlPattern": "/cases/${crn}/restrictions"
+        "urlPattern": "/cases/J678910/restrictions"
       },
       "response": {
         "status": "200",
@@ -32,7 +32,7 @@
           "Content-Type": "application/json;charset=UTF-8"
         },
         "jsonBody": {
-          "crn": "${crn}",
+          "crn": "J678910",
           "isRestricted": true,
           "isRedacted": false
         }
@@ -40,10 +40,10 @@
     },
     {
       "scenarioName": "redacted",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "redacted",
       "request": {
         "method": "GET",
-        "urlPattern": "/cases/${crn}/restrictions"
+        "urlPattern": "/cases/J678910/restrictions"
       },
       "response": {
         "status": "200",
@@ -51,7 +51,7 @@
           "Content-Type": "application/json;charset=UTF-8"
         },
         "jsonBody": {
-          "crn": "${crn}",
+          "crn": "J678910",
           "isRestricted": true,
           "isRedacted": true
         }

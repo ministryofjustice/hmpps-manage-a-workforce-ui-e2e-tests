@@ -2,10 +2,11 @@
   "mappings": [
     {
       "scenarioName": "Allowed",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "Allowed",
+      "newScenarioState": "Allowed",
       "request": {
         "method": "GET",
-        "urlPattern": "/user/${userId}/crn/${crn}/conviction/${convictionNumber}/is-allowed"
+        "urlPattern": "/user/USER1/crn/J678910/conviction/1/is-allowed"
       },
       "response": {
         "status": "200",
@@ -17,10 +18,11 @@
     },
     {
       "scenarioName": "Forbidden",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "Forbidden",
+      "newScenarioState":"Forbidden",
       "request": {
         "method": "GET",
-        "urlPattern": "/user/${userId}/crn/${crn}/conviction/${convictionNumber}/is-allowed"
+        "urlPattern": "/user/USER1/crn/J678910/conviction/1/is-allowed"
       },
       "response": {
         "status": "403",

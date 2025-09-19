@@ -2,10 +2,10 @@
   "mappings": [
     {
       "scenarioName": "teamCountOneTeam",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "teamCountOneTeam",
       "request": {
         "method": "GET",
-        "urlPattern": "/cases/unallocated/teamCount?teams=${teamCode}"
+        "urlPattern": "/cases/unallocated/teamCount?teams=TM1"
       },
       "response": {
         "status": "200",
@@ -14,7 +14,7 @@
         },
         "jsonBody": [
           {
-            "teamCode": "${teamCode}",
+            "teamCode": "TM1",
             "caseCount": 100
           }
         ]
@@ -22,10 +22,10 @@
     },
     {
       "scenarioName": "teamCountZeroCount",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "teamCountZeroCount",
       "request": {
         "method": "GET",
-        "urlPattern": "/cases/unallocated/teamCount?teams=${teamCode}"
+        "urlPattern": "/cases/unallocated/teamCount?teams=TM1"
       },
       "response": {
         "status": "200",
@@ -34,7 +34,7 @@
         },
         "jsonBody": [
           {
-            "teamCode": "${teamCode}",
+            "teamCode": "TM1",
             "caseCount": 0
           }
         ]
@@ -42,10 +42,10 @@
     },
     {
       "scenarioName": "teamCountTwoTeams",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "teamCountTwoTeams",
       "request": {
         "method": "GET",
-        "urlPattern": "/cases/unallocated/teamCount?teams=${teamCode1},${teamCode2}"
+        "urlPattern": "/cases/unallocated/teamCount?teams=TM1,TM2"
       },
       "response": {
         "status": "200",
@@ -54,11 +54,11 @@
         },
         "jsonBody": [
           {
-            "teamCode": "${teamCode1}",
+            "teamCode": "TM1",
             "caseCount": 1
           },
           {
-            "teamCode": "${teamCode2}",
+            "teamCode": "TM2",
             "caseCount": 2
           }
         ]

@@ -1,8 +1,8 @@
 {
   "mappings": [
     {
-      "scenarioName": "Scenario caseAllocationHistory",
-      "requiredScenarioState": "Started",
+      "scenarioName": "caseAllocationHistory",
+      "requiredScenarioState": "caseAllocationHistory",
       "request": {
         "method": "POST",
         "urlPattern": "/allocation/events/teams\\?since=.*"
@@ -83,8 +83,8 @@
       }
     },
     {
-      "scenarioName": "Scenario caseAllocationHistoryEmpty",
-      "requiredScenarioState": "Started",
+      "scenarioName": "caseAllocationHistoryEmpty",
+      "requiredScenarioState": "caseAllocationHistoryEmpty",
       "request": {
         "method": "POST",
         "urlPattern": "/allocation/events/teams\\?since=.*"
@@ -98,8 +98,8 @@
       }
     },
     {
-      "scenarioName": "Scenario caseAllocationHistoryCountEmpty",
-      "requiredScenarioState": "Started",
+      "scenarioName": "caseAllocationHistoryCountEmpty",
+      "requiredScenarioState": "caseAllocationHistoryCountEmpty",
       "request": {
         "method": "POST",
         "urlPattern": "/allocation/events/teams/count\\?since=.*"
@@ -113,8 +113,8 @@
       }
     },
     {
-      "scenarioName": "Scenario overOneHundredCaseAllocationHistory",
-      "requiredScenarioState": "Started",
+      "scenarioName": "overOneHundredCaseAllocationHistory",
+      "requiredScenarioState": "overOneHundredCaseAllocationHistory",
       "request": {
         "method": "POST",
         "urlPattern": "/allocation/events/teams\\?since=.*"

@@ -2,10 +2,11 @@
   "mappings": [
     {
       "scenarioName": "getDocuments",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "getDocuments",
+      "newScenarioState": "getDocuments",
       "request": {
         "method": "GET",
-        "urlPattern": "/cases/unallocated/${crn}/documents"
+        "urlPattern": "/cases/unallocated/J678910/documents"
       },
       "response": {
         "status": "200",
@@ -92,10 +93,11 @@
     },
     {
       "scenarioName": "noDocuments",
-      "requiredScenarioState": "Started",
+      "requiredScenarioState": "noDocuments",
+      "newScenarioState": "noDocuments",
       "request": {
         "method": "GET",
-        "urlPattern": "/cases/unallocated/${crn}/documents"
+        "urlPattern": "/cases/unallocated/J678910/documents"
       },
       "response": {
         "status": "200",
