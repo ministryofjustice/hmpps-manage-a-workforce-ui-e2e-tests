@@ -328,7 +328,7 @@
     },
     {
       "scenarioName": "choosePractitionersWithEmails",
-      "requiredScenarioState": "choosePractitionersWithEmails",
+      "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPath": "/team/choose-practitioner",

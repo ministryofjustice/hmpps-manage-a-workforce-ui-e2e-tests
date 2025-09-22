@@ -2,7 +2,7 @@
   "mappings": [
     {
       "scenarioName": "getUserPreferenceTeams",
-      "requiredScenarioState": "getUserPreferenceTeams",
+      "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPattern": "/users/USER1/preferences/allocation-teams"
@@ -74,7 +74,7 @@
     },
     {
       "scenarioName": "getUserPreferencePdu",
-      "requiredScenarioState": "getUserPreferencePdu",
+      "requiredScenarioState": "Started",
       "request": {
         "urlPattern": "/users/USER1/preferences/allocation-pdu",
         "method": "GET"
@@ -111,7 +111,7 @@
     },
     {
       "scenarioName": "getUserPreferencePduError",
-      "requiredScenarioState": "getUserPreferencePduError",
+      "requiredScenarioState": "notStarted",
       "request": {
         "urlPattern": "/users/USER1/preferences/allocation-pdu",
         "method": "GET"
@@ -144,7 +144,7 @@
     },
     {
       "scenarioName": "getUserPreferenceDemand",
-      "requiredScenarioState": "getUserPreferenceDemand",
+      "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPattern": "/users/USER1/preferences/allocation-demand"
@@ -174,7 +174,7 @@
     },
     {
       "scenarioName": "getUserPreferenceDemandError",
-      "requiredScenarioState": "getUserPreferenceDemandError",
+      "requiredScenarioState": "notStarted",
       "request": {
         "method": "GET",
         "urlPattern": "/users/USER1/preferences/allocation-demand"
