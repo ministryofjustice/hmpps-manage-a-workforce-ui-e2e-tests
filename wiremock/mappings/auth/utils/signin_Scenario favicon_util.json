@@ -1,0 +1,12 @@
+{
+  "scenarioName": "Started",
+  "newScenarioState": "Started",
+  "request": {
+    "method": "POST",
+    "url": "/__scenario/set/Started"
+  },
+  "response": {
+    "status": 200,
+    "body": "Scenario set to Scenario favicon"
+  }
+}

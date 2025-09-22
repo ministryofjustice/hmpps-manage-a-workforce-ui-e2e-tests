@@ -1,7 +1,7 @@
 {
   "mappings": [
     {
-      "scenarioName": "Scenario favicon",
+      "scenarioName": "favicon",
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
@@ -12,7 +12,7 @@
       }
     },
     {
-      "scenarioName": "Scenario ping",
+      "scenarioName": "ping",
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
@@ -23,7 +23,7 @@
       }
     },
     {
-      "scenarioName": "Scenario redirect",
+      "scenarioName": "redirect",
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
@@ -39,7 +39,7 @@
       }
     },
     {
-      "scenarioName": "Scenario signout",
+      "scenarioName": "signout",
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
@@ -54,7 +54,7 @@
       }
     },
     {
-      "scenarioName": "Scenario token",
+      "scenarioName": "token",
       "requiredScenarioState": "Started",
       "id": "ddd92112-5010-4dc3-8f5b-57b4f15d02d5",
       "request": {
