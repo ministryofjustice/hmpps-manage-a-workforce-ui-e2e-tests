@@ -3,7 +3,6 @@
     {
       "scenarioName": "getDocument",
       "requiredScenarioState": "getDocument",
-      "newScenarioState": "getDocument",
       "request": {
         "method": "GET",
         "urlPattern": "/cases/unallocated/J678910/documents/1234"

@@ -3,7 +3,6 @@
     {
       "scenarioName": "Scenario confirmInstructions",
       "requiredScenarioState": "confirmInstructions",
-      "newScenarioState": "confirmInstructions",
       "request": {
         "method": "GET",
         "urlPattern": "/cases/unallocated/J678910/convictions/1/confirm-instructions?staffCode=OM1"

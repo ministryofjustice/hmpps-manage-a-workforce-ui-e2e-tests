@@ -3,7 +3,6 @@
     {
       "scenarioName": "Allowed",
       "requiredScenarioState": "Allowed",
-      "newScenarioState": "Allowed",
       "request": {
         "method": "GET",
         "urlPattern": "/user/USER1/crn/J678910/conviction/1/is-allowed"
@@ -19,7 +18,6 @@
     {
       "scenarioName": "Forbidden",
       "requiredScenarioState": "Forbidden",
-      "newScenarioState":"Forbidden",
       "request": {
         "method": "GET",
         "urlPattern": "/user/USER1/crn/J678910/conviction/1/is-allowed"

@@ -5,7 +5,7 @@
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
-        "urlPattern": "/team/search?codes=TM1"
+        "urlPattern": "/team/search\\?codes=TM1"
       },
       "response": {
         "status": 200,
