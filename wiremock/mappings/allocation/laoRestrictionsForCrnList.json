@@ -1,8 +1,8 @@
 {
   "mappings": [
     {
-      "scenarioName": "unrestricted",
-      "requiredScenarioState": "unrestricted",
+      "scenarioName": "laoRestrictionsForCrnList",
+      "requiredScenarioState": "Started",
       "request": {
         "method": "POST",
         "urlPattern": "/cases/restrictions/crn/list",
@@ -36,7 +36,7 @@
       }
     },
     {
-      "scenarioName": "restrictions",
+      "scenarioName": "laoRestrictionsForCrnList",
       "requiredScenarioState": "restrictions",
       "request": {
         "method": "POST",

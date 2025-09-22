@@ -2,7 +2,7 @@
   "mappings": [
     {
       "scenarioName": "caseAllocationHistory",
-      "requiredScenarioState": "caseAllocationHistory",
+      "requiredScenarioState": "Started",
       "request": {
         "method": "POST",
         "urlPattern": "/allocation/events/teams\\?since=.*"
@@ -83,8 +83,8 @@
       }
     },
     {
-      "scenarioName": "caseAllocationHistoryEmpty",
-      "requiredScenarioState": "caseAllocationHistoryEmpty",
+      "scenarioName": "caseAllocationHistory",
+      "requiredScenarioState": "empty",
       "request": {
         "method": "POST",
         "urlPattern": "/allocation/events/teams\\?since=.*"
@@ -98,8 +98,8 @@
       }
     },
     {
-      "scenarioName": "caseAllocationHistoryCountEmpty",
-      "requiredScenarioState": "caseAllocationHistoryCountEmpty",
+      "scenarioName": "caseAllocationHistory",
+      "requiredScenarioState": "emptyWithCount",
       "request": {
         "method": "POST",
         "urlPattern": "/allocation/events/teams/count\\?since=.*"
@@ -113,8 +113,8 @@
       }
     },
     {
-      "scenarioName": "overOneHundredCaseAllocationHistory",
-      "requiredScenarioState": "overOneHundredCaseAllocationHistory",
+      "scenarioName": "caseAllocationHistory",
+      "requiredScenarioState": "over100",
       "request": {
         "method": "POST",
         "urlPattern": "/allocation/events/teams\\?since=.*"
@@ -2549,8 +2549,8 @@
       }
     },
     {
-      "scenarioName": "Scenario caseAllocationHistoryCount8",
-      "requiredScenarioState": "Started",
+      "scenarioName": "caseAllocationHistory",
+      "requiredScenarioState": "empty2",
       "request": {
         "method": "POST",
         "urlPattern": "/allocation/events/teams/count\\?since=.*"

@@ -1,8 +1,8 @@
 {
   "mappings": [
     {
-      "scenarioName": "notRestricted",
-      "requiredScenarioState": "notRestricted",
+      "scenarioName": "laoStatus",
+      "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPattern": "/cases/unallocated/J678910/restricted"
@@ -16,7 +16,7 @@
       }
     },
     {
-      "scenarioName": "restricted",
+      "scenarioName": "laoStatus",
       "requiredScenarioState": "restricted",
       "request": {
         "method": "GET",
@@ -31,8 +31,8 @@
       }
     },
     {
-      "scenarioName": "Forbidden",
-      "requiredScenarioState": "Forbidden",
+      "scenarioName": "laoStatus",
+      "requiredScenarioState": "forbidden",
       "request": {
         "method": "GET",
         "urlPattern": "/cases/unallocated/J678910/restricted"

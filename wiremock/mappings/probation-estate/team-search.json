@@ -20,7 +20,7 @@
     },
     {
       "scenarioName": "getTeamDetails",
-      "requiredScenarioState": "getTeamDetails",
+      "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPattern": "/team/TM1"

@@ -1,8 +1,8 @@
 {
   "mappings": [
     {
-      "scenarioName": "unrestricted",
-      "requiredScenarioState": "unrestricted",
+      "scenarioName": "laoRestrictionsForCrn",
+      "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPattern": "/cases/J678910/restrictions"
@@ -20,7 +20,7 @@
       }
     },
     {
-      "scenarioName": "restricted",
+      "scenarioName": "laoRestrictionsForCrn",
       "requiredScenarioState": "restricted",
       "request": {
         "method": "GET",
@@ -39,7 +39,7 @@
       }
     },
     {
-      "scenarioName": "redacted",
+      "scenarioName": "laoRestrictionsForCrn",
       "requiredScenarioState": "redacted",
       "request": {
         "method": "GET",

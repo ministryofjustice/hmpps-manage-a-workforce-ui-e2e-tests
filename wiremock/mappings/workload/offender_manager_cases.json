@@ -1,8 +1,8 @@
 {
   "mappings": [
     {
-      "scenarioName": "getOffenderManagerCases",
-      "requiredScenarioState": "getOffenderManagerCases",
+      "scenarioName": "offenderManagerCases",
+      "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPattern": "/team/TM1/offenderManagers/OM2/cases"
@@ -46,8 +46,8 @@
       }
     },
     {
-      "scenarioName": "getOffenderManagerCasesNoEmail",
-      "requiredScenarioState": "getOffenderManagerCasesNoEmail",
+      "scenarioName": "offenderManagerCases",
+      "requiredScenarioState": "noEmail",
       "request": {
         "method": "GET",
         "urlPattern": "/team/TM1/offenderManagers/OM2/cases"

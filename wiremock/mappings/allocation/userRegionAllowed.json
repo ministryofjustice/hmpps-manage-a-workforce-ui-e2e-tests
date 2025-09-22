@@ -1,7 +1,7 @@
 {
   "mappings": [
     {
-      "scenarioName": "Allowed",
+      "scenarioName": "userRegionAllowed",
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
@@ -16,8 +16,8 @@
       }
     },
     {
-      "scenarioName": "Forbidden",
-      "requiredScenarioState": "Forbidden",
+      "scenarioName": "userRegionAllowed",
+      "requiredScenarioState": "forbidden",
       "request": {
         "method": "GET",
         "urlPattern": "/user/USER1/region/RG1/is-allowed"

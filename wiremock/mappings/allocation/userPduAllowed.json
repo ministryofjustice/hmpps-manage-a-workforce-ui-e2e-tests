@@ -1,7 +1,7 @@
 {
   "mappings": [
     {
-      "scenarioName": "Allowed",
+      "scenarioName": "userPduAllowed",
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
@@ -16,8 +16,8 @@
       }
     },
     {
-      "scenarioName": "Forbidden",
-      "requiredScenarioState": "Forbidden",
+      "scenarioName": "userPduAForbidden",
+      "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPattern": "/user/USER1/pdu/PDU/is-allowed"

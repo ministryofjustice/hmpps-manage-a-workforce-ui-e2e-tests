@@ -1,8 +1,8 @@
 {
   "mappings": [
     {
-      "scenarioName": "Allowed",
-      "requiredScenarioState": "Allowed",
+      "scenarioName": "crnRegionAllowed",
+      "requiredScenarioState": "isAllowed",
       "request": {
         "method": "GET",
         "urlPattern": "/user/USER1/crn/J678910/conviction/1/is-allowed"
@@ -16,8 +16,8 @@
       }
     },
     {
-      "scenarioName": "Forbidden",
-      "requiredScenarioState": "Forbidden",
+      "scenarioName": "crnRegionAllowed",
+      "requiredScenarioState": "isForbidden",
       "request": {
         "method": "GET",
         "urlPattern": "/user/USER1/crn/J678910/conviction/1/is-allowed"

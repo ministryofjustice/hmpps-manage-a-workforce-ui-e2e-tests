@@ -2,7 +2,7 @@
   "mappings": [
     {
       "scenarioName": "probationRecord",
-      "requiredScenarioState": "probationRecord",
+      "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPattern": "/cases/unallocated/J678910/record/exclude-conviction/1"
@@ -78,7 +78,7 @@
     },
     {
       "scenarioName": "probationRecordNoOffences",
-      "requiredScenarioState": "probationRecordNoOffences",
+      "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPattern": "/cases/unallocated/J678910/record/exclude-conviction/2"

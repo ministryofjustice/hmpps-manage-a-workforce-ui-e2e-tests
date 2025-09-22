@@ -1,8 +1,8 @@
 {
   "mappings": [
     {
-      "scenarioName": "getDocuments",
-      "requiredScenarioState": "getDocuments",
+      "scenarioName": "documents",
+      "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPattern": "/cases/unallocated/J678910/documents"
@@ -91,9 +91,8 @@
       }
     },
     {
-      "scenarioName": "noDocuments",
-      "requiredScenarioState": "noDocuments",
-      "newScenarioState": "noDocuments",
+      "scenarioName": "documents",
+      "requiredScenarioState": "none",
       "request": {
         "method": "GET",
         "urlPattern": "/cases/unallocated/J678910/documents"

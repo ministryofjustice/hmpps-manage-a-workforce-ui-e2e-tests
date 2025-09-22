@@ -222,8 +222,8 @@
       }
     },
     {
-      "scenarioName": "getCaseCountByTeamCodes100",
-      "requiredScenarioState": "getCaseCountByTeamCodes100",
+      "scenarioName": "getCaseCountByTeamCodes",
+      "requiredScenarioState": "100",
       "request": {
         "method": "GET",
         "urlPattern": "/cases/J678910/restrictions"
