@@ -1,7 +1,7 @@
 {
   "mappings": [
     {
-      "scenarioName": "Scenario favicon",
+      "scenarioName": "favicon",
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
@@ -12,22 +12,22 @@
       }
     },
     {
-      "scenarioName": "Scenario ping",
+      "scenarioName": "ping",
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
-        "urlPattern": "/auth/health/ping"
+        "urlPattern": "/health/ping"
       },
       "response": {
         "status": 200
       }
     },
     {
-      "scenarioName": "Scenario redirect",
+      "scenarioName": "redirect",
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
-        "urlPattern": "/auth/oauth/authorize\\?response_type=code&redirect_uri=.+?&state=.+?&client_id=clientid"
+        "urlPattern": "/oauth/authorize\\?response_type=code&redirect_uri=.+?&state=.+?&client_id=clientid"
       },
       "response": {
         "status": 302,
@@ -39,11 +39,11 @@
       }
     },
     {
-      "scenarioName": "Scenario signout",
+      "scenarioName": "signout",
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
-        "urlPattern": "/auth/sign-out.*"
+        "urlPattern": "/sign-out.*"
       },
       "response": {
         "status": 200,
@@ -54,11 +54,11 @@
       }
     },
     {
-      "scenarioName": "Scenario token",
+      "scenarioName": "token",
       "requiredScenarioState": "Started",
       "id": "ddd92112-5010-4dc3-8f5b-57b4f15d02d5",
       "request": {
-        "urlPattern": "/auth/oauth/token",
+        "urlPattern": "/oauth/token",
         "method": "POST"
       },
       "response": {

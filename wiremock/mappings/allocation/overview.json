@@ -2,7 +2,7 @@
   "mappings": [
     {
       "scenarioName": "caseOverview",
-      "requiredScenarioState": "caseOverview",
+      "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPattern": "/cases/unallocated/J678910/convictions/1/overview"

@@ -1,8 +1,16 @@
 import axios from 'axios';
 
-const wiremockBase = 'http://localhost:9090/__scenario/set';
+const wiremockBase = 'http://localhost:9090';
 
-async function setupScenario(requiredScenarioState:String) {
-  await axios.post(`${wiremockBase}/${requiredScenarioState}`);
+export async function setupScenario(requiredScenarioState:String) {
+  await axios.put(`${wiremockBase}/__admin/scenarios/${requiredScenarioState}/state`, { state: requiredScenarioState });
+}
+
+export async function resetScenario(requiredScenarioState:String) {
+  await axios.put(`${wiremockBase}/__admin/scenarios/${requiredScenarioState}/state`)
+}
+
+export async function resetAllScenarios() {
+  await axios.post(`${wiremockBase}/__admin/scenarios/reset`);
 }
 

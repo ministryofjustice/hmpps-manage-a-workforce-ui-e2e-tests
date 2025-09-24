@@ -1,8 +1,8 @@
 {
   "mappings": [
     {
-      "scenarioName": "Scenario1",
-      "requiredScenarioState": "Scenario1",
+      "scenarioName": "risks",
+      "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPattern": "/cases/unallocated/J678910/convictions/1/risks"
@@ -90,8 +90,8 @@
       }
     },
     {
-      "scenarioName": "Not Found Risk",
-      "requiredScenarioState": "Started",
+      "scenarioName": "risks",
+      "requiredScenarioState": "notFound",
       "request": {
         "method": "GET",
         "urlPattern": "/cases/unallocated/J678910/convictions/1/risks"
@@ -121,8 +121,8 @@
       }
     },
     {
-      "scenarioName": "Unavailable",
-      "requiredScenarioState": "Unavailable",
+      "scenarioName": "risks",
+      "requiredScenarioState": "unavailable",
       "request": {
         "method": "GET",
         "urlPattern": "/cases/unallocated/J678910/convictions/1/risks"

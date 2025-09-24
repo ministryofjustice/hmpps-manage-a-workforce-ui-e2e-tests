@@ -1,8 +1,8 @@
 {
   "mappings": [
     {
-      "scenarioName": "staffRestrictionsByCrn",
-      "requiredScenarioState": "staffRestrictionsByCrn",
+      "scenarioName": "laoStaffRestrictionsByCrn",
+      "requiredScenarioState": "Started",
       "request": {
         "method": "POST",
         "urlPattern": "/cases/unallocated/J678910/restrictions",
@@ -39,8 +39,8 @@
       }
     },
     {
-      "scenarioName": "noStaffRestrictionsByCrn",
-      "requiredScenarioState": "noStaffRestrictionsByCrn",
+      "scenarioName": "laoStaffRestrictionsByCrn",
+      "requiredScenarioState": "noRestrictions",
       "request": {
         "method": "POST",
         "urlPattern": "/cases/unallocated/J678910/restrictions",

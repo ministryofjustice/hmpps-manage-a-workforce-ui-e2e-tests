@@ -1,7 +1,7 @@
 {
   "mappings": [
     {
-      "scenarioName": "getCurrentlyManagedCaseForChoosePractitioner",
+      "scenarioName": "choosePractitioner",
       "requiredScenarioState": "getCurrentlyManagedCaseForChoosePractitioner",
       "request": {
         "method": "GET",
@@ -64,7 +64,7 @@
       }
     },
     {
-      "scenarioName": "getCurrentlyManagedNoOffenderManagerCaseForChoosePractitioner",
+      "scenarioName": "choosePractitioner",
       "requiredScenarioState": "getCurrentlyManagedNoOffenderManagerCaseForChoosePractitioner",
       "request": {
         "method": "GET",
@@ -118,7 +118,7 @@
       }
     },
     {
-      "scenarioName": "getPreviouslyManagedNoOffenderManagerCaseForChoosePractitioner",
+      "scenarioName": "choosePractitioner",
       "requiredScenarioState": "getPreviouslyManagedNoOffenderManagerCaseForChoosePractitioner",
       "request": {
         "method": "GET",
@@ -172,7 +172,7 @@
       }
     },
     {
-      "scenarioName": "getNewToProbationCaseForChoosePractitioner",
+      "scenarioName": "choosePractitioner",
       "requiredScenarioState": "getNewToProbationCaseForChoosePractitioner",
       "request": {
         "method": "GET",
@@ -235,7 +235,7 @@
       }
     },
     {
-      "scenarioName": "choosePractitioners",
+      "scenarioName": "choosePractitioner",
       "requiredScenarioState": "choosePractitioners",
       "request": {
         "method": "GET",
@@ -327,8 +327,8 @@
       }
     },
     {
-      "scenarioName": "choosePractitionersWithEmails",
-      "requiredScenarioState": "choosePractitionersWithEmails",
+      "scenarioName": "choosePractitioner",
+      "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPath": "/team/choose-practitioner",

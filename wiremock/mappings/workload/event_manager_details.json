@@ -1,8 +1,8 @@
 {
   "mappings": [
     {
-      "scenarioName": "getEventManagerDetails",
-      "requiredScenarioState": "getEventManagerDetails",
+      "scenarioName": "eventManagerDetals",
+      "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPattern": "/allocation/person/J678910/event/1/details"
@@ -18,8 +18,8 @@
       }
     },
     {
-      "scenarioName": "notFoundEventManagerDetails",
-      "requiredScenarioState": "notFoundEventManagerDetails",
+      "scenarioName": "eventManagerDetals",
+      "requiredScenarioState": "notFound",
       "request": {
         "method": "GET",
         "urlPattern": "/allocation/person/J678910/event/1/details"

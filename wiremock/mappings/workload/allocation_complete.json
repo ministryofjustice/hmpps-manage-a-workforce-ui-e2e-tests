@@ -1,8 +1,8 @@
 {
   "mappings": [
     {
-      "scenarioName": "allocateOffenderManagerToCaseBlank",
-      "requiredScenarioState": "allocateOffenderManagerToCaseBlank",
+      "scenarioName": "completeAllocation",
+      "requiredScenarioState": "blank",
       "request": {
         "method": "POST",
         "urlPattern": "/team/TM2/offenderManager/OM1/case"
@@ -18,8 +18,8 @@
       }
     },
     {
-      "scenarioName": "allocateOffenderManagerToCase",
-      "requiredScenarioState": "allocateOffenderManagerToCase",
+      "scenarioName": "completeAllocation",
+      "requiredScenarioState": "Started",
       "request": {
         "method": "POST",
         "urlPattern": "/team/TM2/offenderManager/OM1/case",
@@ -40,8 +40,8 @@
       }
     },
     {
-      "scenarioName": "errorAllocateOffenderManagerToCase",
-      "requiredScenarioState": "errorAllocateOffenderManagerToCase",
+      "scenarioName": "completeAllocation",
+      "requiredScenarioState": "error",
       "request": {
         "method": "POST",
         "urlPattern": "/team/TM2/offenderManager/OM1/case",
@@ -57,8 +57,8 @@
       }
     },
     {
-      "scenarioName": "allocateOffenderManagerToCaseMultipleEmails",
-      "requiredScenarioState": "allocateOffenderManagerToCaseMultipleEmails",
+      "scenarioName": "completeAllocation",
+      "requiredScenarioState": "multipleEmails",
       "request": {
         "method": "POST",
         "urlPattern": "/team/TM2/offenderManager/OM1/case",
@@ -79,8 +79,8 @@
       }
     },
     {
-      "scenarioName": "allocateOffenderManagerToCaseMultipleEmailsNumericEvent",
-      "requiredScenarioState": "allocateOffenderManagerToCaseMultipleEmailsNumericEvent",
+      "scenarioName": "completeAllocation",
+      "requiredScenarioState": "multipleEmailsNumericEvent",
       "request": {
         "method": "POST",
         "urlPattern": "/team/TM2/offenderManager/OM1/case",
@@ -101,8 +101,8 @@
       }
     },
     {
-      "scenarioName": "getAllocationCompleteDetails",
-      "requiredScenarioState": "getAllocationCompleteDetails",
+      "scenarioName": "allocationCompleteDetails",
+      "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPattern": "/allocation/person/J678910/event/1/complete-details"
@@ -137,8 +137,8 @@
       }
     },
     {
-      "scenarioName": "getApostropheAllocationCompleteDetails",
-      "requiredScenarioState": "getApostropheAllocationCompleteDetails",
+      "scenarioName": "allocationCompleteDetails",
+      "requiredScenarioState": "apostrophe",
       "request": {
         "method": "GET",
         "urlPattern": "/allocation/person/J678910/event/1/complete-details"
@@ -173,8 +173,8 @@
       }
     },
     {
-      "scenarioName": "getAllocationCompleteDetailsNoInitialAppointment",
-      "requiredScenarioState": "getAllocationCompleteDetailsNoInitialAppointment",
+      "scenarioName": "allocationCompleteDetails",
+      "requiredScenarioState": "noInitialAppointment",
       "request": {
         "method": "GET",
         "urlPattern": "/allocation/person/J678910/event/1/complete-details"
@@ -206,8 +206,8 @@
       }
     },
     {
-      "scenarioName": "getAllocationCompleteDetailsCustody",
-      "requiredScenarioState": "getAllocationCompleteDetailsCustody",
+      "scenarioName": "allocationCompleteDetails",
+      "requiredScenarioState": "custody",
       "request": {
         "method": "GET",
         "urlPattern": "/allocation/person/J678910/event/1/complete-details"
@@ -242,8 +242,8 @@
       }
     },
     {
-      "scenarioName": "getAllocationCompleteDetailsLicense",
-      "requiredScenarioState": "getAllocationCompleteDetailsLicense",
+      "scenarioName": "allocationCompleteDetails",
+      "requiredScenarioState": "license",
       "request": {
         "method": "GET",
         "urlPattern": "/allocation/person/J678910/event/1/complete-details"
