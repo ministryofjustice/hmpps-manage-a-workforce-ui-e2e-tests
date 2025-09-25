@@ -12,5 +12,5 @@
     "types": ["node", "playwright"]
   },
   "exclude": ["node_modules", "dist","assets/**/*.js", "coverage", "test_results", "playwright.config.ts", "allure-report/**/*.js"],
-  "include": ["**/*.js", "**/*.ts"]
+  "include": ["**/*.js", "**/*.ts",  "tests", "utils", "data", "utils", "pages", "fixtures "]
 }
