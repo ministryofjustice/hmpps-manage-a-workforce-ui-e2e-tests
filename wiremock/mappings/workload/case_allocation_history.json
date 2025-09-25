@@ -5,7 +5,12 @@
       "requiredScenarioState": "Started",
       "request": {
         "method": "POST",
-        "urlPattern": "/allocation/events/teams\\?since=.*"
+        "urlPath": "/allocation/events/teams/count",
+        "queryParameters": {
+          "since": {
+            "matches": ".*"
+          }
+        }
       },
       "response": {
         "status": 200,
@@ -87,7 +92,12 @@
       "requiredScenarioState": "empty",
       "request": {
         "method": "POST",
-        "urlPattern": "/allocation/events/teams\\?since=.*"
+        "urlPath": "/allocation/events/teams/count",
+        "queryParameters": {
+          "since": {
+            "matches": ".*"
+          }
+        }
       },
       "response": {
         "status": 200,
@@ -102,7 +112,12 @@
       "requiredScenarioState": "emptyWithCount",
       "request": {
         "method": "POST",
-        "urlPattern": "/allocation/events/teams/count\\?since=.*"
+        "urlPath": "/allocation/events/teams/count",
+        "queryParameters": {
+          "since": {
+            "matches": ".*"
+          }
+        }
       },
       "response": {
         "status": 200,
@@ -117,7 +132,12 @@
       "requiredScenarioState": "over100",
       "request": {
         "method": "POST",
-        "urlPattern": "/allocation/events/teams\\?since=.*"
+        "urlPath": "/allocation/events/teams/count",
+        "queryParameters": {
+          "since": {
+            "matches": ".*"
+          }
+        }
       },
       "response": {
         "status": 200,
@@ -2553,7 +2573,12 @@
       "requiredScenarioState": "empty2",
       "request": {
         "method": "POST",
-        "urlPattern": "/allocation/events/teams/count\\?since=.*"
+        "urlPath": "/allocation/events/teams/count",
+        "queryParameters": {
+          "since": {
+            "matches": ".*"
+          }
+        }
       },
       "response": {
         "status": 200,
