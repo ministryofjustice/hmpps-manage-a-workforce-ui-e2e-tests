@@ -5,7 +5,7 @@
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
-        "urlPattern": "/user/231232/regions"
+        "urlPattern": "/user/USER1/regions"
       },
       "response": {
         "status": "200",

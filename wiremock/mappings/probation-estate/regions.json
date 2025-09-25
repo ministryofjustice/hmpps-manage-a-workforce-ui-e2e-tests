@@ -2,7 +2,7 @@
   "mappings": [
     {
       "scenarioName": "regions",
-      "requiredScenarioState": "all",
+      "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPattern": "/regions"
