@@ -9,8 +9,15 @@
     "resolveJsonModule": true,
     "outDir": "dist",
     "skipLibCheck": true,
-    "types": ["node", "playwright"]
+    "types": ["node", "playwright"],
+    "paths": {
+      "@tests/*": ["./e2e_tests/tests/*"],
+      "@utils/*": ["./e2e_tests/utils/*"],
+      "@test-data/*": ["./e2e_tests/test-data/*"],
+      "@pages/*": ["./e2e_tests/pages/*"],
+      "@fixtures/*": ["./e2e_tests/fixtures/*"]
+    }
   },
   "exclude": ["node_modules", "dist","assets/**/*.js", "coverage", "test_results", "playwright.config.ts", "allure-report/**/*.js"],
-  "include": ["**/*.js", "**/*.ts",  "tests", "utils", "data", "utils", "pages", "fixtures "]
+  "include": ["**/*.js", "**/*.ts",  "tests", "utils", "test-data", "pages", "fixtures", "eslint.config.js"]
 }

@@ -1,15 +1,12 @@
 import { describe } from 'node:test';
-import { expect } from '@playwright/test';
-import { test } from '../../fixtures/PageFixtures';
-import  testData  from '../../data/expectedHeading.json';
-import { verifyNoErrorHeading } from '../../utils/errorCheck';
+import { test } from '@fixtures/PageFixtures';
 
 describe('Happy path - Scenario 1 - Successful allocation with email notification', () => {
-   test(`As a SPO allocate a case to the practitioner for 'Wales' region, 
+  test(`As a SPO allocate a case to the practitioner for 'Wales' region, 
      + 'Cardiff & Vale' PDU and for the 'Vale - Team' and notify other 
-     + practitioners by emails.  @smoke`, async ({yourTeamsPage ,page }) => {
-    await expect(yourTeamsPage.heading()).toHaveText(testData.expectedHeading);
-    yourTeamsPage.clickViewUnallocatedCasesButton();
-    await verifyNoErrorHeading(page);
+     + practitioners by emails.  @smoke`, async ({ regionsPage, pduPage, selectYourTeamsPage, page }) => {
+    await regionsPage.completeRegionsPage(page);
+    await pduPage.completePduPage(page);
+    await selectYourTeamsPage.completeSelectYourTeamsPage(page);
   });
 });

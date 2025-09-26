@@ -29,7 +29,7 @@
     "posttest:ci:html": "npm run report",
     "posttest:ci:allure": "npm run report && npm run allure:generate",
     "lint": "npx eslint . --ext .ts",
-    "lint:fix": "npx eslint . --ext .ts --fix",
+    "lint:fix": "npx eslint '**/*.ts' --fix",
     "prepare": "npx playwright install",
     "prepare:ci": "npx playwright install --with-deps",
     "record-build-info": "node ./utils/record-build-info",
@@ -51,9 +51,13 @@
   },
   "homepage": "https://github.com/ministryofjustice/hmpps-manage-a-workforce-ui-e2e-tests#readme",
   "devDependencies": {
+    "@eslint/js": "^9.36.0",
     "@playwright/test": "^1.55.0",
     "@types/node": "^24.3.1",
+    "@typescript-eslint/eslint-plugin": "^8.44.1",
+    "@typescript-eslint/parser": "^8.44.1",
     "allure-playwright": "^3.4.1",
-    "axios":"1.12.2"
+    "axios": "1.12.2",
+    "eslint": "^9.36.0"
   }
 }
