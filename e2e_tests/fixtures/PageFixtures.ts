@@ -1,6 +1,6 @@
 import { BrowserContext, Page, test as baseTest } from '@playwright/test';
 
-import envConfig from '@test-data/envConfig.json';
+import envConfig  from '@env-config/envConfig.json';
 import { pduPage } from '@pages/pduPage';
 import { regionsPage } from '@pages/regionsPage';
 import { selectYourTeamsPage } from '@pages/selectYourTeamsPage';

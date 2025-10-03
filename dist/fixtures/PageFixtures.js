@@ -6,10 +6,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.test = void 0;
 const test_1 = require("@playwright/test");
 const envConfig_json_1 = __importDefault(require("@env-config/envConfig.json"));
-const yourTeamsPage_1 = require("@pages/yourTeamsPage");
+const pduPage_1 = require("@pages/pduPage");
+const regionsPage_1 = require("@pages/regionsPage");
+const selectYourTeamsPage_1 = require("@pages/selectYourTeamsPage");
 exports.test = test_1.test.extend({
     context: async ({ browser }, use) => {
-        const context = await browser.newContext();
+        const context = await browser.newContext({
+            viewport: { width: 1920, height: 1080 }, // Chromium only
+            deviceScaleFactor: 1,
+        });
         await use(context);
         await context.close();
     },
@@ -21,12 +26,17 @@ exports.test = test_1.test.extend({
     },
     page: async ({ context, baseURL }, use) => {
         const page = await context.newPage();
-        await page.goto(`${baseURL}/regions`); // Replace with actual base URL
-        //await page.waitForTimeout(5000);
+        await page.goto(`${baseURL}/regions`);
         await use(page);
         await page.close();
     },
-    yourTeamsPage: async ({ page }, use) => {
-        await use(new yourTeamsPage_1.yourTeamsPage(page));
+    regionsPage: async ({ page }, use) => {
+        await use(new regionsPage_1.regionsPage(page));
     },
+    pduPage: async ({ page }, use) => {
+        await use(new pduPage_1.pduPage(page));
+    },
+    selectYourTeamsPage: async ({ page }, use) => {
+        await use(new selectYourTeamsPage_1.selectYourTeamsPage(page));
+    }
 });

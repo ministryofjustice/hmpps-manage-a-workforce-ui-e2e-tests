@@ -1,5 +1,8 @@
 import { defineConfig, devices } from '@playwright/test';
 
+const isHeadless = process.env.HEADLESS === 'true';
+console.log('Running in HEADLESS mode:', isHeadless);
+
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
@@ -33,7 +36,7 @@ export default defineConfig({
     // baseURL: 'http://localhost:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    headless: false,
+    //headless: isHeadless,
     viewport: { width: 1920, height: 1080 }, // Chromium only
     trace: 'on-first-retry',
     video: 'retain-on-failure'
@@ -43,7 +46,9 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: {
+        headless: isHeadless, 
+        ...devices['Desktop Chrome'] },
     },
 
     {
