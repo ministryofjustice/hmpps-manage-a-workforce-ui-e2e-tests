@@ -1,7 +1,7 @@
 name: Scheduled Build Job e2e tests
 on:
   schedule:
-    - cron: '0 18 * * *' # Runs every 10 minutes
+    - cron: '0 1 31 2 *' # Runs every 10 minutes
   workflow_dispatch:        
 permissions:
   contents: read
@@ -30,8 +30,11 @@ jobs:
         run: |
           npm install
           npm run build
-          npm run start-external-test
+          npm run start-external-test &
         working-directory: manage-a-workforce-ui
+      - name: Run docker compose
+        run: |
+          docker compose up -d  
       - name: Wait for maw-ui application to be ready
         run: |
           for i in {1..60}; do
@@ -39,10 +42,6 @@ jobs:
             sleep 5
           done
           echo "App failed to start" && exit 1
-
-      - name: Run docker compose
-        run: |
-          docker compose up -d     
 
       #- name: Run e2e tests
         #run: npm run test:regression:chrome
