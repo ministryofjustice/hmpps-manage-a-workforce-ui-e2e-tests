@@ -23,9 +23,6 @@ export class unallocatedCasesPage {
         const personName = firstRow.locator('td.govuk-table__cell a').first().innerText();
         console.log(`Clicking on the case for person: ${await personName}`);
         await firstRow.locator('td.govuk-table__cell a').first().click();
-        
-        //await page.locator('//*[@id="main-content"]/div[6]/div/table/tbody/tr[1]').click(); // Click on the first case in the table
-        await expect(page.getByRole('heading', { name: 'Summary' })).toBeVisible();
         await page.waitForTimeout(5000);
     }
 }

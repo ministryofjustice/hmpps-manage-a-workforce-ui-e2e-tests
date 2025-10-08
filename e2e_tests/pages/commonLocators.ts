@@ -1,5 +1,7 @@
 import { Page, expect } from "@playwright/test";
 
+import { generateRandomParagraph } from '@utils/generateRandomParagraph';
+
 export async function verifyPageHeadingsByName(page: Page, pageHeadingName: string) {
     await expect(page.getByRole('heading', { name: `${pageHeadingName}` })).toBeVisible();
 }
@@ -27,10 +29,19 @@ export async function selectCheckBoxByName(page: Page, checkBoxName: string) {
     expect(isChecked).toBeTruthy();
 }
 
+export async function fillTextInTextArea(page: Page) {
+    const textArea = page.locator('xpath=//*[@id="instructions"]');
+    await textArea.click();
+    await expect(textArea).toBeEditable();
+    await textArea.fill(generateRandomParagraph(100));
+
+}
+
 export const commonLocators = {
     verifyPageHeadingsByName,
     verifyPageByText,
     clickOnButtonByName,
     selectRadioButtonByName,
-    selectCheckBoxByName
+    selectCheckBoxByName,
+    fillTextInTextArea
 };

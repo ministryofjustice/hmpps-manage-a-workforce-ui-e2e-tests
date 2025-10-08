@@ -1,9 +1,11 @@
 import { BrowserContext, Page, test as baseTest } from '@playwright/test';
 
+import { caseSummaryPage } from '@pages/caseSummaryPage';
 import envConfig  from '@env-config/envConfig.json';
 import { pduPage } from '@pages/pduPage';
 import { regionsPage } from '@pages/regionsPage';
 import { selectYourTeamsPage } from '@pages/selectYourTeamsPage';
+import { unallocatedCasesPage } from '@pages/unallocatedCasesPage';
 
 type PageFixtures = {
   context: BrowserContext;
@@ -12,6 +14,8 @@ type PageFixtures = {
   regionsPage: regionsPage;
   pduPage: pduPage;
   selectYourTeamsPage: selectYourTeamsPage;
+  unallocatedCasesPage: unallocatedCasesPage;
+  caseSummaryPage: caseSummaryPage;
   
 };
 
@@ -49,5 +53,13 @@ export const test = baseTest.extend<PageFixtures>({
 
   selectYourTeamsPage: async ({ page }, use) => {
     await use(new selectYourTeamsPage(page));
-  }
+  },
+  
+  unallocatedCasesPage: async ({ page }, use) => {
+    await use(new unallocatedCasesPage(page));
+  },
+
+  caseSummaryPage: async ({ page }, use) => {
+    await use(new caseSummaryPage(page));
+  },  
 });

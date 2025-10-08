@@ -19,5 +19,3 @@ export class yourTeamsPage {
         await page.waitForTimeout(5000);
     }
 }
-
-// TODO: Add verification for links within each section and click them to ensure navigation works correctly.

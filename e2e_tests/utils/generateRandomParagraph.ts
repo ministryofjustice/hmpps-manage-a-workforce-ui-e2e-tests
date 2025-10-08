@@ -13,5 +13,3 @@ export function generateRandomParagraph(length: number = 100): string {
 
   return result.trim().slice(0, length);
 }
-
-// TODO: Add verification for links within each section and click them to ensure navigation works correctly.
