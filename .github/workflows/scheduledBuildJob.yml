@@ -28,11 +28,11 @@ jobs:
 
       - name: Start manage-a-workforce-ui
         run: |
-          cd manage-a-workforce-ui
           npm install
           npm run build
           npm run start-external-test
           npx wait-on http://localhost:3007
+        working-directory: manage-a-workforce-ui
 
       - name: Run docker compose
         run: |
