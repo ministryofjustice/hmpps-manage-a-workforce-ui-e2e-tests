@@ -1,7 +1,7 @@
 name: Scheduled Build Job e2e tests
 on:
   schedule:
-    - cron: '0/10 * * * *' # Runs every 10 minutes
+  #  - cron: '0/10 * * * *' # Runs every 10 minutes
   workflow_dispatch:        
 permissions:
   contents: read
