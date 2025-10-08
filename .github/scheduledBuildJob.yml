@@ -1,0 +1,54 @@
+name: Scheduled Build Job e2e tests
+on:
+  schedule:
+    - cron: '0/10 * * * *' # Runs every 10 minutes
+  workflow_dispatch:        
+permissions:
+  contents: read
+jobs:
+  e2e-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout manage-a-workforce-ui
+        uses: actions/checkout@v5
+        with:
+          repository: ministryofjustice/manage-a-workforce-ui
+          path: manage-a-workforce-ui
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: main
+      - name: Checkout hmpps-manage-a-workforce-ui-e2e-tests 
+        uses: actions/checkout@v5
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Install e2e dependencies
+        run: npm install
+
+      - name: Start manage-a-workforce-ui
+        run: |
+          cd manage-a-workforce-ui
+          npm install
+          npm run build
+          npm run start-external-test
+          npx wait-on http://localhost:3007
+
+      - name: Run docker compose
+        run: |
+          docker compose up -d     
+
+      #- name: Run e2e tests
+        #run: npm run test:regression:chrome
+
+      #- name: Archive test results
+       # if: always()
+        #uses: actions/upload-artifact@v3
+        #with:
+         # name: e2e-test-results
+          #path: allure-results
+
+      - name: docker compose down
+        if: always()
+        run: |
+          docker compose down
