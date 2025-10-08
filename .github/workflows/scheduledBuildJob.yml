@@ -9,6 +9,8 @@ jobs:
   e2e-tests:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout hmpps-manage-a-workforce-ui-e2e-tests 
+        uses: actions/checkout@v5
       - name: Checkout manage-a-workforce-ui
         uses: actions/checkout@v5
         with:
@@ -16,8 +18,6 @@ jobs:
           path: manage-a-workforce-ui
           token: ${{ secrets.GITHUB_TOKEN }}
           ref: main
-      - name: Checkout hmpps-manage-a-workforce-ui-e2e-tests 
-        uses: actions/checkout@v5
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
