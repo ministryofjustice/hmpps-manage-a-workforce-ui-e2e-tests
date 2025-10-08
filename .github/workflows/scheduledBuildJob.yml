@@ -31,8 +31,14 @@ jobs:
           npm install
           npm run build
           npm run start-external-test
-          npx wait-on http://localhost:3007
         working-directory: manage-a-workforce-ui
+      - name: Wait for maw-ui application to be ready
+        run: |
+          for i in {1..60}; do
+            if curl -sSf http://localhost:3007/health; then exit 0; fi
+            sleep 5
+          done
+          echo "App failed to start" && exit 1
 
       - name: Run docker compose
         run: |
