@@ -8,3 +8,4 @@ node_modules/
 /playwright/.cache/
 envConfig.json
 envConfig.d.json
+.DS_Store
