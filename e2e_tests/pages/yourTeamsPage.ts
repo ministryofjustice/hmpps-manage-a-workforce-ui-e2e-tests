@@ -16,6 +16,6 @@ export class yourTeamsPage {
         }
         await commonLocators.verifyPageHeadingsByName(this.page, "Your teams");
         await commonLocators.clickOnButtonByName(this.page, "View unallocated cases");
-        await page.waitForTimeout(5000);
+        await page.waitForTimeout(3000);
     }
 }

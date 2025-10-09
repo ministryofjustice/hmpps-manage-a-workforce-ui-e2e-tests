@@ -5,7 +5,7 @@ import { generateRandomParagraph } from '@utils/generateRandomParagraph';
 
 export class caseSummaryPage {
     constructor(private page: Page) { }
-    
+
     async completeCaseSummaryPage(mode: 'headless' | 'headed', page: Page = this.page): Promise<void> {
         if (mode === 'headless') {
             await expect(page).toHaveScreenshot('actual-caseSummaryPage.png', {
@@ -15,10 +15,9 @@ export class caseSummaryPage {
         } else {
             console.log('Skipping screenshot assertion in headed mode');
         }
-
         await commonLocators.verifyPageHeadingsByName(this.page, 'Summary');
         await commonLocators.fillTextInTextArea(this.page);
         await commonLocators.clickOnButtonByName(this.page, 'Continue');
-        await page.waitForTimeout(5000);
+        await page.waitForTimeout(3000);
     }
 }

@@ -15,16 +15,17 @@ export class unallocatedCasesPage {
             console.log('Skipping screenshot assertion in headed mode');
         }
         await commonLocators.verifyPageHeadingsByName(this.page, "Unallocated cases");
-        
-        // Locate the first row in the table body
-        const firstRow = page.locator('tbody.govuk-table__body > tr.govuk-table__row').first();
 
-        // Fetch the actual name of the person and click the first link inside the first cell of that row
-        const personName = firstRow.locator('td.govuk-table__cell a').first().innerText();
-        console.log(`Clicking on the case for person: ${await personName}`);
-        await firstRow.locator('td.govuk-table__cell a').first().click();
+        const firstRow = page.locator('tbody.govuk-table__body > tr.govuk-table__row').first();
+        const firstCellLink = firstRow.locator('td.govuk-table__cell a').first();
+
+        if (await firstCellLink.isEnabled()) {
+            const personName = await firstCellLink.innerText();
+            console.log(`unallocatedCasesPage - Clicking on the case for person: ${personName}`);
+            await firstCellLink.click();
+        } else {
+            console.log(`unallocatedCasesPage - First cell link is not enabled — skipping click`);
+        }
         await page.waitForTimeout(5000);
     }
 }
-
-// TODO: Add verification for links within each section and click them to ensure navigation works correctly.

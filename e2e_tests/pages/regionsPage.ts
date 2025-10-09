@@ -17,6 +17,6 @@ export class regionsPage {
         await commonLocators.verifyPageHeadingsByName(this.page, "Select your region");
         await commonLocators.selectRadioButtonByName(this.page, "A Region");
         await commonLocators.clickOnButtonByName(this.page, "Continue");
-        await page.waitForTimeout(5000);
+        await page.waitForTimeout(3000);
     }
 }

@@ -17,6 +17,6 @@ export class pduPage {
         await commonLocators.verifyPageHeadingsByName(this.page, "Select your probation");
         await commonLocators.selectRadioButtonByName(this.page, "A Probation Delivery Unit");
         await commonLocators.clickOnButtonByName(this.page, "Continue");
-        await page.waitForTimeout(5000);
+        await page.waitForTimeout(3000);
     }
 }

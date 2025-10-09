@@ -17,6 +17,6 @@ export class selectYourTeamsPage {
         await commonLocators.verifyPageHeadingsByName(this.page, "Select your teams");
         await commonLocators.selectCheckBoxByName(this.page, "A Team");
         await commonLocators.clickOnButtonByName(this.page, "Continue");
-        await page.waitForTimeout(5000);
+        await page.waitForTimeout(3000);
     }
 }
