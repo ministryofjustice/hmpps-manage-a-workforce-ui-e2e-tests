@@ -26,6 +26,6 @@ export class unallocatedCasesPage {
         } else {
             console.log(`unallocatedCasesPage - First cell link is not enabled — skipping click`);
         }
-        await page.waitForTimeout(5000);
+        await page.waitForTimeout(3000);
     }
 }

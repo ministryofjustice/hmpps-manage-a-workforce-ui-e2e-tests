@@ -5,7 +5,7 @@ import { commonLocators } from "./commonLocators";
 export class pduPage {
     constructor(public page: Page) { }
 
-    async completePduPage(mode: 'headless' | 'headed',page: Page = this.page) {
+    async completePduPage(mode: 'headless' | 'headed', page: Page = this.page) {
         if (mode === 'headless') {
             await expect(page).toHaveScreenshot('actual-pduPage.png', {
                 fullPage: true,

@@ -1,4 +1,4 @@
-import { Locator, Page, expect } from '@playwright/test';
+import { Page, expect } from '@playwright/test';
 
 import { commonLocators } from "./commonLocators";
 
@@ -17,6 +17,6 @@ export class youAreAllocatingPage {
         await expect(page.getByRole('heading', { name: 'You\'re allocating' })).toBeVisible();
         await commonLocators.verifyFilledTextArea(this.page);
         await commonLocators.clickOnButtonByName(this.page, 'Continue');
-        await page.waitForTimeout(5000);
+        await page.waitForTimeout(3000);
     }
 }

@@ -1,8 +1,6 @@
 import { Page, expect } from '@playwright/test';
 
-import { TIMEOUT } from 'dns';
 import { commonLocators } from "./commonLocators";
-import { time } from 'console';
 
 export class caseAllocatedPage {
     constructor(private page: Page) { }

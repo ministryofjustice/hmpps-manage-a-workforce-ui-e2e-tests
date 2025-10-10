@@ -1,7 +1,6 @@
-import { Locator, Page, expect } from '@playwright/test';
+import { Page, expect } from '@playwright/test';
 
 import { commonLocators } from "./commonLocators";
-import { generateRandomParagraph } from '@utils/generateRandomParagraph';
 
 export class caseSummaryPage {
     constructor(private page: Page) { }
