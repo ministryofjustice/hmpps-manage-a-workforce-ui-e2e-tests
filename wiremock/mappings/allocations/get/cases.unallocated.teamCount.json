@@ -1,0 +1,18 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "GET.cases.unallocated.teamCount",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "GET",
+        "urlPath": "/cases/unallocated/teamCount",
+        "queryParameters": { "teams": { "matches": ".*" } }
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": [{ "teamCode": "N03F01", "caseCount": 59 }]
+      }
+    }
+  ]
+}

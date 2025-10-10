@@ -1,0 +1,47 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "cases.unallocated.X960722.convictions.1",
+      "requiredScenarioState": "Started",
+      "request": { "method": "GET", "urlPath": "/cases/unallocated/X960722/convictions/1" },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {
+          "name": "Eric Kessler",
+          "crn": "X960722",
+          "tier": "D0",
+          "sentenceDate": "2025-09-30",
+          "gender": "Male",
+          "dateOfBirth": "1992-05-22",
+          "age": 33,
+          "offences": [
+            {
+              "mainOffence": true,
+              "mainCategory": "Coronavirus Related Offences",
+              "subCategory": "Contravene Requirements of the Coronavirus Restrictions"
+            }
+          ],
+          "expectedSentenceEndDate": "2026-03-29",
+          "sentenceDescription": "ORA Community Order",
+          "requirements": [
+            { "mainCategory": "Curfew (Police Checks Only)", "subCategory": "Curfew", "length": "6 Weeks" }
+          ],
+          "pncNumber": "1992/4294856W",
+          "courtReport": null,
+          "assessment": null,
+          "cpsPack": null,
+          "preConvictionDocument": null,
+          "address": null,
+          "sentenceLength": "6 Months",
+          "convictionNumber": 1,
+          "roshLevel": "NOT_FOUND",
+          "rsrLevel": "NOT_FOUND",
+          "ogrsScore": null,
+          "activeRiskRegistration": null,
+          "outOfAreaTransfer": false
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "team.choose-practitioner",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "GET",
+        "urlPath": "/team/choose-practitioner",
+        "queryParameters": {
+          "grades": { "matches": ".*" },
+          "crn": { "matches": ".*" },
+          "teamCodes": { "matches": ".*" }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {
+          "crn": "X960731",
+          "name": { "forename": "Viola", "middleName": "", "surname": "Heller", "combinedName": "Viola Heller" },
+          "tier": "D0",
+          "probationStatus": { "status": "PREVIOUSLY_MANAGED", "description": "Previously managed" },
+          "communityPersonManager": {
+            "code": "N03A019",
+            "name": { "forename": "Derek", "surname": "Pint", "combinedName": "Derek Pint" },
+            "grade": "PO",
+            "teamCode": "N03F01",
+            "isUnallocated": false
+          },
+          "teams": {
+            "N03C01": [
+              {
+                "code": "N57A042",
+                "name": { "forename": "Pauline", "surname": "Silver", "combinedName": "Pauline Silver" },
+                "email": "pauline.silver@digital.justice.gov.uk",
+                "grade": "PO",
+                "workload": 0,
+                "casesPastWeek": 2,
+                "communityCases": 0,
+                "custodyCases": 0
+              }
+            ],
+            "N03D01": [],
+            "N03E01": [],
+            "N03B01": [],
+            "N03F01": [
+              {
+                "code": "N03A020",
+                "name": { "forename": "Coco", "surname": "Pint", "combinedName": "Coco Pint" },
+                "email": "simulate-delivered@notifications.service.gov.uk",
+                "grade": "PO",
+                "workload": 0,
+                "casesPastWeek": 5,
+                "communityCases": 0,
+                "custodyCases": 0
+              },
+              {
+                "code": "N03A016",
+                "name": { "forename": "Carlo", "surname": "Veo", "combinedName": "Carlo Veo" },
+                "email": "carlo.veo@digital.justice.gov.uk",
+                "grade": "PO",
+                "workload": 0,
+                "casesPastWeek": 0,
+                "communityCases": 0,
+                "custodyCases": 0
+              },
+              {
+                "code": "N01A022",
+                "name": { "forename": "Katie", "surname": "Cawthorne", "combinedName": "Katie Cawthorne" },
+                "email": "katie.cawthorne@digital.justice.gov.uk",
+                "grade": "PO",
+                "workload": 0,
+                "casesPastWeek": 0,
+                "communityCases": 0,
+                "custodyCases": 0
+              },
+              {
+                "code": "N03A034",
+                "name": { "forename": "kiran", "surname": "venkatanarayana", "combinedName": "kiran venkatanarayana" },
+                "email": "kiran.venkatanarayana@justice.gov.uk",
+                "grade": "PO",
+                "workload": 0,
+                "casesPastWeek": 0,
+                "communityCases": 0,
+                "custodyCases": 0
+              },
+              {
+                "code": "N03A033",
+                "name": { "forename": "kiran", "surname": "venkatanarayana", "combinedName": "kiran venkatanarayana" },
+                "email": "kiran.venkatanarayana@justice.gov.uk",
+                "grade": "PO",
+                "workload": 0,
+                "casesPastWeek": 0,
+                "communityCases": 0,
+                "custodyCases": 0
+              },
+              {
+                "code": "N04A135",
+                "name": { "forename": "Test", "surname": "User", "combinedName": "Test User" },
+                "grade": "PO",
+                "workload": 0,
+                "casesPastWeek": 0,
+                "communityCases": 0,
+                "custodyCases": 0
+              },
+              {
+                "code": "N03A029",
+                "name": { "forename": "kiran", "surname": "venkatanarayana", "combinedName": "kiran venkatanarayana" },
+                "email": "kiran.venkatanarayana@justice.gov.uk",
+                "grade": "PO",
+                "workload": 0,
+                "casesPastWeek": 0,
+                "communityCases": 0,
+                "custodyCases": 0
+              },
+              {
+                "code": "N07B743",
+                "name": { "forename": "Paul", "surname": "McPhee", "combinedName": "Paul McPhee" },
+                "email": "paul.mcphee@digital.justice.gov.uk",
+                "grade": "PO",
+                "workload": 0,
+                "casesPastWeek": 0,
+                "communityCases": 0,
+                "custodyCases": 0
+              },
+              {
+                "code": "N01A025",
+                "name": { "forename": "MPOP", "surname": "TestUser", "combinedName": "MPOP TestUser" },
+                "email": "simulate-delivered@notifications.service.gov.uk",
+                "grade": "PSO",
+                "workload": 0,
+                "casesPastWeek": 0,
+                "communityCases": 0,
+                "custodyCases": 0
+              },
+              {
+                "code": "N07B656",
+                "name": { "forename": "Natalie", "surname": "Wood", "combinedName": "Natalie Wood" },
+                "email": "natalie.wood@digital.justice.gov.uk",
+                "grade": "PO",
+                "workload": 0,
+                "casesPastWeek": 0,
+                "communityCases": 0,
+                "custodyCases": 0
+              },
+              {
+                "code": "N54A022",
+                "name": {
+                  "forename": "AutomatedTestUser",
+                  "surname": "AutomatedTestUser",
+                  "combinedName": "AutomatedTestUser AutomatedTestUser"
+                },
+                "email": "simulate-delivered@notifications.service.gov.uk",
+                "grade": "PSO",
+                "workload": 0,
+                "casesPastWeek": 3,
+                "communityCases": 0,
+                "custodyCases": 0
+              },
+              {
+                "code": "N03A022",
+                "name": { "forename": "Marcus", "surname": "Aspin", "combinedName": "Marcus Aspin" },
+                "email": "marcus.aspin@digital.justice.gov.uk",
+                "grade": "PO",
+                "workload": 0,
+                "casesPastWeek": 0,
+                "communityCases": 0,
+                "custodyCases": 0
+              },
+              {
+                "code": "N03F030",
+                "name": { "forename": "Robert", "surname": "King", "combinedName": "Robert King" },
+                "email": "robert.king@digital.justice.gov.uk",
+                "grade": "PO",
+                "workload": 0,
+                "casesPastWeek": 0,
+                "communityCases": 0,
+                "custodyCases": 0
+              },
+              {
+                "code": "N57A029",
+                "name": { "forename": "Leigh", "surname": "Christie", "combinedName": "Leigh Christie" },
+                "email": "leigh.christie@digital.justice.gov.uk",
+                "grade": "PO",
+                "workload": 0,
+                "casesPastWeek": 0,
+                "communityCases": 0,
+                "custodyCases": 0
+              },
+              {
+                "code": "N03A019",
+                "name": { "forename": "Derek", "surname": "Pint", "combinedName": "Derek Pint" },
+                "email": "simulate-delivered-2@notifications.service.gov.uk",
+                "grade": "PO",
+                "workload": 0,
+                "casesPastWeek": 0,
+                "communityCases": 0,
+                "custodyCases": 0
+              },
+              {
+                "code": "N57A046",
+                "name": { "forename": "Samantha", "surname": "Bryant", "combinedName": "Samantha Bryant" },
+                "email": "Samantha.Bryant@digital.justice.gov.uk",
+                "grade": "PO",
+                "workload": 0,
+                "casesPastWeek": 0,
+                "communityCases": 0,
+                "custodyCases": 0
+              },
+              {
+                "code": "N57A042",
+                "name": { "forename": "Pauline", "surname": "Silver", "combinedName": "Pauline Silver" },
+                "email": "pauline.silver@digital.justice.gov.uk",
+                "grade": "PO",
+                "workload": 0,
+                "casesPastWeek": 0,
+                "communityCases": 0,
+                "custodyCases": 0
+              },
+              {
+                "code": "N57A024",
+                "name": { "forename": "Rose", "surname": "Brandle", "combinedName": "Rose Brandle" },
+                "email": "rose.brandle@digital.justice.gov.uk",
+                "grade": "PO",
+                "workload": 0,
+                "casesPastWeek": 0,
+                "communityCases": 0,
+                "custodyCases": 0
+              },
+              {
+                "code": "N07B725",
+                "name": { "forename": "Greg", "surname": "Hawkins", "combinedName": "Greg Hawkins" },
+                "email": "Greg.Hawkins@justice.gov.uk",
+                "grade": "PO",
+                "workload": 0,
+                "casesPastWeek": 0,
+                "communityCases": 0,
+                "custodyCases": 0
+              },
+              {
+                "code": "N03A032",
+                "name": { "forename": "kiran", "surname": "venkatanarayana", "combinedName": "kiran venkatanarayana" },
+                "email": "kiran.venkatanarayana@justice.gov.uk",
+                "grade": "PO",
+                "workload": 0,
+                "casesPastWeek": 1,
+                "communityCases": 0,
+                "custodyCases": 0
+              }
+            ],
+            "N03A01": []
+          }
+        }
+      }
+    }
+  ]
+}

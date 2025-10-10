@@ -1,0 +1,14 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "GET.users.USER1.preferences.allocation-demand",
+      "requiredScenarioState": "Started",
+      "request": { "method": "GET", "urlPath": "/users/USER1/preferences/allocation-demand" },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": { "items": ["{\"pdu\":\"WPTNWS\",\"ldu\":\"WPTNWS\",\"team\":\"N03F01\"}"] }
+      }
+    }
+  ]
+}
