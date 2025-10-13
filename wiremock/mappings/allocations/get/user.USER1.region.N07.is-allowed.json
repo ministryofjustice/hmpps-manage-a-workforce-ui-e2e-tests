@@ -1,0 +1,10 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "GET.user.USER1.region.N07.is-allowed",
+      "requiredScenarioState": "Started",
+      "request": { "method": "GET", "urlPath": "/user/USER1/region/N07/is-allowed" },
+      "response": { "status": 200, "headers": { "Content-Type": "application/json;charset=UTF-8" }, "jsonBody": "Ok" }
+    }
+  ]
+}

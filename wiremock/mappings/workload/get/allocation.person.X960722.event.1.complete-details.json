@@ -1,0 +1,25 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "allocation.person.X960722.event.1.complete-details",
+      "requiredScenarioState": "Started",
+      "request": { "method": "GET", "urlPath": "/allocation/person/X960722/event/1/complete-details" },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {
+          "crn": "X960722",
+          "name": { "forename": "Eric", "middleName": "", "surname": "Kessler", "combinedName": "Eric Kessler" },
+          "type": "COMMUNITY",
+          "initialAppointment": { "date": "2025-10-03" },
+          "staff": {
+            "code": "N03A020",
+            "name": { "forename": "Coco", "surname": "Pint", "combinedName": "Coco Pint" },
+            "email": "simulate-delivered@notifications.service.gov.uk",
+            "grade": "PO"
+          }
+        }
+      }
+    }
+  ]
+}

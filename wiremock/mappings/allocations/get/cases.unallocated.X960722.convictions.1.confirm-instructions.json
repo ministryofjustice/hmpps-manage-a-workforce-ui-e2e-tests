@@ -1,0 +1,29 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "cases.unallocated.X960722.convictions.1.confirm-instructions",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "GET",
+        "urlPath": "/cases/unallocated/X960722/convictions/1/confirm-instructions",
+        "queryParameters": { "staffCode": { "matches": ".*" } }
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {
+          "name": { "forename": "Eric", "middleName": "", "surname": "Kessler", "combinedName": "Eric Kessler" },
+          "crn": "X960722",
+          "tier": "D0",
+          "convictionNumber": 1,
+          "staff": {
+            "code": "N03A020",
+            "name": { "forename": "Coco", "middleName": "", "surname": "Pint", "combinedName": "Coco Pint" },
+            "email": "simulate-delivered@notifications.service.gov.uk",
+            "grade": "PO"
+          }
+        }
+      }
+    }
+  ]
+}

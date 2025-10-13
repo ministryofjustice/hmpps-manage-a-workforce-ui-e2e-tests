@@ -1,0 +1,29 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "cases.unallocated.X960720.convictions.2.confirm-instructions",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "GET",
+        "urlPath": "/cases/unallocated/X960720/convictions/2/confirm-instructions",
+        "queryParameters": { "staffCode": { "matches": ".*" } }
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {
+          "name": { "forename": "Della", "middleName": "", "surname": "Luettgen", "combinedName": "Della Luettgen" },
+          "crn": "X960720",
+          "tier": "D0",
+          "convictionNumber": 2,
+          "staff": {
+            "code": "N03A020",
+            "name": { "forename": "Coco", "middleName": "", "surname": "Pint", "combinedName": "Coco Pint" },
+            "email": "simulate-delivered@notifications.service.gov.uk",
+            "grade": "PO"
+          }
+        }
+      }
+    }
+  ]
+}

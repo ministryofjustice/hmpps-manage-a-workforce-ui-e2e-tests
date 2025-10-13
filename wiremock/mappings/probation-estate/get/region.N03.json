@@ -1,0 +1,24 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "GET.region.N03",
+      "requiredScenarioState": "Started",
+      "request": { "method": "GET", "urlPath": "/region/N03" },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {
+          "code": "N03",
+          "name": "Wales",
+          "probationDeliveryUnits": [
+            { "code": "N03SW1", "name": "Cardiff and Vale" },
+            { "code": "WPTNWS", "name": "North Wales" },
+            { "code": "WPTWES", "name": "Dyfed Powys" },
+            { "code": "WPTGWT", "name": "Gwent" },
+            { "code": "N03SW2", "name": "South Wales 2" }
+          ]
+        }
+      }
+    }
+  ]
+}

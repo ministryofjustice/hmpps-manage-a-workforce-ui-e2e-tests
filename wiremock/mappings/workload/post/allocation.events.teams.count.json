@@ -1,0 +1,18 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "allocation.events.teams.count",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "POST",
+        "urlPath": "/allocation/events/teams/count",
+        "queryParameters": { "since": { "matches": ".*" } }
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": { "caseCount": 29 }
+      }
+    }
+  ]
+}

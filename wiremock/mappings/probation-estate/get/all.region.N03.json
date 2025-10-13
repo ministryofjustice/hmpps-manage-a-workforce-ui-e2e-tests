@@ -1,0 +1,98 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "all.region.N03",
+      "requiredScenarioState": "Started",
+      "request": { "method": "GET", "urlPath": "/all/region/N03" },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {
+          "N03SW1": {
+            "name": "Cardiff and Vale",
+            "ldus": {
+              "WPTSW1": {
+                "name": "Cardiff and Vale",
+                "teams": [
+                  { "code": "N03T01", "name": "Vale - Team" },
+                  { "code": "N03S0D", "name": "NPS - Cardiff - IOM Team" },
+                  { "code": "N03T0D", "name": "NPS - Vale - IOM Team" },
+                  { "code": "N03UA4", "name": "NPS - Awaiting Allocation South Wales 1" }
+                ]
+              }
+            }
+          },
+          "WPTNWS": {
+            "name": "North Wales",
+            "ldus": {
+              "WPTNWS": {
+                "name": "North Wales",
+                "teams": [
+                  { "code": "N03C01", "name": "Conwy - Team 1" },
+                  { "code": "N03A01", "name": "NPS - Ynys Mon - Team 1" },
+                  { "code": "N03B01", "name": "NPS - Gwynedd - Team 1" },
+                  { "code": "N03D01", "name": "NPS - Denbighshire - Team 1" },
+                  { "code": "N03E01", "name": "NPS - Flintshire - Team 1" },
+                  { "code": "N03F01", "name": "NPS - Wrexham - Team 1" }
+                ]
+              }
+            }
+          },
+          "WPTWES": {
+            "name": "Dyfed Powys",
+            "ldus": {
+              "WPTWES": {
+                "name": "Dyfed Powys",
+                "teams": [
+                  { "code": "N03N01", "name": "Carmarthenshire - Team 1" },
+                  { "code": "N03N02", "name": "Carmarthenshire - Team 2" },
+                  { "code": "N03G11", "name": "NPS - Powys - Team 1" },
+                  { "code": "N03L01", "name": "NPS - Ceredigion - Team 1" },
+                  { "code": "N03M01", "name": "NPS - Pembrokeshire - Team 1" }
+                ]
+              }
+            }
+          },
+          "WPTGWT": {
+            "name": "Gwent",
+            "ldus": {
+              "WPTGWT": {
+                "name": "Gwent",
+                "teams": [
+                  { "code": "N03CT1", "name": "NPS - Caerphilly\\Blaenau Gwent Team 1" },
+                  { "code": "N03CT2", "name": "NPS - Caerphilly\\Blaenau Gwent Team 2" },
+                  { "code": "N03UA5", "name": "NPS - Awaiting Allocation Gwent" },
+                  { "code": "N03Y01", "name": "NPS - Newport - Team 1" },
+                  { "code": "N03Z02", "name": "NPS - East Gwent Team" },
+                  { "code": "N03Z0D", "name": "NPS - Gwent - IOM Team" }
+                ]
+              }
+            }
+          },
+          "N03SW2": {
+            "name": "South Wales 2",
+            "ldus": {
+              "WPTSW2": {
+                "name": "South Wales 2 LDU",
+                "teams": [
+                  { "code": "N03J01", "name": "NPS - RCT - Team 1" },
+                  { "code": "N03J02", "name": "NPS - RCT - Team 2" },
+                  { "code": "N03J03", "name": "NPS - RCT - Team 3" },
+                  { "code": "N03K01", "name": "NPS - Merthyr - Team 1" },
+                  { "code": "N03K02", "name": "NPS - Merthyr - Team 2" },
+                  { "code": "N03P01", "name": "NPS - Swansea - Team 1" },
+                  { "code": "N03P02", "name": "NPS - Swansea - Team 2" },
+                  { "code": "N03P03", "name": "NPS - Swansea - Team 3" },
+                  { "code": "N03P0D", "name": "NPS - Swansea - IOM Team" },
+                  { "code": "N03Q01", "name": "NPS - Neath/PTalbot - Team 1" },
+                  { "code": "N03Q02", "name": "NPS - Neath/PTalbot - Team 2" },
+                  { "code": "N03R01", "name": "NPS - Bridgend - Team 1" }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}
