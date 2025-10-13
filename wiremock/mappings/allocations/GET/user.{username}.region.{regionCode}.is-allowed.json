@@ -1,0 +1,21 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "GET.user.{username}.region.{regionCode}.is-allowed",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "GET",
+        "urlPathTemplate": "/user/{username}/region/{regionCode}/is-allowed",
+        "pathParameters": {
+          "username": {
+            "matches": ".*"
+          },
+          "regionCode": {
+            "matches": ".*"
+          }
+        }
+      },
+      "response": { "status": 200, "headers": { "Content-Type": "application/json;charset=UTF-8" }, "jsonBody": "Ok" }
+    }
+  ]
+}

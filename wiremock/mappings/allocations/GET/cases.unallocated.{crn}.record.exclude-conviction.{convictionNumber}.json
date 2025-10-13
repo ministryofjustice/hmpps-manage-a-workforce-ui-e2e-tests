@@ -1,0 +1,32 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "GET.cases.unallocated.{crn}.record.exclude-conviction.{convictionNumber}",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "GET",
+        "urlPathTemplate": "/cases/unallocated/{crn}/record/exclude-conviction/{convictionNumber}",
+        "pathParameters": {
+          "crn": {
+            "matches": ".*"
+          },
+          "convictionNumber": {
+            "matches": ".*"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {
+          "name": "Tricia Langosh",
+          "crn": "X960926",
+          "tier": "D0",
+          "active": [],
+          "previous": [],
+          "convictionNumber": 2
+        }
+      }
+    }
+  ]
+}

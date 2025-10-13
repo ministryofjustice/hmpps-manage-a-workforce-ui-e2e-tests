@@ -1,0 +1,37 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "GET.cases.unallocated.{crn}.convictions.{convictionNumber}.confirm-instructions",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "GET",
+        "urlPathTemplate": "/cases/unallocated/{crn}/convictions/{convictionNumber}/confirm-instructions",
+        "pathParameters": {
+          "crn": {
+            "matches": ".*"
+          },
+          "convictionNumber": {
+            "matches": ".*"
+          }
+        },
+        "queryParameters": { "staffCode": { "matches": ".*" } }
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {
+          "name": { "forename": "Tricia", "middleName": "", "surname": "Langosh", "combinedName": "Tricia Langosh" },
+          "crn": "X960926",
+          "tier": "D0",
+          "convictionNumber": 2,
+          "staff": {
+            "code": "N03A020",
+            "name": { "forename": "Coco", "middleName": "", "surname": "Pint", "combinedName": "Coco Pint" },
+            "email": "simulate-delivered@notifications.service.gov.uk",
+            "grade": "PO"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "PUT.users.{username}.preferences.allocation-teams",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "PUT",
+        "urlPathTemplate": "/users/{username}/preferences/allocation-teams",
+        "pathParameters": {
+          "username": {
+            "matches": ".*"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": { "items": ["N03C01", "N03D01", "N03E01", "N03B01", "N03F01", "N03A01"] }
+      }
+    }
+  ]
+}

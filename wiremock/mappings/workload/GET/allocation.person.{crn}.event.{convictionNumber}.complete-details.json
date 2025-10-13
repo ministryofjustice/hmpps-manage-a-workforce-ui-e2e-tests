@@ -1,0 +1,36 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "GET.allocation.person.{crn}.event.{convictionNumber}.complete-details",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "GET",
+        "urlPathTemplate": "/allocation/person/{crn}/event/{convictionNumber}/complete-details",
+        "pathParameters": {
+          "crn": {
+            "matches": ".*"
+          },
+          "convictionNumber": {
+            "matches": ".*"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {
+          "crn": "X960926",
+          "name": { "forename": "Tricia", "middleName": "", "surname": "Langosh", "combinedName": "Tricia Langosh" },
+          "type": "COMMUNITY",
+          "initialAppointment": { "date": "2025-10-04" },
+          "staff": {
+            "code": "N03A020",
+            "name": { "forename": "Coco", "surname": "Pint", "combinedName": "Coco Pint" },
+            "email": "simulate-delivered@notifications.service.gov.uk",
+            "grade": "PO"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "PUT.users.{username}.preferences.allocation-pdu",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "PUT",
+        "urlPathTemplate": "/users/{username}/preferences/allocation-pdu",
+        "pathParameters": {
+          "username": {
+            "matches": ".*"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": { "items": ["WPTNWS"] }
+      }
+    }
+  ]
+}
