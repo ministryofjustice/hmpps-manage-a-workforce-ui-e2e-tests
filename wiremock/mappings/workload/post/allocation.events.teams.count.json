@@ -1,7 +1,7 @@
 {
   "mappings": [
     {
-      "scenarioName": "allocation.events.teams.count",
+      "scenarioName": "POST.allocation.events.teams.count",
       "requiredScenarioState": "Started",
       "request": {
         "method": "POST",
@@ -11,7 +11,7 @@
       "response": {
         "status": 200,
         "headers": { "Content-Type": "application/json;charset=UTF-8" },
-        "jsonBody": { "caseCount": 29 }
+        "jsonBody": { "caseCount": 22 }
       }
     }
   ]

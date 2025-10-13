@@ -1,0 +1,1485 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "GET.team.{teamCode}.cases.unallocated",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "GET",
+        "urlPathTemplate": "/team/{teamCode}/cases/unallocated",
+        "pathParameters": {
+          "teamCode": {
+            "matches": ".*"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": [
+          {
+            "name": "Shaun Kassulke-Fahey",
+            "crn": "X898931",
+            "tier": "D0",
+            "sentenceDate": "2025-04-14",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-04-17",
+              "staff": {
+                "name": { "forename": "Test", "middleName": "", "surname": "User", "combinedName": "Test User" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 1,
+            "outOfAreaTransfer": false,
+            "excluded": true,
+            "apopExcluded": true
+          },
+          {
+            "name": "Gene Roob",
+            "crn": "X899011",
+            "tier": "D0",
+            "sentenceDate": "2025-04-15",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-04-18",
+              "staff": {
+                "name": { "forename": "Paul", "middleName": "", "surname": "McPhee", "combinedName": "Paul McPhee" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": true,
+            "apopExcluded": true
+          },
+          {
+            "name": "Wilbert Reilly",
+            "crn": "X899471",
+            "tier": "D0",
+            "sentenceDate": "2025-04-21",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-04-23",
+              "staff": {
+                "name": { "forename": "Natalie", "middleName": "", "surname": "Wood", "combinedName": "Natalie Wood" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 1,
+            "outOfAreaTransfer": false,
+            "excluded": true,
+            "apopExcluded": true
+          },
+          {
+            "name": "Raymond Haley",
+            "crn": "X899951",
+            "tier": "D0",
+            "sentenceDate": "2025-04-21",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-04-24",
+              "staff": {
+                "name": { "forename": "Paul", "middleName": "", "surname": "McPhee", "combinedName": "Paul McPhee" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": true,
+            "apopExcluded": true
+          },
+          {
+            "name": "Billy Mann",
+            "crn": "X929180",
+            "tier": "D0",
+            "sentenceDate": "2025-06-15",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-06-18",
+              "staff": {
+                "name": {
+                  "forename": "Unallocated",
+                  "middleName": "",
+                  "surname": "Unallocated",
+                  "combinedName": "Unallocated Unallocated"
+                }
+              }
+            },
+            "status": "Previously managed",
+            "offenderManager": { "forenames": "Derek", "surname": "Pint" },
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": true,
+            "apopExcluded": true
+          },
+          {
+            "name": "Franklin Vandervort",
+            "crn": "X929187",
+            "tier": "D0",
+            "sentenceDate": "2025-06-15",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-06-18",
+              "staff": {
+                "name": { "forename": "Natalie", "middleName": "", "surname": "Wood", "combinedName": "Natalie Wood" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": true,
+            "apopExcluded": true
+          },
+          {
+            "name": "Tricia Langosh",
+            "crn": "X960926",
+            "tier": "D0",
+            "sentenceDate": "2025-10-01",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-04",
+              "staff": {
+                "name": { "forename": "Paul", "middleName": "", "surname": "McPhee", "combinedName": "Paul McPhee" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Felix Schinner",
+            "crn": "X960928",
+            "tier": "D0",
+            "sentenceDate": "2025-10-01",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-04",
+              "staff": {
+                "name": { "forename": "Carlo", "middleName": "", "surname": "Veo", "combinedName": "Carlo Veo" }
+              }
+            },
+            "status": "Previously managed",
+            "offenderManager": { "forenames": "Derek", "surname": "Pint" },
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Courtney Dicki",
+            "crn": "X960935",
+            "tier": "D0",
+            "sentenceDate": "2025-10-02",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-04",
+              "staff": {
+                "name": {
+                  "forename": "Pauline",
+                  "middleName": "",
+                  "surname": "Silver",
+                  "combinedName": "Pauline Silver"
+                }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 1,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Alonzo Zemlak",
+            "crn": "X960936",
+            "tier": "D0",
+            "sentenceDate": "2025-10-02",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-04",
+              "staff": {
+                "name": { "forename": "Rose", "middleName": "", "surname": "Brandle", "combinedName": "Rose Brandle" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Melanie Torphy",
+            "crn": "X960937",
+            "tier": "D0",
+            "sentenceDate": "2025-10-02",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-04",
+              "staff": {
+                "name": { "forename": "Marcus", "middleName": "", "surname": "Aspin", "combinedName": "Marcus Aspin" }
+              }
+            },
+            "status": "Previously managed",
+            "offenderManager": { "forenames": "Derek", "surname": "Pint" },
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Joe Wolf",
+            "crn": "X960946",
+            "tier": "D0",
+            "sentenceDate": "2025-10-02",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-04",
+              "staff": {
+                "name": { "forename": "Carlo", "middleName": "", "surname": "Veo", "combinedName": "Carlo Veo" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 1,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Kenneth Koepp",
+            "crn": "X960951",
+            "tier": "D0",
+            "sentenceDate": "2025-10-02",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-04",
+              "staff": {
+                "name": { "forename": "Paul", "middleName": "", "surname": "McPhee", "combinedName": "Paul McPhee" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Phyllis Considine",
+            "crn": "X960949",
+            "tier": "D0",
+            "sentenceDate": "2025-10-01",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-04",
+              "staff": {
+                "name": {
+                  "forename": "kiran",
+                  "middleName": "",
+                  "surname": "venkatanarayana",
+                  "combinedName": "kiran venkatanarayana"
+                }
+              }
+            },
+            "status": "Previously managed",
+            "offenderManager": { "forenames": "Derek", "surname": "Pint" },
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Candace Sporer",
+            "crn": "X960958",
+            "tier": "D0",
+            "sentenceDate": "2025-10-01",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-04",
+              "staff": {
+                "name": { "forename": "Robert", "middleName": "", "surname": "King", "combinedName": "Robert King" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 1,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Allan Cummerata",
+            "crn": "X960960",
+            "tier": "D0",
+            "sentenceDate": "2025-10-02",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-04",
+              "staff": {
+                "name": {
+                  "forename": "Katie",
+                  "middleName": "",
+                  "surname": "Cawthorne",
+                  "combinedName": "Katie Cawthorne"
+                }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Dexter Romaguera",
+            "crn": "X960961",
+            "tier": "D0",
+            "sentenceDate": "2025-10-02",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-04",
+              "staff": {
+                "name": { "forename": "MPOP", "middleName": "", "surname": "TestUser", "combinedName": "MPOP TestUser" }
+              }
+            },
+            "status": "Previously managed",
+            "offenderManager": { "forenames": "Derek", "surname": "Pint" },
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Elizabeth Wilderman",
+            "crn": "X961007",
+            "tier": "D0",
+            "sentenceDate": "2025-10-02",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-04",
+              "staff": {
+                "name": { "forename": "Derek", "middleName": "", "surname": "Pint", "combinedName": "Derek Pint" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 1,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Damon Friesen",
+            "crn": "X961006",
+            "tier": "D0",
+            "sentenceDate": "2025-10-01",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-04",
+              "staff": {
+                "name": {
+                  "forename": "Samantha",
+                  "middleName": "",
+                  "surname": "Bryant",
+                  "combinedName": "Samantha Bryant"
+                }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Silvia Ernser",
+            "crn": "X961010",
+            "tier": "D0",
+            "sentenceDate": "2025-10-02",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-04",
+              "staff": {
+                "name": { "forename": "Coco", "middleName": "", "surname": "Pint", "combinedName": "Coco Pint" }
+              }
+            },
+            "status": "Previously managed",
+            "offenderManager": { "forenames": "Derek", "surname": "Pint" },
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Winston Price",
+            "crn": "X961016",
+            "tier": "D0",
+            "sentenceDate": "2025-10-01",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-04",
+              "staff": {
+                "name": { "forename": "Carlo", "middleName": "", "surname": "Veo", "combinedName": "Carlo Veo" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Marie Wiegand",
+            "crn": "X961018",
+            "tier": "D0",
+            "sentenceDate": "2025-10-01",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-04",
+              "staff": {
+                "name": { "forename": "Derek", "middleName": "", "surname": "Pint", "combinedName": "Derek Pint" }
+              }
+            },
+            "status": "Previously managed",
+            "offenderManager": { "forenames": "Derek", "surname": "Pint" },
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Shaun Runolfsdottir",
+            "crn": "X961081",
+            "tier": "D0",
+            "sentenceDate": "2025-10-04",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-07",
+              "staff": {
+                "name": { "forename": "Natalie", "middleName": "", "surname": "Wood", "combinedName": "Natalie Wood" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 1,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Mable Barton",
+            "crn": "X961083",
+            "tier": "D0",
+            "sentenceDate": "2025-10-04",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-07",
+              "staff": {
+                "name": { "forename": "Rose", "middleName": "", "surname": "Brandle", "combinedName": "Rose Brandle" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Alyssa Schuppe",
+            "crn": "X961084",
+            "tier": "D0",
+            "sentenceDate": "2025-10-05",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-07",
+              "staff": {
+                "name": { "forename": "Greg", "middleName": "", "surname": "Hawkins", "combinedName": "Greg Hawkins" }
+              }
+            },
+            "status": "Previously managed",
+            "offenderManager": { "forenames": "Derek", "surname": "Pint" },
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Jonathon Kunze",
+            "crn": "X961092",
+            "tier": "D0",
+            "sentenceDate": "2025-10-04",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-07",
+              "staff": {
+                "name": { "forename": "Paul", "middleName": "", "surname": "McPhee", "combinedName": "Paul McPhee" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 1,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Tracy Grady",
+            "crn": "X961093",
+            "tier": "D0",
+            "sentenceDate": "2025-10-05",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-07",
+              "staff": {
+                "name": {
+                  "forename": "kiran",
+                  "middleName": "",
+                  "surname": "venkatanarayana",
+                  "combinedName": "kiran venkatanarayana"
+                }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Shelley Schroeder",
+            "crn": "X961094",
+            "tier": "D0",
+            "sentenceDate": "2025-10-04",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-07",
+              "staff": {
+                "name": {
+                  "forename": "AutomatedTestUser",
+                  "middleName": "",
+                  "surname": "AutomatedTestUser",
+                  "combinedName": "AutomatedTestUser AutomatedTestUser"
+                }
+              }
+            },
+            "status": "Previously managed",
+            "offenderManager": { "forenames": "Derek", "surname": "Pint" },
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Becky Rohan",
+            "crn": "X961160",
+            "tier": "D0",
+            "sentenceDate": "2025-10-05",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-08",
+              "staff": {
+                "name": {
+                  "forename": "Unallocated",
+                  "middleName": "",
+                  "surname": "Unallocated",
+                  "combinedName": "Unallocated Unallocated"
+                }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 1,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Ruben Marquardt",
+            "crn": "X961162",
+            "tier": "D0",
+            "sentenceDate": "2025-10-05",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-08",
+              "staff": {
+                "name": { "forename": "Greg", "middleName": "", "surname": "Hawkins", "combinedName": "Greg Hawkins" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Chad Upton",
+            "crn": "X961163",
+            "tier": "D0",
+            "sentenceDate": "2025-10-05",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-08",
+              "staff": {
+                "name": { "forename": "Robert", "middleName": "", "surname": "King", "combinedName": "Robert King" }
+              }
+            },
+            "status": "Previously managed",
+            "offenderManager": { "forenames": "Derek", "surname": "Pint" },
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Jana Treutel",
+            "crn": "X961171",
+            "tier": "D0",
+            "sentenceDate": "2025-10-06",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-08",
+              "staff": {
+                "name": {
+                  "forename": "Pauline",
+                  "middleName": "",
+                  "surname": "Silver",
+                  "combinedName": "Pauline Silver"
+                }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 1,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Charlie O&#39;Connell",
+            "crn": "X961173",
+            "tier": "D0",
+            "sentenceDate": "2025-10-06",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-08",
+              "staff": {
+                "name": {
+                  "forename": "AutomatedTestUser",
+                  "middleName": "",
+                  "surname": "AutomatedTestUser",
+                  "combinedName": "AutomatedTestUser AutomatedTestUser"
+                }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Sonya Von",
+            "crn": "X961484",
+            "tier": "D0",
+            "sentenceDate": "2025-10-07",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-09",
+              "staff": {
+                "name": { "forename": "Natalie", "middleName": "", "surname": "Wood", "combinedName": "Natalie Wood" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 1,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Ronnie Armstrong",
+            "crn": "X961482",
+            "tier": "D0",
+            "sentenceDate": "2025-10-06",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-09",
+              "staff": {
+                "name": { "forename": "Gary", "middleName": "", "surname": "Reid", "combinedName": "Gary Reid" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Dwight Altenwerth",
+            "crn": "X961483",
+            "tier": "D0",
+            "sentenceDate": "2025-10-06",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-09",
+              "staff": {
+                "name": { "forename": "Paul", "middleName": "", "surname": "McPhee", "combinedName": "Paul McPhee" }
+              }
+            },
+            "status": "Previously managed",
+            "offenderManager": { "forenames": "Derek", "surname": "Pint" },
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Gregory Herman",
+            "crn": "X961491",
+            "tier": "D0",
+            "sentenceDate": "2025-10-06",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-09",
+              "staff": {
+                "name": {
+                  "forename": "kiran",
+                  "middleName": "",
+                  "surname": "venkatanarayana",
+                  "combinedName": "kiran venkatanarayana"
+                }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 1,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Naomi Kuvalis",
+            "crn": "X961492",
+            "tier": "D0",
+            "sentenceDate": "2025-10-06",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-09",
+              "staff": {
+                "name": { "forename": "Paul", "middleName": "", "surname": "McPhee", "combinedName": "Paul McPhee" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Carole Douglas",
+            "crn": "X961494",
+            "tier": "D0",
+            "sentenceDate": "2025-10-06",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-10",
+              "staff": {
+                "name": {
+                  "forename": "kiran",
+                  "middleName": "",
+                  "surname": "venkatanarayana",
+                  "combinedName": "kiran venkatanarayana"
+                }
+              }
+            },
+            "status": "Previously managed",
+            "offenderManager": { "forenames": "Derek", "surname": "Pint" },
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Pam Bernier",
+            "crn": "X961533",
+            "tier": "D0",
+            "sentenceDate": "2025-10-06",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-09",
+              "staff": {
+                "name": { "forename": "Carlo", "middleName": "", "surname": "Veo", "combinedName": "Carlo Veo" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 1,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Willie Grant-Erdman",
+            "crn": "X961535",
+            "tier": "D0",
+            "sentenceDate": "2025-10-07",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-09",
+              "staff": {
+                "name": { "forename": "Test", "middleName": "", "surname": "User", "combinedName": "Test User" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Eddie Nitzsche",
+            "crn": "X961534",
+            "tier": "D0",
+            "sentenceDate": "2025-10-06",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-09",
+              "staff": {
+                "name": {
+                  "forename": "Leigh",
+                  "middleName": "",
+                  "surname": "Christie",
+                  "combinedName": "Leigh Christie"
+                }
+              }
+            },
+            "status": "Previously managed",
+            "offenderManager": { "forenames": "Derek", "surname": "Pint" },
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Rufus Johnston",
+            "crn": "X961539",
+            "tier": "D0",
+            "sentenceDate": "2025-10-07",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-09",
+              "staff": {
+                "name": {
+                  "forename": "Katie",
+                  "middleName": "",
+                  "surname": "Cawthorne",
+                  "combinedName": "Katie Cawthorne"
+                }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 1,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Loren Yundt",
+            "crn": "X961540",
+            "tier": "D0",
+            "sentenceDate": "2025-10-06",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-09",
+              "staff": {
+                "name": { "forename": "Natalie", "middleName": "", "surname": "Wood", "combinedName": "Natalie Wood" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Hubert Kessler",
+            "crn": "X961541",
+            "tier": "D0",
+            "sentenceDate": "2025-10-07",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-09",
+              "staff": {
+                "name": { "forename": "Coco", "middleName": "", "surname": "Pint", "combinedName": "Coco Pint" }
+              }
+            },
+            "status": "Previously managed",
+            "offenderManager": { "forenames": "Derek", "surname": "Pint" },
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Johnnie Gulgowski",
+            "crn": "X961668",
+            "tier": "D0",
+            "sentenceDate": "2025-10-07",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-10",
+              "staff": {
+                "name": {
+                  "forename": "kiran",
+                  "middleName": "",
+                  "surname": "venkatanarayana",
+                  "combinedName": "kiran venkatanarayana"
+                }
+              }
+            },
+            "status": "Previously managed",
+            "offenderManager": { "forenames": "Derek", "surname": "Pint" },
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Darryl Rohan",
+            "crn": "X961673",
+            "tier": "D0",
+            "sentenceDate": "2025-10-07",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-10",
+              "staff": {
+                "name": { "forename": "Rose", "middleName": "", "surname": "Brandle", "combinedName": "Rose Brandle" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 1,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Heather Rodriguez",
+            "crn": "X961674",
+            "tier": "D0",
+            "sentenceDate": "2025-10-07",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-10",
+              "staff": {
+                "name": { "forename": "Derek", "middleName": "", "surname": "Pint", "combinedName": "Derek Pint" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Andrew Willms-Gerlach",
+            "crn": "X961678",
+            "tier": "D0",
+            "sentenceDate": "2025-10-08",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-10",
+              "staff": {
+                "name": {
+                  "forename": "Leigh",
+                  "middleName": "",
+                  "surname": "Christie",
+                  "combinedName": "Leigh Christie"
+                }
+              }
+            },
+            "status": "Previously managed",
+            "offenderManager": { "forenames": "Derek", "surname": "Pint" },
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Vicki Kreiger",
+            "crn": "X961747",
+            "tier": "D0",
+            "sentenceDate": "2025-10-08",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-11",
+              "staff": {
+                "name": { "forename": "Coco", "middleName": "", "surname": "Pint", "combinedName": "Coco Pint" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 1,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Esther Baumbach",
+            "crn": "X961746",
+            "tier": "D0",
+            "sentenceDate": "2025-10-09",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-11",
+              "staff": {
+                "name": { "forename": "Paul", "middleName": "", "surname": "McPhee", "combinedName": "Paul McPhee" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Jacqueline Lockman",
+            "crn": "X961748",
+            "tier": "D0",
+            "sentenceDate": "2025-10-09",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-11",
+              "staff": {
+                "name": {
+                  "forename": "kiran",
+                  "middleName": "",
+                  "surname": "venkatanarayana",
+                  "combinedName": "kiran venkatanarayana"
+                }
+              }
+            },
+            "status": "Previously managed",
+            "offenderManager": { "forenames": "Derek", "surname": "Pint" },
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Richard Parisian",
+            "crn": "X961754",
+            "tier": "D0",
+            "sentenceDate": "2025-10-09",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-11",
+              "staff": {
+                "name": { "forename": "Robert", "middleName": "", "surname": "King", "combinedName": "Robert King" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 1,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Ben Emmerich",
+            "crn": "X961755",
+            "tier": "D0",
+            "sentenceDate": "2025-10-09",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-11",
+              "staff": {
+                "name": { "forename": "Robert", "middleName": "", "surname": "King", "combinedName": "Robert King" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Michael Brakus",
+            "crn": "X961756",
+            "tier": "D0",
+            "sentenceDate": "2025-10-08",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-11",
+              "staff": {
+                "name": {
+                  "forename": "kiran",
+                  "middleName": "",
+                  "surname": "venkatanarayana",
+                  "combinedName": "kiran venkatanarayana"
+                }
+              }
+            },
+            "status": "Previously managed",
+            "offenderManager": { "forenames": "Derek", "surname": "Pint" },
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Naomi Tremblay",
+            "crn": "X961870",
+            "tier": "D0",
+            "sentenceDate": "2025-10-11",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-14",
+              "staff": {
+                "name": { "forename": "Sam", "middleName": "", "surname": "Bailey", "combinedName": "Sam Bailey" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 1,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Abel Harber",
+            "crn": "X961872",
+            "tier": "D0",
+            "sentenceDate": "2025-10-11",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-14",
+              "staff": {
+                "name": { "forename": "Robert", "middleName": "", "surname": "King", "combinedName": "Robert King" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Warren Corwin",
+            "crn": "X961873",
+            "tier": "D0",
+            "sentenceDate": "2025-10-12",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-14",
+              "staff": {
+                "name": { "forename": "Greg", "middleName": "", "surname": "Hawkins", "combinedName": "Greg Hawkins" }
+              }
+            },
+            "status": "Previously managed",
+            "offenderManager": { "forenames": "Derek", "surname": "Pint" },
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Kurt Nader-Quitzon",
+            "crn": "X961879",
+            "tier": "D0",
+            "sentenceDate": "2025-10-12",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-14",
+              "staff": {
+                "name": { "forename": "Test", "middleName": "", "surname": "User", "combinedName": "Test User" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 1,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Marty Tromp",
+            "crn": "X961880",
+            "tier": "D0",
+            "sentenceDate": "2025-10-11",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-14",
+              "staff": {
+                "name": {
+                  "forename": "kiran",
+                  "middleName": "",
+                  "surname": "venkatanarayana",
+                  "combinedName": "kiran venkatanarayana"
+                }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Margaret Satterfield",
+            "crn": "X961881",
+            "tier": "D0",
+            "sentenceDate": "2025-10-11",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-14",
+              "staff": {
+                "name": { "forename": "Paul", "middleName": "", "surname": "McPhee", "combinedName": "Paul McPhee" }
+              }
+            },
+            "status": "Previously managed",
+            "offenderManager": { "forenames": "Derek", "surname": "Pint" },
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Elena Kub",
+            "crn": "X961883",
+            "tier": "D0",
+            "sentenceDate": "2025-10-11",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-14",
+              "staff": {
+                "name": {
+                  "forename": "Leigh",
+                  "middleName": "",
+                  "surname": "Christie",
+                  "combinedName": "Leigh Christie"
+                }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 1,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Delia Leannon",
+            "crn": "X961882",
+            "tier": "D0",
+            "sentenceDate": "2025-10-12",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-14",
+              "staff": {
+                "name": { "forename": "Marcus", "middleName": "", "surname": "Aspin", "combinedName": "Marcus Aspin" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Woodrow Nitzsche-Pfannerstill",
+            "crn": "X961884",
+            "tier": "D0",
+            "sentenceDate": "2025-10-11",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-14",
+              "staff": {
+                "name": { "forename": "MPOP", "middleName": "", "surname": "TestUser", "combinedName": "MPOP TestUser" }
+              }
+            },
+            "status": "Previously managed",
+            "offenderManager": { "forenames": "Derek", "surname": "Pint" },
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Zachary Hartmann",
+            "crn": "X961885",
+            "tier": "D0",
+            "sentenceDate": "2025-10-11",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-14",
+              "staff": {
+                "name": { "forename": "Paul", "middleName": "", "surname": "McPhee", "combinedName": "Paul McPhee" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 1,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Harold Crona",
+            "crn": "X961886",
+            "tier": "D0",
+            "sentenceDate": "2025-10-11",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-14",
+              "staff": {
+                "name": { "forename": "Gary", "middleName": "", "surname": "Reid", "combinedName": "Gary Reid" }
+              }
+            },
+            "status": "New to probation",
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          },
+          {
+            "name": "Pearl Gorczany",
+            "crn": "X961887",
+            "tier": "D0",
+            "sentenceDate": "2025-10-11",
+            "handoverDate": null,
+            "initialAppointment": {
+              "date": "2025-10-14",
+              "staff": {
+                "name": { "forename": "MPOP", "middleName": "", "surname": "TestUser", "combinedName": "MPOP TestUser" }
+              }
+            },
+            "status": "Previously managed",
+            "offenderManager": { "forenames": "Derek", "surname": "Pint" },
+            "caseType": "COMMUNITY",
+            "sentenceLength": "6 Months",
+            "convictionNumber": 2,
+            "outOfAreaTransfer": false,
+            "excluded": false,
+            "apopExcluded": false
+          }
+        ]
+      }
+    }
+  ]
+}
