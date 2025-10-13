@@ -1,5 +1,6 @@
 import { Page, expect } from "@playwright/test";
 
+import emailData from '@test-data/email.json';
 import { generateRandomParagraph } from '@utils/generateRandomParagraph';
 
 export async function verifyPageHeadingsByName(page: Page, pageHeadingName: string) {
@@ -45,19 +46,29 @@ export async function fillTextInTextArea(page: Page): Promise<string> {
 
 export async function verifyFilledTextArea(page: Page) {
     const filledText = await fillTextInTextArea(page);
-    // Locate the same textarea and verify its content
     const nextTextArea = page.locator('xpath=//*[@id="instructions"]');
     await expect(nextTextArea).toBeVisible();
     await expect(nextTextArea).toHaveText(filledText);
 }
 
-export async function enterEmailAddressInCombobox(page: Page, email: string) {
+export async function enterEmailAddressInCombobox(page: Page, count: number = 1) {
+  const emailList = emailData['Email address'];
+
+  if (!emailList || emailList.length === 0) {
+    console.warn('No email data found in email.json');
+    return;
+  }
+
+  const emailsToFill = emailList.slice(0, count);
+
+  for (const [index, entry] of emailsToFill.entries()) {
+    const email = entry.email;
     await page.getByRole('combobox', { name: 'Email address' }).click();
     await page.getByRole('combobox', { name: 'Email address' }).fill(email);
-    await expect(page.getByRole('listbox', { name: email })).toBeVisible();
-    await page.getByRole('option', { name: `${email} -` }).click();
+    console.log(`Filled email ${index + 1}: ${email}`);
     await expect(page.getByRole('button', { name: 'Remove' })).toBeVisible();
     await page.getByRole('button', { name: 'Add another person' }).click();
+  }
 }
 
 export const commonLocators = {

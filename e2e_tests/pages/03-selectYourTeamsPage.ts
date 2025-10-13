@@ -12,7 +12,7 @@ export class selectYourTeamsPage {
                 threshold: 0.2,
             });
         } else {
-            console.log('Skipping screenshot assertion in headed mode');
+            console.log('selectYourTeamsPage - Skipping screenshot assertion in headed mode');
         }
         await commonLocators.verifyPageHeadingsByName(this.page, "Select your teams");
         await commonLocators.selectCheckBoxByName(this.page, "A Team");

@@ -12,7 +12,7 @@ export class unallocatedCasesPage {
                 threshold: 0.2,
             });
         } else {
-            console.log('Skipping screenshot assertion in headed mode');
+            console.log('unallocatedCasesPage - Skipping screenshot assertion in headed mode');
         }
         await commonLocators.verifyPageHeadingsByName(this.page, "Unallocated cases");
 

@@ -12,7 +12,7 @@ export class pduPage {
                 threshold: 0.2,
             });
         } else {
-            console.log('Skipping screenshot assertion in headed mode');
+            console.log('pduPage - Skipping screenshot assertion in headed mode');
         }
         await commonLocators.verifyPageHeadingsByName(this.page, "Select your probation");
         await commonLocators.selectRadioButtonByName(this.page, "A Probation Delivery Unit");

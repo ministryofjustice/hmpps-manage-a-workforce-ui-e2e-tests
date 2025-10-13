@@ -12,7 +12,7 @@ export class regionsPage {
                 threshold: 0.2,
             });
         } else {
-            console.log('Skipping screenshot assertion in headed mode');
+            console.log('regionsPage - Skipping screenshot assertion in headed mode');
         }
         await commonLocators.verifyPageHeadingsByName(this.page, "Select your region");
         await commonLocators.selectRadioButtonByName(this.page, "A Region");

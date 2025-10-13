@@ -16,7 +16,7 @@ export class reviewYourAllocationNotesPage {
         }
         await expect(page.getByRole('heading', { name: 'Review your allocation notes' })).toBeVisible();
         await commonLocators.verifyFilledTextArea(this.page);
-        await commonLocators.enterEmailAddressInCombobox(this.page, 'test@example.com');
+        await commonLocators.enterEmailAddressInCombobox(this.page); // Fills 1st email address from email.json
         await commonLocators.clickOnButtonByName(this.page, 'Continue');
         await page.waitForTimeout(3000);
     }

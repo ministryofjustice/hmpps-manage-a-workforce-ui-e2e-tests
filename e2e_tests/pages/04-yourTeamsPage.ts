@@ -12,7 +12,7 @@ export class yourTeamsPage {
                 threshold: 0.2,
             });
         } else {
-            console.log('Skipping screenshot assertion in headed mode');
+            console.log('yourTeamsPage - Skipping screenshot assertion in headed mode');
         }
         await commonLocators.verifyPageHeadingsByName(this.page, "Your teams");
         await commonLocators.clickOnButtonByName(this.page, "View unallocated cases");
