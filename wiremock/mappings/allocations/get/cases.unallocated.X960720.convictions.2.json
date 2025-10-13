@@ -1,0 +1,45 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "cases.unallocated.X960720.convictions.2",
+      "requiredScenarioState": "Started",
+      "request": { "method": "GET", "urlPath": "/cases/unallocated/X960720/convictions/2" },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {
+          "name": "Della Luettgen",
+          "crn": "X960720",
+          "tier": "D0",
+          "sentenceDate": "2025-09-30",
+          "gender": "Female",
+          "dateOfBirth": "1971-11-18",
+          "age": 53,
+          "offences": [
+            {
+              "mainOffence": true,
+              "mainCategory": "Offences involving impersonation, making false statements etc.",
+              "subCategory": "Intentionally obstructing/misleading a weights and measures officer."
+            }
+          ],
+          "expectedSentenceEndDate": "2026-03-29",
+          "sentenceDescription": "ORA Community Order",
+          "requirements": [],
+          "pncNumber": "1971/1238125T",
+          "courtReport": null,
+          "assessment": null,
+          "cpsPack": null,
+          "preConvictionDocument": null,
+          "address": null,
+          "sentenceLength": "6 Months",
+          "convictionNumber": 2,
+          "roshLevel": "NOT_FOUND",
+          "rsrLevel": "NOT_FOUND",
+          "ogrsScore": null,
+          "activeRiskRegistration": null,
+          "outOfAreaTransfer": false
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "team.N03F01.offenderManager.N03A020.case",
+      "requiredScenarioState": "Started",
+      "request": { "method": "POST", "urlPath": "/team/N03F01/offenderManager/N03A020/case" },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {
+          "personManagerId": "87bd8536-6fe5-4ad9-bce5-b1c8a788c8b5",
+          "eventManagerId": "c3e384d7-c244-48d1-a24e-d2de914da3da",
+          "requirementManagerIds": ["295cb54e-10d0-463d-9f32-7b65a00cf343"]
+        }
+      }
+    }
+  ]
+}

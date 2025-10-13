@@ -1,0 +1,10 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "user.USER1.crn.X960722.conviction.1.is-allowed",
+      "requiredScenarioState": "Started",
+      "request": { "method": "GET", "urlPath": "/user/USER1/crn/X960722/conviction/1/is-allowed" },
+      "response": { "status": 200, "headers": { "Content-Type": "application/json;charset=UTF-8" }, "jsonBody": "Ok" }
+    }
+  ]
+}

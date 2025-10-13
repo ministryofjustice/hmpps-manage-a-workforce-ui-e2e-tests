@@ -1,0 +1,25 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "GET.team.workloadcases",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "GET",
+        "urlPath": "/team/workloadcases",
+        "queryParameters": { "teams": { "matches": ".*" } }
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": [
+          { "teamCode": "N03D01", "totalCases": 301, "workload": 77.2 },
+          { "teamCode": "N03F01", "totalCases": 566, "workload": 87.7 },
+          { "teamCode": "N03B01", "totalCases": 431, "workload": 94 },
+          { "teamCode": "N03C01", "totalCases": 321, "workload": 119.3 },
+          { "teamCode": "N03A01", "totalCases": 290, "workload": 79.5 },
+          { "teamCode": "N03E01", "totalCases": 478, "workload": 93 }
+        ]
+      }
+    }
+  ]
+}

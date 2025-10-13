@@ -1,0 +1,20 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "GET.regions",
+      "requiredScenarioState": "Started",
+      "request": { "method": "GET", "urlPath": "/regions" },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": [
+          { "code": "N03", "name": "Wales" },
+          { "code": "N07", "name": "London" },
+          { "code": "N51", "name": "North West Region" },
+          { "code": "N50", "name": "Greater Manchester" },
+          { "code": "N54", "name": "North East Region" }
+        ]
+      }
+    }
+  ]
+}
