@@ -1,0 +1,29 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "POST.team.{teamCode}.offenderManager.{offenderManagerCode}.case",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "POST",
+        "urlPathTemplate": "/team/{teamCode}/offenderManager/{offenderManagerCode}/case",
+        "pathParameters": {
+          "teamCode": {
+            "matches": ".*"
+          },
+          "offenderManagerCode": {
+            "matches": ".*"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {
+          "personManagerId": "f888c6c8-37fe-4d56-93aa-1cb7a13cee0e",
+          "eventManagerId": "2fc3d48c-3af1-4543-9390-335cedb214b1",
+          "requirementManagerIds": []
+        }
+      }
+    }
+  ]
+}

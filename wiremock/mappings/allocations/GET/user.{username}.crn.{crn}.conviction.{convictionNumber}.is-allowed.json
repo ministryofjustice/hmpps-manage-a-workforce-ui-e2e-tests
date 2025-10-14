@@ -1,0 +1,24 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "GET.user.{username}.crn.{crn}.conviction.{convictionNumber}.is-allowed",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "GET",
+        "urlPathTemplate": "/user/{username}/crn/{crn}/conviction/{convictionNumber}/is-allowed",
+        "pathParameters": {
+          "username": {
+            "matches": ".*"
+          },
+          "crn": {
+            "matches": ".*"
+          },
+          "convictionNumber": {
+            "matches": ".*"
+          }
+        }
+      },
+      "response": { "status": 200, "headers": { "Content-Type": "application/json;charset=UTF-8" }, "jsonBody": "Ok" }
+    }
+  ]
+}

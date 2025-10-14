@@ -1,7 +1,7 @@
 {
   "mappings": [
     {
-      "scenarioName": "team.choose-practitioner",
+      "scenarioName": "GET.team.choose-practitioner",
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
@@ -16,13 +16,13 @@
         "status": 200,
         "headers": { "Content-Type": "application/json;charset=UTF-8" },
         "jsonBody": {
-          "crn": "X960731",
-          "name": { "forename": "Viola", "middleName": "", "surname": "Heller", "combinedName": "Viola Heller" },
+          "crn": "X960926",
+          "name": { "forename": "Tricia", "middleName": "", "surname": "Langosh", "combinedName": "Tricia Langosh" },
           "tier": "D0",
-          "probationStatus": { "status": "PREVIOUSLY_MANAGED", "description": "Previously managed" },
+          "probationStatus": { "status": "NEW_TO_PROBATION", "description": "New to probation" },
           "communityPersonManager": {
-            "code": "N03A019",
-            "name": { "forename": "Derek", "surname": "Pint", "combinedName": "Derek Pint" },
+            "code": "N03A022",
+            "name": { "forename": "Marcus", "surname": "Aspin", "combinedName": "Marcus Aspin" },
             "grade": "PO",
             "teamCode": "N03F01",
             "isUnallocated": false
@@ -50,7 +50,7 @@
                 "email": "simulate-delivered@notifications.service.gov.uk",
                 "grade": "PO",
                 "workload": 0,
-                "casesPastWeek": 5,
+                "casesPastWeek": 7,
                 "communityCases": 0,
                 "custodyCases": 0
               },
@@ -153,7 +153,7 @@
                 "email": "simulate-delivered@notifications.service.gov.uk",
                 "grade": "PSO",
                 "workload": 0,
-                "casesPastWeek": 3,
+                "casesPastWeek": 1,
                 "communityCases": 0,
                 "custodyCases": 0
               },
