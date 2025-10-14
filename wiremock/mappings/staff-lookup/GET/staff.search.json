@@ -1,0 +1,155 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "GET.staff.search",
+      "requiredScenarioState": "Started",
+      "request": { "method": "GET", "urlPath": "/staff/search", "queryParameters": { "email": { "matches": ".*" } } },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": [
+            {
+                "firstName": "Wellington",
+                "lastName": "Kohler",
+                "email": "Wellington.Kohler@justice.gov.uk",
+                "fullName": "Wellington Kohler",
+                "jobTitle": null
+            },
+            {
+                "firstName": "Chasity",
+                "lastName": "Davis",
+                "email": "Chasity.Davis@@justice.gov.uk",
+                "fullName": "Chasity Davis",
+                "jobTitle": null
+            },
+            {
+                "firstName": "Alexandre",
+                "lastName": "Koelpin",
+                "email": "Alexandre.Koelpin@justice.gov.uk",
+                "fullName": "Alexandre Koelpin",
+                "jobTitle": null
+            },
+            {
+                "firstName": "Rosamond",
+                "lastName": "Ernser",
+                "email": "Rosamond.Ernser@justice.gov.uk",
+                "fullName": "Rosamond Ernser",
+                "jobTitle": null
+            },
+            {
+                "firstName": "Kelli",
+                "lastName": "Dibbert",
+                "email": "Kelli.Dibbert@justice.gov.uk",
+                "fullName": "Kelli Dibbert",
+                "jobTitle": null
+            },
+            {
+                "firstName": "Roy",
+                "lastName": "Dach",
+                "email": "Roy.Dach@justice.gov.uk",
+                "fullName": "Roy Dach",
+                "jobTitle": null
+            },
+            {
+                "firstName": "Kendra",
+                "lastName": "Kling",
+                "email": "Kendra.Kling@justice.gov.uk",
+                "fullName": "Kendra Kling",
+                "jobTitle": null
+            },
+            {
+                "firstName": "Uriah",
+                "lastName": "Kling",
+                "email": "Uriah.Kling@justice.gov.uk",
+                "fullName": "Uriah Kling",
+                "jobTitle": null
+            },
+            {
+                "firstName": "Aurelia",
+                "lastName": "Little",
+                "email": "Aurelia.Little@justice.gov.uk",
+                "fullName": "Aurelia Little",
+                "jobTitle": null
+            },
+            {
+                "firstName": "Percival",
+                "lastName": "Howe",
+                "email": "Percival.Howe@justice.gov.uk",
+                "fullName": "Percival Howe",
+                "jobTitle": null
+            },
+            {
+                "firstName": "Clare",
+                "lastName": "Ullrich",
+                "email": "Clare.Ullrich@justice.gov.uk",
+                "fullName": "Clare Ullrich",
+                "jobTitle": null
+            },
+            {
+                "firstName": "Elisabeth",
+                "lastName": "Schmidt",
+                "email": "Elisabeth.Schmidt@justice.gov.uk",
+                "fullName": "Elisabeth Schmidt",
+                "jobTitle": null
+            },
+            {
+                "firstName": "Marielle",
+                "lastName": "Cremin",
+                "email": "Marielle.Cremin@justice.gov.uk",
+                "fullName": "Marielle Cremin",
+                "jobTitle": null
+            },
+            {
+                "firstName": "Wilber",
+                "lastName": "Stiedemann",
+                "email": "Wilber.Stiedemann@justice.gov.uk",
+                "fullName": "Wilber Stiedemann",
+                "jobTitle": null
+            },
+            {
+                "firstName": "Edward",
+                "lastName": "Williamson",
+                "email": "Edward.Williamson@justice.gov.uk",
+                "fullName": "Edward Williamson",
+                "jobTitle": null
+            },
+            {
+                "firstName": "Trystan",
+                "lastName": "O'Hara",
+                "email": "Trystan.OHara@justice.gov.uk",
+                "fullName": "Trystan O'Hara",
+                "jobTitle": null
+            },
+            {
+                "firstName": "Assunta",
+                "lastName": "Spencer",
+                "email": "Assunta.Spencer@justice.gov.uk",
+                "fullName": "Assunta Spencer",
+                "jobTitle": null
+            },
+            {
+                "firstName": "Santa",
+                "lastName": "Boyle",
+                "email": "Santa.Boyle@justice.gov.uk",
+                "fullName": "Santa Boyle",
+                "jobTitle": null
+            },
+            {
+                "firstName": "Lela",
+                "lastName": "Stroman",
+                "email": "Lela.Stroman@justice.gov.uk",
+                "fullName": "Lela Stroman",
+                "jobTitle": null
+            },
+            {
+                "firstName": "Joannie",
+                "lastName": "Labadie",
+                "email": "Joannie.Labadie@justice.gov.uk",
+                "fullName": "Joannie Labadie",
+                "jobTitle": null
+            }
+        ]      
+      }
+    }
+  ]
+}
