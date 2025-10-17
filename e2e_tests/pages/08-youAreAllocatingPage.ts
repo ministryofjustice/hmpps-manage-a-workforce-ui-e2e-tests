@@ -1,6 +1,6 @@
 import { Page, expect } from '@playwright/test';
 
-import { commonLocators } from "./commonLocators";
+import { commonLocators } from "./common-functions";
 
 export class youAreAllocatingPage {
     constructor(private page: Page) { }
@@ -14,9 +14,8 @@ export class youAreAllocatingPage {
         } else {
             console.log('YouAreAllocatingPage - Skipping screenshot assertion in headed mode');
         }
-        await expect(page.getByRole('heading', { name: 'You\'re allocating' })).toBeVisible();
-        await commonLocators.verifyFilledTextArea(this.page);
-        await commonLocators.clickOnButtonByName(this.page, 'Continue');
-        await page.waitForTimeout(3000);
+        await commonLocators.verifyPageHeadingsByName(this.page, `You\'re allocating`);
+        await commonLocators.verifyFilledTextArea(page);
+        await commonLocators.clickOnButtonByName(this.page, 'Continue');    
     }
 }

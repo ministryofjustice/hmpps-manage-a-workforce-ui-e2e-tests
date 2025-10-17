@@ -1,6 +1,6 @@
 import { Page, expect } from "@playwright/test";
 
-import { commonLocators } from "./commonLocators";
+import { commonLocators } from "./common-functions";
 
 export class selectYourTeamsPage {
     constructor(public page: Page) { }
@@ -15,8 +15,7 @@ export class selectYourTeamsPage {
             console.log('selectYourTeamsPage - Skipping screenshot assertion in headed mode');
         }
         await commonLocators.verifyPageHeadingsByName(this.page, "Select your teams");
-        await commonLocators.selectCheckBoxByName(this.page, "A Team");
+        await commonLocators.selectCheckBoxByName(this.page, "NPS - Wrexham - Team 1");
         await commonLocators.clickOnButtonByName(this.page, "Continue");
-        await page.waitForTimeout(3000);
     }
 }

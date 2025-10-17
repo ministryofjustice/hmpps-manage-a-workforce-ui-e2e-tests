@@ -10,6 +10,5 @@ export function generateRandomParagraph(length: number = 100): string {
     }
     result += word + ' ';
   }
-
   return result.trim().slice(0, length);
 }

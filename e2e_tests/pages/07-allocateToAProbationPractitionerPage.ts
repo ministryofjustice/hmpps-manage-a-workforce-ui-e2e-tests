@@ -1,6 +1,6 @@
 import { Page, expect } from '@playwright/test';
 
-import { commonLocators } from "./commonLocators";
+import { commonLocators } from "./common-functions";
 
 export class allocateToAProbationPractitionerPage {
     constructor(private page: Page) { }
@@ -22,10 +22,9 @@ export class allocateToAProbationPractitionerPage {
             const isEnabled = await radio.isEnabled();
             if (isEnabled) {
                 await radio.check();
-                break; // Exit the loop after checking the first enabled radio button
+                break;
             }
         }
-
         const secondCell = page.locator('table tr').first().locator('td').nth(1);
         const nameOfThePractitioner = secondCell.locator('a');
 
@@ -35,9 +34,7 @@ export class allocateToAProbationPractitionerPage {
         } else {
             console.log('allocateToAProbationPractitionerPage - Allocate to practitioner link is not visible');
         }
-
-        await commonLocators.verifyFilledTextArea(this.page);
-        await commonLocators.clickOnButtonByName(this.page, 'Continue');
-        await page.waitForTimeout(3000);
+        await commonLocators.verifyFilledTextArea(page);
+        await commonLocators.clickOnButtonByName(this.page, 'Continue');       
     }
 }

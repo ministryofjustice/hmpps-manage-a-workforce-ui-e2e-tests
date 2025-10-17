@@ -1,6 +1,6 @@
 import { Page, expect } from "@playwright/test";
 
-import { commonLocators } from "./commonLocators";
+import { commonLocators } from "./common-functions";
 
 export class regionsPage {
     constructor(public page: Page) { }
@@ -15,8 +15,7 @@ export class regionsPage {
             console.log('regionsPage - Skipping screenshot assertion in headed mode');
         }
         await commonLocators.verifyPageHeadingsByName(this.page, "Select your region");
-        await commonLocators.selectRadioButtonByName(this.page, "A Region");
+        await commonLocators.selectRadioButtonByName(this.page, "Wales");
         await commonLocators.clickOnButtonByName(this.page, "Continue");
-        await page.waitForTimeout(3000);
     }
 }

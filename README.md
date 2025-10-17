@@ -33,7 +33,8 @@ This repository contains automated E2E UI tests for the hmpps-manage-a-workforce
     > pages - Implements the Page Object Model, encapsulating UI selectors and actions for maintainable test abstraction.
     > test-data - Stores test data inputs, payloads, and reusable datasets for parameterized scenarios.
     > tests - The core test suite with actual test cases(spec.ts files) validating UI, API, and end-to-end flows.
-    > utils - Hosts helper functions, custom assertions, and reusable logic to keep tests clean and DRY.  
+    > utils - Hosts helper functions, custom assertions, and reusable logic to keep tests clean and DRY.
+    > common-functions - Holds the common functions which can be reused across the suite.  
 
 ### Running the Tests:
 
@@ -91,5 +92,8 @@ This repository contains automated E2E UI tests for the hmpps-manage-a-workforce
 
 ### allure-results:
 
-This project captures allure report after the run/execution.(To view: npm run allure:serve)
-![alt text](image.png)
+This project captures allure report after the execution.(To view: npm run allure:serve)
+
+### tags:
+
+Used tags (regression, smoke, e2e, and JIRA ticket reference) -  to organize, filter, and selectively run tests by feature, priority, or environment for scalable automation.

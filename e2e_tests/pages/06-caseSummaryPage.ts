@@ -1,6 +1,6 @@
 import { Page, expect } from '@playwright/test';
 
-import { commonLocators } from "./commonLocators";
+import { commonLocators } from "./common-functions";
 
 export class caseSummaryPage {
     constructor(private page: Page) { }
@@ -17,6 +17,5 @@ export class caseSummaryPage {
         await commonLocators.verifyPageHeadingsByName(this.page, 'Summary');
         await commonLocators.fillTextInTextArea(this.page);
         await commonLocators.clickOnButtonByName(this.page, 'Continue');
-        await page.waitForTimeout(3000);
     }
 }

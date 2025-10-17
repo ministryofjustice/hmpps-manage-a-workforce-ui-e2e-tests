@@ -1,6 +1,6 @@
 import { Page, expect } from "@playwright/test";
 
-import { commonLocators } from "./commonLocators";
+import { commonLocators } from "./common-functions";
 
 export class unallocatedCasesPage {
     constructor(public page: Page) { }
@@ -16,16 +16,18 @@ export class unallocatedCasesPage {
         }
         await commonLocators.verifyPageHeadingsByName(this.page, "Unallocated cases");
 
-        const firstRow = page.locator('tbody.govuk-table__body > tr.govuk-table__row').first();
-        const firstCellLink = firstRow.locator('td.govuk-table__cell a').first();
+        const rows = page.locator('tbody.govuk-table__body > tr.govuk-table__row');
+        const rowCount = await rows.count();
 
-        if (await firstCellLink.isEnabled()) {
-            const personName = await firstCellLink.innerText();
-            console.log(`unallocatedCasesPage - Clicking on the case for person: ${personName}`);
-            await firstCellLink.click();
-        } else {
-            console.log(`unallocatedCasesPage - First cell link is not enabled — skipping click`);
+        for (let i = 0; i < rowCount; i++) {
+            const row = rows.nth(i);
+            const link = row.locator('td.govuk-table__cell a');
+
+            if (await link.count() > 0 && await link.isVisible() && await link.isEnabled()) {
+                await link.click();
+                console.log(`Clicked link in row ${i + 1}`);
+                break;
+            }
         }
-        await page.waitForTimeout(3000);
     }
 }

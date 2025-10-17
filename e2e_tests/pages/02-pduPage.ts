@@ -1,6 +1,6 @@
 import { Page, expect } from "@playwright/test";
 
-import { commonLocators } from "./commonLocators";
+import { commonLocators } from "./common-functions";
 
 export class pduPage {
     constructor(public page: Page) { }
@@ -15,8 +15,7 @@ export class pduPage {
             console.log('pduPage - Skipping screenshot assertion in headed mode');
         }
         await commonLocators.verifyPageHeadingsByName(this.page, "Select your probation");
-        await commonLocators.selectRadioButtonByName(this.page, "A Probation Delivery Unit");
+        await commonLocators.selectRadioButtonByName(this.page, "Cardiff and Vale");
         await commonLocators.clickOnButtonByName(this.page, "Continue");
-        await page.waitForTimeout(3000);
     }
 }
