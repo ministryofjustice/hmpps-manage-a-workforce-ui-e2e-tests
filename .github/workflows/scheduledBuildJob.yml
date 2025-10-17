@@ -1,4 +1,4 @@
-name: Scheduled Build Job e2e tests
+name: Scheduled Build Job UI e2e tests
 on:
   schedule:
     - cron: "36 6 * * MON-FRI"
@@ -43,15 +43,21 @@ jobs:
           done
           echo "App failed to start" && exit 1
 
-      #- name: Run e2e tests
-        #run: npm run test:regression:chrome
+      - name: Run e2e tests
+        run: npm run test:regression:chrome
 
-      #- name: Archive test results
-       # if: always()
-        #uses: actions/upload-artifact@v3
-        #with:
-         # name: e2e-test-results
-          #path: allure-results
+      - name: Install Allure CLI        
+        run: npm install -g allure-commandline
+
+      - name: Generate Allure HTML report        
+        run: allure generate allure-results --clean -o allure-report
+
+      - name: Archive test results
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+         name: e2e-test-results
+         path: allure-results
 
       - name: docker compose down
         if: always()

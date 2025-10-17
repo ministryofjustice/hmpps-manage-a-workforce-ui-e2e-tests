@@ -13,4 +13,3 @@ export async function resetScenario(requiredScenarioState:String) {
 export async function resetAllScenarios() {
   await axios.post(`${wiremockBase}/__admin/scenarios/reset`);
 }
-
