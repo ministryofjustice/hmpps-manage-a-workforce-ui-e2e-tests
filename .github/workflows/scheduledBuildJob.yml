@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout hmpps-manage-a-workforce-ui-e2e-tests 
         uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
       - name: Checkout manage-a-workforce-ui
         uses: actions/checkout@v5
         with:
@@ -42,6 +44,12 @@ jobs:
             sleep 5
           done
           echo "App failed to start" && exit 1
+
+      - name: Install fonts
+        run: sudo apt-get install -y fonts-noto fonts-freefont-ttf
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
 
       - name: Run e2e tests
         run: npm run test:regression:chrome
