@@ -56,8 +56,8 @@ jobs:
 
       - name: Install Allure CLI
         run: |
-          npm install -g allure-commandline
-          allure --version
+          npm install -g allure-commandline --save-dev
+          echo "$(npm bin -g)" >> $GITHUB_PATH
           
       - name: List Allure results
         run: ls -la allure-results
@@ -76,6 +76,13 @@ jobs:
         with:
          name: e2e-test-results
          path: allure-results
+
+      - name: Archive Allure HTML report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-html-report
+          path: allure-report   
 
       - name: docker compose down
         if: always()
