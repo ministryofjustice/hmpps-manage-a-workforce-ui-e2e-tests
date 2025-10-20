@@ -60,7 +60,10 @@ jobs:
           echo "$(npm bin -g)" >> $GITHUB_PATH
           
       - name: List Allure results
-        run: ls -la allure-results
+        run: ls -R allure-results
+
+      - name: Sample result.json content
+        run: head -n 20 allure-results/*.json || echo "No JSON files found"  
 
       - name: Generate Allure HTML report
         run: |
@@ -70,12 +73,15 @@ jobs:
           echo "No allure results found. Skipping report generation."
           fi
 
+      - name: List Allure HTML report contents
+        run: ls -R allure-report
+
       - name: Archive test results
         if: always()
         uses: actions/upload-artifact@v4
         with:
          name: e2e-test-results
-         path: allure-results/
+         path: allure-results
 
       - name: Archive Allure HTML report
         if: always()
