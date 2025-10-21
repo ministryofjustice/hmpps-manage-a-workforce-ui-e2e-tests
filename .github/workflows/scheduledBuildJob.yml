@@ -60,12 +60,6 @@ jobs:
 
       - name: Run e2e tests
         run: npm run test:regression:chrome
-          
-      - name: List Allure results
-        run: ls -R allure-results
-
-      - name: Sample result.json content
-        run: head -n 20 allure-results/*.json || echo "No JSON files found"  
 
       - name: Archive test results
         if: always()
