@@ -11,6 +11,25 @@ jobs:
     steps:
       - name: Checkout hmpps-manage-a-workforce-ui-e2e-tests 
         uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'    
+
+      - name: Cache node_modules
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install e2e dependencies
+        run: npm install        
+
       - name: Checkout manage-a-workforce-ui
         uses: actions/checkout@v5
         with:
@@ -18,13 +37,6 @@ jobs:
           path: manage-a-workforce-ui
           token: ${{ secrets.GITHUB_TOKEN }}
           ref: main
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '24'
-
-      - name: Install e2e dependencies
-        run: npm install
 
       - name: Start manage-a-workforce-ui
         run: |
@@ -43,14 +55,11 @@ jobs:
           done
           echo "App failed to start" && exit 1
 
+      - name: Install Chromium browser
+        run: npx playwright install chromium
+
       - name: Run e2e tests
         run: npm run test:regression:chrome
-
-      - name: Install Allure CLI        
-        run: npm install -g allure-commandline
-
-      - name: Generate Allure HTML report        
-        run: allure generate allure-results --clean -o allure-report
 
       - name: Archive test results
         if: always()
