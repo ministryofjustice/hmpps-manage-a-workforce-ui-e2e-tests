@@ -1,0 +1,41 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "GET.allocated.crn.{crn}",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "GET",
+        "urlPathTemplate": "/allocated/crn/{crn}",
+        "pathParameters": {
+          "crn": {
+            "matches": ".*"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {
+          "crn": "X960926",
+          "name": {
+            "forename": "John",
+            "middleName": "A",
+            "surname": "Smith"
+          },
+          "dateOfBirth": "1996-09-26",
+          "manager": {
+            "code": "A1234",
+            "name": {
+              "forename": "Manager",
+              "middleName": "B",
+              "surname": "Person"
+            },
+            "teamCode": "T5678",
+            "grade": "PO",
+            "allocated": true
+          }
+        }
+      }
+    }
+  ]
+}
