@@ -1,0 +1,71 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "GET.cases.allocated.{crn}",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "GET",
+        "urlPathTemplate": "/cases/allocated/{crn}",
+        "pathParameters": {
+          "crn": {
+            "matches": ".*"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {
+          "crn": "X960926",
+          "name": "John M Smith",
+          "pncNumber" : "2000/123456A",
+          "gender": "Male",
+          "dateOfBirth": "1996-09-26",
+          "age": 27,
+          "tier": "A3",
+          "address": {
+            "buildingName": "The Manor",
+            "addressNumber": "10",
+            "streetName": "High Street",
+            "town": "Anytown",
+            "county": "Anyshire",
+            "postcode": "AA1 1AA",
+            "noFixedAbode": false,
+            "typeVerified": true,
+            "typeDescription": "Home Address",
+            "startDate": "2020-01-01"
+          },
+          "nextAppointmentDate": "2024-08-15T10:30:00",
+          "outOfAreaTransfer": false,
+          "activeEvents": [
+            {
+              "number": 1,
+              "failureToComplyCount": 0,
+              "failureToComplyStartDate": "2024-05-01",
+              "sentence": {
+                "description": "12 months community order",
+                "length": "12 months",
+                "startDate": "2024-01-15",
+                "endDate": "2025-01-14"
+              },
+              "offences": [
+                {
+                  "mainCategory": "Theft",
+                  "subCategory": "Shoplifting",
+                  "mainOffence": true
+                }
+              ],
+              "requirements": [
+                {
+                  "mainCategory": "Unpaid work",
+                  "subCategory": "Community Payback",
+                  "length": "100 hours"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
