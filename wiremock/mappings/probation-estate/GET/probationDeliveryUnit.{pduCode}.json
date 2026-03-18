@@ -1,16 +1,12 @@
 {
   "mappings": [
     {
-      "scenarioName": "GET.probationDeliveryUnit.{pduCode}",
+      "scenarioName": "GET.probationDeliveryUnit.__pduCode__",
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPathTemplate": "/probationDeliveryUnit/{pduCode}",
-        "pathParameters": {
-          "pduCode": {
-            "matches": ".*"
-          }
-        }
+        "pathParameters": { "pduCode": { "matches": ".*" } }
       },
       "response": {
         "status": 200,

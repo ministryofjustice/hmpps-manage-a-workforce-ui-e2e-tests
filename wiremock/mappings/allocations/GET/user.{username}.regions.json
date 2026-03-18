@@ -1,16 +1,12 @@
 {
   "mappings": [
     {
-      "scenarioName": "GET.user.{username}.regions",
+      "scenarioName": "GET.user.__username__.regions",
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPathTemplate": "/user/{username}/regions",
-        "pathParameters": {
-          "username": {
-            "matches": ".*"
-          }
-        }
+        "pathParameters": { "username": { "matches": ".*" } }
       },
       "response": {
         "status": 200,

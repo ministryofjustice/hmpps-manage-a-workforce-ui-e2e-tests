@@ -1,18 +1,14 @@
 {
   "mappings": [
     {
-      "scenarioName": "GET.cases.unallocated.{crn}.record.exclude-conviction.{convictionNumber}",
+      "scenarioName": "GET.cases.unallocated.__crn__.record.exclude-conviction.__convictionNumber__",
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPathTemplate": "/cases/unallocated/{crn}/record/exclude-conviction/{convictionNumber}",
         "pathParameters": {
-          "crn": {
-            "matches": ".*"
-          },
-          "convictionNumber": {
-            "matches": ".*"
-          }
+          "crn": { "matches": ".*" },
+          "convictionNumber": { "matches": ".*" }
         }
       },
       "response": {

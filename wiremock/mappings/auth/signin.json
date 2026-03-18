@@ -3,24 +3,14 @@
     {
       "scenarioName": "favicon",
       "requiredScenarioState": "Started",
-      "request": {
-        "method": "GET",
-        "urlPattern": "/favicon.ico"
-      },
-      "response": {
-        "status": 200
-      }
+      "request": { "method": "GET", "urlPattern": "/favicon.ico" },
+      "response": { "status": 200 }
     },
     {
       "scenarioName": "ping",
       "requiredScenarioState": "Started",
-      "request": {
-        "method": "GET",
-        "urlPattern": "/health/ping"
-      },
-      "response": {
-        "status": 200
-      }
+      "request": { "method": "GET", "urlPattern": "/health/ping" },
+      "response": { "status": 200 }
     },
     {
       "scenarioName": "redirect",
@@ -41,15 +31,10 @@
     {
       "scenarioName": "signout",
       "requiredScenarioState": "Started",
-      "request": {
-        "method": "GET",
-        "urlPattern": "/sign-out.*"
-      },
+      "request": { "method": "GET", "urlPattern": "/sign-out.*" },
       "response": {
         "status": 200,
-        "headers": {
-          "Content-Type": "text/html"
-        },
+        "headers": { "Content-Type": "text/html" },
         "body": "<html><body>SignIn page<h1>Sign in</h1></body></html>"
       }
     },
@@ -57,10 +42,7 @@
       "scenarioName": "token",
       "requiredScenarioState": "Started",
       "id": "ddd92112-5010-4dc3-8f5b-57b4f15d02d5",
-      "request": {
-        "urlPattern": "/oauth/token",
-        "method": "POST"
-      },
+      "request": { "urlPattern": "/oauth/token", "method": "POST" },
       "response": {
         "status": 200,
         "jsonBody": {

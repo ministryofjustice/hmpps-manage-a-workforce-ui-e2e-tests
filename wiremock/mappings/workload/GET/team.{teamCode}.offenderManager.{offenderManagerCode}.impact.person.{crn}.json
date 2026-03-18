@@ -1,21 +1,15 @@
 {
   "mappings": [
     {
-      "scenarioName": "GET.team.{teamCode}.offenderManager.{offenderManagerCode}.impact.person.{crn}",
+      "scenarioName": "GET.team.__teamCode__.offenderManager.__offenderManagerCode__.impact.person.__crn__",
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPathTemplate": "/team/{teamCode}/offenderManager/{offenderManagerCode}/impact/person/{crn}",
         "pathParameters": {
-          "teamCode": {
-            "matches": ".*"
-          },
-          "offenderManagerCode": {
-            "matches": ".*"
-          },
-          "crn": {
-            "matches": ".*"
-          }
+          "teamCode": { "matches": ".*" },
+          "offenderManagerCode": { "matches": ".*" },
+          "crn": { "matches": ".*" }
         }
       },
       "response": {
@@ -24,10 +18,19 @@
         "jsonBody": {
           "capacity": 0,
           "potentialCapacity": 1.3,
-          "name": { "forename": "Tricia", "middleName": "", "surname": "Langosh", "combinedName": "Tricia Langosh" },
+          "name": {
+            "forename": "Tricia",
+            "middleName": "",
+            "surname": "Langosh",
+            "combinedName": "Tricia Langosh"
+          },
           "staff": {
             "code": "N03A020",
-            "name": { "forename": "Coco", "surname": "Pint", "combinedName": "Coco Pint" },
+            "name": {
+              "forename": "Coco",
+              "surname": "Pint",
+              "combinedName": "Coco Pint"
+            },
             "email": "simulate-delivered@notifications.service.gov.uk",
             "grade": "PO"
           },

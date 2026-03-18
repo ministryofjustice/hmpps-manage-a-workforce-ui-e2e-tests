@@ -1,15 +1,10 @@
 {
-    "mappings": [
+  "mappings": [
     {
-      "request": {
-        "method": "GET",
-        "urlPath": "/users/me"
-      },
+      "request": { "method": "GET", "urlPath": "/users/me" },
       "response": {
         "status": 200,
-        "headers": {
-          "Content-Type": "application/json;charset=UTF-8"
-        },
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
         "jsonBody": {
           "staffId": 231232,
           "username": "USER1",
@@ -20,4 +15,3 @@
     }
   ]
 }
-

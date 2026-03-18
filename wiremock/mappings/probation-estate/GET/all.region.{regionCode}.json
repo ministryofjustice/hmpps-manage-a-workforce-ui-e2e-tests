@@ -1,16 +1,12 @@
 {
   "mappings": [
     {
-      "scenarioName": "GET.all.region.{regionCode}",
+      "scenarioName": "GET.all.region.__regionCode__",
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPathTemplate": "/all/region/{regionCode}",
-        "pathParameters": {
-          "regionCode": {
-            "matches": ".*"
-          }
-        }
+        "pathParameters": { "regionCode": { "matches": ".*" } }
       },
       "response": {
         "status": 200,
@@ -25,7 +21,10 @@
                   { "code": "N03T01", "name": "Vale - Team" },
                   { "code": "N03S0D", "name": "NPS - Cardiff - IOM Team" },
                   { "code": "N03T0D", "name": "NPS - Vale - IOM Team" },
-                  { "code": "N03UA4", "name": "NPS - Awaiting Allocation South Wales 1" }
+                  {
+                    "code": "N03UA4",
+                    "name": "NPS - Awaiting Allocation South Wales 1"
+                  }
                 ]
               }
             }
@@ -67,9 +66,18 @@
               "WPTGWT": {
                 "name": "Gwent",
                 "teams": [
-                  { "code": "N03CT1", "name": "NPS - Caerphilly\\Blaenau Gwent Team 1" },
-                  { "code": "N03CT2", "name": "NPS - Caerphilly\\Blaenau Gwent Team 2" },
-                  { "code": "N03UA5", "name": "NPS - Awaiting Allocation Gwent" },
+                  {
+                    "code": "N03CT1",
+                    "name": "NPS - Caerphilly\\Blaenau Gwent Team 1"
+                  },
+                  {
+                    "code": "N03CT2",
+                    "name": "NPS - Caerphilly\\Blaenau Gwent Team 2"
+                  },
+                  {
+                    "code": "N03UA5",
+                    "name": "NPS - Awaiting Allocation Gwent"
+                  },
                   { "code": "N03Y01", "name": "NPS - Newport - Team 1" },
                   { "code": "N03Z02", "name": "NPS - East Gwent Team" },
                   { "code": "N03Z0D", "name": "NPS - Gwent - IOM Team" }
