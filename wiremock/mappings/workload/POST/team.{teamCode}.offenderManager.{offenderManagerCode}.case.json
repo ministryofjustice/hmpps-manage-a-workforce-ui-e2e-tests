@@ -1,18 +1,14 @@
 {
   "mappings": [
     {
-      "scenarioName": "POST.team.{teamCode}.offenderManager.{offenderManagerCode}.case",
+      "scenarioName": "POST.team.__teamCode__.offenderManager.__offenderManagerCode__.case",
       "requiredScenarioState": "Started",
       "request": {
         "method": "POST",
         "urlPathTemplate": "/team/{teamCode}/offenderManager/{offenderManagerCode}/case",
         "pathParameters": {
-          "teamCode": {
-            "matches": ".*"
-          },
-          "offenderManagerCode": {
-            "matches": ".*"
-          }
+          "teamCode": { "matches": ".*" },
+          "offenderManagerCode": { "matches": ".*" }
         }
       },
       "response": {

@@ -1,18 +1,14 @@
 {
   "mappings": [
     {
-      "scenarioName": "GET.cases.unallocated.{crn}.convictions.{convictionNumber}.risks",
+      "scenarioName": "GET.cases.unallocated.__crn__.convictions.__convictionNumber__.risks",
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPathTemplate": "/cases/unallocated/{crn}/convictions/{convictionNumber}/risks",
         "pathParameters": {
-          "crn": {
-            "matches": ".*"
-          },
-          "convictionNumber": {
-            "matches": ".*"
-          }
+          "crn": { "matches": ".*" },
+          "convictionNumber": { "matches": ".*" }
         }
       },
       "response": {
@@ -24,8 +20,16 @@
           "tier": "D0",
           "activeRegistrations": [],
           "inactiveRegistrations": [],
-          "roshRisk": { "overallRisk": "NOT_FOUND", "assessedOn": null, "riskInCommunity": {} },
-          "rsr": { "level": "NOT_FOUND", "lastUpdatedOn": null, "percentage": -2147483648 },
+          "roshRisk": {
+            "overallRisk": "NOT_FOUND",
+            "assessedOn": null,
+            "riskInCommunity": {}
+          },
+          "rsr": {
+            "level": "NOT_FOUND",
+            "lastUpdatedOn": null,
+            "percentage": -2147483648
+          },
           "ogrs": null,
           "convictionNumber": 2
         }

@@ -3,7 +3,11 @@
     {
       "scenarioName": "GET.team.search",
       "requiredScenarioState": "Started",
-      "request": { "method": "GET", "urlPath": "/team/search", "queryParameters": { "codes": { "matches": ".*" } } },
+      "request": {
+        "method": "GET",
+        "urlPath": "/team/search",
+        "queryParameters": { "codes": { "matches": ".*" } }
+      },
       "response": {
         "status": 200,
         "headers": { "Content-Type": "application/json;charset=UTF-8" },

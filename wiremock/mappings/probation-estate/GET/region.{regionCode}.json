@@ -1,16 +1,12 @@
 {
   "mappings": [
     {
-      "scenarioName": "GET.region.{regionCode}",
+      "scenarioName": "GET.region.__regionCode__",
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPathTemplate": "/region/{regionCode}",
-        "pathParameters": {
-          "regionCode": {
-            "matches": ".*"
-          }
-        }
+        "pathParameters": { "regionCode": { "matches": ".*" } }
       },
       "response": {
         "status": 200,

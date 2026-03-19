@@ -1,16 +1,12 @@
 {
   "mappings": [
     {
-      "scenarioName": "GET.users.{username}.preferences.allocation-pdu",
+      "scenarioName": "GET.users.__username__.preferences.allocation-pdu",
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPathTemplate": "/users/{username}/preferences/allocation-pdu",
-        "pathParameters": {
-          "username": {
-            "matches": ".*"
-          }
-        }
+        "pathParameters": { "username": { "matches": ".*" } }
       },
       "response": {
         "status": 200,

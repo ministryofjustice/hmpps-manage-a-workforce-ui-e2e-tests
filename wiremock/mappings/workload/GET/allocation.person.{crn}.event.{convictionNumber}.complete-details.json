@@ -1,18 +1,14 @@
 {
   "mappings": [
     {
-      "scenarioName": "GET.allocation.person.{crn}.event.{convictionNumber}.complete-details",
+      "scenarioName": "GET.allocation.person.__crn__.event.__convictionNumber__.complete-details",
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPathTemplate": "/allocation/person/{crn}/event/{convictionNumber}/complete-details",
         "pathParameters": {
-          "crn": {
-            "matches": ".*"
-          },
-          "convictionNumber": {
-            "matches": ".*"
-          }
+          "crn": { "matches": ".*" },
+          "convictionNumber": { "matches": ".*" }
         }
       },
       "response": {
@@ -20,12 +16,21 @@
         "headers": { "Content-Type": "application/json;charset=UTF-8" },
         "jsonBody": {
           "crn": "X960926",
-          "name": { "forename": "Tricia", "middleName": "", "surname": "Langosh", "combinedName": "Tricia Langosh" },
+          "name": {
+            "forename": "Tricia",
+            "middleName": "",
+            "surname": "Langosh",
+            "combinedName": "Tricia Langosh"
+          },
           "type": "COMMUNITY",
           "initialAppointment": { "date": "2025-10-04" },
           "staff": {
             "code": "N03A020",
-            "name": { "forename": "Coco", "surname": "Pint", "combinedName": "Coco Pint" },
+            "name": {
+              "forename": "Coco",
+              "surname": "Pint",
+              "combinedName": "Coco Pint"
+            },
             "email": "simulate-delivered@notifications.service.gov.uk",
             "grade": "PO"
           }

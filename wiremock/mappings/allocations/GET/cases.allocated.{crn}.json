@@ -1,16 +1,12 @@
 {
   "mappings": [
     {
-      "scenarioName": "GET.cases.allocated.{crn}",
+      "scenarioName": "GET.cases.allocated.__crn__",
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPathTemplate": "/cases/allocated/{crn}",
-        "pathParameters": {
-          "crn": {
-            "matches": ".*"
-          }
-        }
+        "pathParameters": { "crn": { "matches": ".*" } }
       },
       "response": {
         "status": 200,
@@ -18,7 +14,7 @@
         "jsonBody": {
           "crn": "X960926",
           "name": "John M Smith",
-          "pncNumber" : "2000/123456A",
+          "pncNumber": "2000/123456A",
           "gender": "Male",
           "dateOfBirth": "1996-09-26",
           "age": 27,

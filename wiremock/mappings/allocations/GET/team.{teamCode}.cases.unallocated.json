@@ -1,16 +1,12 @@
 {
   "mappings": [
     {
-      "scenarioName": "GET.team.{teamCode}.cases.unallocated",
+      "scenarioName": "GET.team.__teamCode__.cases.unallocated",
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPathTemplate": "/team/{teamCode}/cases/unallocated",
-        "pathParameters": {
-          "teamCode": {
-            "matches": ".*"
-          }
-        }
+        "pathParameters": { "teamCode": { "matches": ".*" } }
       },
       "response": {
         "status": 200,
@@ -25,7 +21,12 @@
             "initialAppointment": {
               "date": "2025-04-17",
               "staff": {
-                "name": { "forename": "Test", "middleName": "", "surname": "User", "combinedName": "Test User" }
+                "name": {
+                  "forename": "Test",
+                  "middleName": "",
+                  "surname": "User",
+                  "combinedName": "Test User"
+                }
               }
             },
             "status": "New to probation",
@@ -45,7 +46,12 @@
             "initialAppointment": {
               "date": "2025-04-18",
               "staff": {
-                "name": { "forename": "Paul", "middleName": "", "surname": "McPhee", "combinedName": "Paul McPhee" }
+                "name": {
+                  "forename": "Paul",
+                  "middleName": "",
+                  "surname": "McPhee",
+                  "combinedName": "Paul McPhee"
+                }
               }
             },
             "status": "New to probation",
@@ -65,7 +71,12 @@
             "initialAppointment": {
               "date": "2025-04-23",
               "staff": {
-                "name": { "forename": "Natalie", "middleName": "", "surname": "Wood", "combinedName": "Natalie Wood" }
+                "name": {
+                  "forename": "Natalie",
+                  "middleName": "",
+                  "surname": "Wood",
+                  "combinedName": "Natalie Wood"
+                }
               }
             },
             "status": "New to probation",
@@ -85,7 +96,12 @@
             "initialAppointment": {
               "date": "2025-04-24",
               "staff": {
-                "name": { "forename": "Paul", "middleName": "", "surname": "McPhee", "combinedName": "Paul McPhee" }
+                "name": {
+                  "forename": "Paul",
+                  "middleName": "",
+                  "surname": "McPhee",
+                  "combinedName": "Paul McPhee"
+                }
               }
             },
             "status": "New to probation",
@@ -131,7 +147,12 @@
             "initialAppointment": {
               "date": "2025-06-18",
               "staff": {
-                "name": { "forename": "Natalie", "middleName": "", "surname": "Wood", "combinedName": "Natalie Wood" }
+                "name": {
+                  "forename": "Natalie",
+                  "middleName": "",
+                  "surname": "Wood",
+                  "combinedName": "Natalie Wood"
+                }
               }
             },
             "status": "New to probation",
@@ -151,7 +172,12 @@
             "initialAppointment": {
               "date": "2025-10-04",
               "staff": {
-                "name": { "forename": "Paul", "middleName": "", "surname": "McPhee", "combinedName": "Paul McPhee" }
+                "name": {
+                  "forename": "Paul",
+                  "middleName": "",
+                  "surname": "McPhee",
+                  "combinedName": "Paul McPhee"
+                }
               }
             },
             "status": "New to probation",
@@ -171,7 +197,12 @@
             "initialAppointment": {
               "date": "2025-10-04",
               "staff": {
-                "name": { "forename": "Carlo", "middleName": "", "surname": "Veo", "combinedName": "Carlo Veo" }
+                "name": {
+                  "forename": "Carlo",
+                  "middleName": "",
+                  "surname": "Veo",
+                  "combinedName": "Carlo Veo"
+                }
               }
             },
             "status": "Previously managed",
@@ -217,7 +248,12 @@
             "initialAppointment": {
               "date": "2025-10-04",
               "staff": {
-                "name": { "forename": "Rose", "middleName": "", "surname": "Brandle", "combinedName": "Rose Brandle" }
+                "name": {
+                  "forename": "Rose",
+                  "middleName": "",
+                  "surname": "Brandle",
+                  "combinedName": "Rose Brandle"
+                }
               }
             },
             "status": "New to probation",
@@ -237,7 +273,12 @@
             "initialAppointment": {
               "date": "2025-10-04",
               "staff": {
-                "name": { "forename": "Marcus", "middleName": "", "surname": "Aspin", "combinedName": "Marcus Aspin" }
+                "name": {
+                  "forename": "Marcus",
+                  "middleName": "",
+                  "surname": "Aspin",
+                  "combinedName": "Marcus Aspin"
+                }
               }
             },
             "status": "Previously managed",
@@ -258,7 +299,12 @@
             "initialAppointment": {
               "date": "2025-10-04",
               "staff": {
-                "name": { "forename": "Carlo", "middleName": "", "surname": "Veo", "combinedName": "Carlo Veo" }
+                "name": {
+                  "forename": "Carlo",
+                  "middleName": "",
+                  "surname": "Veo",
+                  "combinedName": "Carlo Veo"
+                }
               }
             },
             "status": "New to probation",
@@ -278,7 +324,12 @@
             "initialAppointment": {
               "date": "2025-10-04",
               "staff": {
-                "name": { "forename": "Paul", "middleName": "", "surname": "McPhee", "combinedName": "Paul McPhee" }
+                "name": {
+                  "forename": "Paul",
+                  "middleName": "",
+                  "surname": "McPhee",
+                  "combinedName": "Paul McPhee"
+                }
               }
             },
             "status": "New to probation",
@@ -324,7 +375,12 @@
             "initialAppointment": {
               "date": "2025-10-04",
               "staff": {
-                "name": { "forename": "Robert", "middleName": "", "surname": "King", "combinedName": "Robert King" }
+                "name": {
+                  "forename": "Robert",
+                  "middleName": "",
+                  "surname": "King",
+                  "combinedName": "Robert King"
+                }
               }
             },
             "status": "New to probation",
@@ -369,7 +425,12 @@
             "initialAppointment": {
               "date": "2025-10-04",
               "staff": {
-                "name": { "forename": "MPOP", "middleName": "", "surname": "TestUser", "combinedName": "MPOP TestUser" }
+                "name": {
+                  "forename": "MPOP",
+                  "middleName": "",
+                  "surname": "TestUser",
+                  "combinedName": "MPOP TestUser"
+                }
               }
             },
             "status": "Previously managed",
@@ -390,7 +451,12 @@
             "initialAppointment": {
               "date": "2025-10-04",
               "staff": {
-                "name": { "forename": "Derek", "middleName": "", "surname": "Pint", "combinedName": "Derek Pint" }
+                "name": {
+                  "forename": "Derek",
+                  "middleName": "",
+                  "surname": "Pint",
+                  "combinedName": "Derek Pint"
+                }
               }
             },
             "status": "New to probation",
@@ -435,7 +501,12 @@
             "initialAppointment": {
               "date": "2025-10-04",
               "staff": {
-                "name": { "forename": "Coco", "middleName": "", "surname": "Pint", "combinedName": "Coco Pint" }
+                "name": {
+                  "forename": "Coco",
+                  "middleName": "",
+                  "surname": "Pint",
+                  "combinedName": "Coco Pint"
+                }
               }
             },
             "status": "Previously managed",
@@ -456,7 +527,12 @@
             "initialAppointment": {
               "date": "2025-10-04",
               "staff": {
-                "name": { "forename": "Carlo", "middleName": "", "surname": "Veo", "combinedName": "Carlo Veo" }
+                "name": {
+                  "forename": "Carlo",
+                  "middleName": "",
+                  "surname": "Veo",
+                  "combinedName": "Carlo Veo"
+                }
               }
             },
             "status": "New to probation",
@@ -476,7 +552,12 @@
             "initialAppointment": {
               "date": "2025-10-04",
               "staff": {
-                "name": { "forename": "Derek", "middleName": "", "surname": "Pint", "combinedName": "Derek Pint" }
+                "name": {
+                  "forename": "Derek",
+                  "middleName": "",
+                  "surname": "Pint",
+                  "combinedName": "Derek Pint"
+                }
               }
             },
             "status": "Previously managed",
@@ -497,7 +578,12 @@
             "initialAppointment": {
               "date": "2025-10-07",
               "staff": {
-                "name": { "forename": "Natalie", "middleName": "", "surname": "Wood", "combinedName": "Natalie Wood" }
+                "name": {
+                  "forename": "Natalie",
+                  "middleName": "",
+                  "surname": "Wood",
+                  "combinedName": "Natalie Wood"
+                }
               }
             },
             "status": "New to probation",
@@ -517,7 +603,12 @@
             "initialAppointment": {
               "date": "2025-10-07",
               "staff": {
-                "name": { "forename": "Rose", "middleName": "", "surname": "Brandle", "combinedName": "Rose Brandle" }
+                "name": {
+                  "forename": "Rose",
+                  "middleName": "",
+                  "surname": "Brandle",
+                  "combinedName": "Rose Brandle"
+                }
               }
             },
             "status": "New to probation",
@@ -537,7 +628,12 @@
             "initialAppointment": {
               "date": "2025-10-07",
               "staff": {
-                "name": { "forename": "Greg", "middleName": "", "surname": "Hawkins", "combinedName": "Greg Hawkins" }
+                "name": {
+                  "forename": "Greg",
+                  "middleName": "",
+                  "surname": "Hawkins",
+                  "combinedName": "Greg Hawkins"
+                }
               }
             },
             "status": "Previously managed",
@@ -558,7 +654,12 @@
             "initialAppointment": {
               "date": "2025-10-07",
               "staff": {
-                "name": { "forename": "Paul", "middleName": "", "surname": "McPhee", "combinedName": "Paul McPhee" }
+                "name": {
+                  "forename": "Paul",
+                  "middleName": "",
+                  "surname": "McPhee",
+                  "combinedName": "Paul McPhee"
+                }
               }
             },
             "status": "New to probation",
@@ -654,7 +755,12 @@
             "initialAppointment": {
               "date": "2025-10-08",
               "staff": {
-                "name": { "forename": "Greg", "middleName": "", "surname": "Hawkins", "combinedName": "Greg Hawkins" }
+                "name": {
+                  "forename": "Greg",
+                  "middleName": "",
+                  "surname": "Hawkins",
+                  "combinedName": "Greg Hawkins"
+                }
               }
             },
             "status": "New to probation",
@@ -674,7 +780,12 @@
             "initialAppointment": {
               "date": "2025-10-08",
               "staff": {
-                "name": { "forename": "Robert", "middleName": "", "surname": "King", "combinedName": "Robert King" }
+                "name": {
+                  "forename": "Robert",
+                  "middleName": "",
+                  "surname": "King",
+                  "combinedName": "Robert King"
+                }
               }
             },
             "status": "Previously managed",
@@ -745,7 +856,12 @@
             "initialAppointment": {
               "date": "2025-10-09",
               "staff": {
-                "name": { "forename": "Natalie", "middleName": "", "surname": "Wood", "combinedName": "Natalie Wood" }
+                "name": {
+                  "forename": "Natalie",
+                  "middleName": "",
+                  "surname": "Wood",
+                  "combinedName": "Natalie Wood"
+                }
               }
             },
             "status": "New to probation",
@@ -765,7 +881,12 @@
             "initialAppointment": {
               "date": "2025-10-09",
               "staff": {
-                "name": { "forename": "Gary", "middleName": "", "surname": "Reid", "combinedName": "Gary Reid" }
+                "name": {
+                  "forename": "Gary",
+                  "middleName": "",
+                  "surname": "Reid",
+                  "combinedName": "Gary Reid"
+                }
               }
             },
             "status": "New to probation",
@@ -785,7 +906,12 @@
             "initialAppointment": {
               "date": "2025-10-09",
               "staff": {
-                "name": { "forename": "Paul", "middleName": "", "surname": "McPhee", "combinedName": "Paul McPhee" }
+                "name": {
+                  "forename": "Paul",
+                  "middleName": "",
+                  "surname": "McPhee",
+                  "combinedName": "Paul McPhee"
+                }
               }
             },
             "status": "Previously managed",
@@ -831,7 +957,12 @@
             "initialAppointment": {
               "date": "2025-10-09",
               "staff": {
-                "name": { "forename": "Paul", "middleName": "", "surname": "McPhee", "combinedName": "Paul McPhee" }
+                "name": {
+                  "forename": "Paul",
+                  "middleName": "",
+                  "surname": "McPhee",
+                  "combinedName": "Paul McPhee"
+                }
               }
             },
             "status": "New to probation",
@@ -877,7 +1008,12 @@
             "initialAppointment": {
               "date": "2025-10-09",
               "staff": {
-                "name": { "forename": "Carlo", "middleName": "", "surname": "Veo", "combinedName": "Carlo Veo" }
+                "name": {
+                  "forename": "Carlo",
+                  "middleName": "",
+                  "surname": "Veo",
+                  "combinedName": "Carlo Veo"
+                }
               }
             },
             "status": "New to probation",
@@ -897,7 +1033,12 @@
             "initialAppointment": {
               "date": "2025-10-09",
               "staff": {
-                "name": { "forename": "Test", "middleName": "", "surname": "User", "combinedName": "Test User" }
+                "name": {
+                  "forename": "Test",
+                  "middleName": "",
+                  "surname": "User",
+                  "combinedName": "Test User"
+                }
               }
             },
             "status": "New to probation",
@@ -968,7 +1109,12 @@
             "initialAppointment": {
               "date": "2025-10-09",
               "staff": {
-                "name": { "forename": "Natalie", "middleName": "", "surname": "Wood", "combinedName": "Natalie Wood" }
+                "name": {
+                  "forename": "Natalie",
+                  "middleName": "",
+                  "surname": "Wood",
+                  "combinedName": "Natalie Wood"
+                }
               }
             },
             "status": "New to probation",
@@ -988,7 +1134,12 @@
             "initialAppointment": {
               "date": "2025-10-09",
               "staff": {
-                "name": { "forename": "Coco", "middleName": "", "surname": "Pint", "combinedName": "Coco Pint" }
+                "name": {
+                  "forename": "Coco",
+                  "middleName": "",
+                  "surname": "Pint",
+                  "combinedName": "Coco Pint"
+                }
               }
             },
             "status": "Previously managed",
@@ -1035,7 +1186,12 @@
             "initialAppointment": {
               "date": "2025-10-10",
               "staff": {
-                "name": { "forename": "Rose", "middleName": "", "surname": "Brandle", "combinedName": "Rose Brandle" }
+                "name": {
+                  "forename": "Rose",
+                  "middleName": "",
+                  "surname": "Brandle",
+                  "combinedName": "Rose Brandle"
+                }
               }
             },
             "status": "New to probation",
@@ -1055,7 +1211,12 @@
             "initialAppointment": {
               "date": "2025-10-10",
               "staff": {
-                "name": { "forename": "Derek", "middleName": "", "surname": "Pint", "combinedName": "Derek Pint" }
+                "name": {
+                  "forename": "Derek",
+                  "middleName": "",
+                  "surname": "Pint",
+                  "combinedName": "Derek Pint"
+                }
               }
             },
             "status": "New to probation",
@@ -1101,7 +1262,12 @@
             "initialAppointment": {
               "date": "2025-10-11",
               "staff": {
-                "name": { "forename": "Coco", "middleName": "", "surname": "Pint", "combinedName": "Coco Pint" }
+                "name": {
+                  "forename": "Coco",
+                  "middleName": "",
+                  "surname": "Pint",
+                  "combinedName": "Coco Pint"
+                }
               }
             },
             "status": "New to probation",
@@ -1121,7 +1287,12 @@
             "initialAppointment": {
               "date": "2025-10-11",
               "staff": {
-                "name": { "forename": "Paul", "middleName": "", "surname": "McPhee", "combinedName": "Paul McPhee" }
+                "name": {
+                  "forename": "Paul",
+                  "middleName": "",
+                  "surname": "McPhee",
+                  "combinedName": "Paul McPhee"
+                }
               }
             },
             "status": "New to probation",
@@ -1167,7 +1338,12 @@
             "initialAppointment": {
               "date": "2025-10-11",
               "staff": {
-                "name": { "forename": "Robert", "middleName": "", "surname": "King", "combinedName": "Robert King" }
+                "name": {
+                  "forename": "Robert",
+                  "middleName": "",
+                  "surname": "King",
+                  "combinedName": "Robert King"
+                }
               }
             },
             "status": "New to probation",
@@ -1187,7 +1363,12 @@
             "initialAppointment": {
               "date": "2025-10-11",
               "staff": {
-                "name": { "forename": "Robert", "middleName": "", "surname": "King", "combinedName": "Robert King" }
+                "name": {
+                  "forename": "Robert",
+                  "middleName": "",
+                  "surname": "King",
+                  "combinedName": "Robert King"
+                }
               }
             },
             "status": "New to probation",
@@ -1233,7 +1414,12 @@
             "initialAppointment": {
               "date": "2025-10-14",
               "staff": {
-                "name": { "forename": "Sam", "middleName": "", "surname": "Bailey", "combinedName": "Sam Bailey" }
+                "name": {
+                  "forename": "Sam",
+                  "middleName": "",
+                  "surname": "Bailey",
+                  "combinedName": "Sam Bailey"
+                }
               }
             },
             "status": "New to probation",
@@ -1253,7 +1439,12 @@
             "initialAppointment": {
               "date": "2025-10-14",
               "staff": {
-                "name": { "forename": "Robert", "middleName": "", "surname": "King", "combinedName": "Robert King" }
+                "name": {
+                  "forename": "Robert",
+                  "middleName": "",
+                  "surname": "King",
+                  "combinedName": "Robert King"
+                }
               }
             },
             "status": "New to probation",
@@ -1273,7 +1464,12 @@
             "initialAppointment": {
               "date": "2025-10-14",
               "staff": {
-                "name": { "forename": "Greg", "middleName": "", "surname": "Hawkins", "combinedName": "Greg Hawkins" }
+                "name": {
+                  "forename": "Greg",
+                  "middleName": "",
+                  "surname": "Hawkins",
+                  "combinedName": "Greg Hawkins"
+                }
               }
             },
             "status": "Previously managed",
@@ -1294,7 +1490,12 @@
             "initialAppointment": {
               "date": "2025-10-14",
               "staff": {
-                "name": { "forename": "Test", "middleName": "", "surname": "User", "combinedName": "Test User" }
+                "name": {
+                  "forename": "Test",
+                  "middleName": "",
+                  "surname": "User",
+                  "combinedName": "Test User"
+                }
               }
             },
             "status": "New to probation",
@@ -1339,7 +1540,12 @@
             "initialAppointment": {
               "date": "2025-10-14",
               "staff": {
-                "name": { "forename": "Paul", "middleName": "", "surname": "McPhee", "combinedName": "Paul McPhee" }
+                "name": {
+                  "forename": "Paul",
+                  "middleName": "",
+                  "surname": "McPhee",
+                  "combinedName": "Paul McPhee"
+                }
               }
             },
             "status": "Previously managed",
@@ -1385,7 +1591,12 @@
             "initialAppointment": {
               "date": "2025-10-14",
               "staff": {
-                "name": { "forename": "Marcus", "middleName": "", "surname": "Aspin", "combinedName": "Marcus Aspin" }
+                "name": {
+                  "forename": "Marcus",
+                  "middleName": "",
+                  "surname": "Aspin",
+                  "combinedName": "Marcus Aspin"
+                }
               }
             },
             "status": "New to probation",
@@ -1405,7 +1616,12 @@
             "initialAppointment": {
               "date": "2025-10-14",
               "staff": {
-                "name": { "forename": "MPOP", "middleName": "", "surname": "TestUser", "combinedName": "MPOP TestUser" }
+                "name": {
+                  "forename": "MPOP",
+                  "middleName": "",
+                  "surname": "TestUser",
+                  "combinedName": "MPOP TestUser"
+                }
               }
             },
             "status": "Previously managed",
@@ -1426,7 +1642,12 @@
             "initialAppointment": {
               "date": "2025-10-14",
               "staff": {
-                "name": { "forename": "Paul", "middleName": "", "surname": "McPhee", "combinedName": "Paul McPhee" }
+                "name": {
+                  "forename": "Paul",
+                  "middleName": "",
+                  "surname": "McPhee",
+                  "combinedName": "Paul McPhee"
+                }
               }
             },
             "status": "New to probation",
@@ -1446,7 +1667,12 @@
             "initialAppointment": {
               "date": "2025-10-14",
               "staff": {
-                "name": { "forename": "Gary", "middleName": "", "surname": "Reid", "combinedName": "Gary Reid" }
+                "name": {
+                  "forename": "Gary",
+                  "middleName": "",
+                  "surname": "Reid",
+                  "combinedName": "Gary Reid"
+                }
               }
             },
             "status": "New to probation",
@@ -1466,7 +1692,12 @@
             "initialAppointment": {
               "date": "2025-10-14",
               "staff": {
-                "name": { "forename": "MPOP", "middleName": "", "surname": "TestUser", "combinedName": "MPOP TestUser" }
+                "name": {
+                  "forename": "MPOP",
+                  "middleName": "",
+                  "surname": "TestUser",
+                  "combinedName": "MPOP TestUser"
+                }
               }
             },
             "status": "Previously managed",

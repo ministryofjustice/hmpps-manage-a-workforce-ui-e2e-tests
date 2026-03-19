@@ -1,21 +1,21 @@
 {
   "mappings": [
     {
-      "scenarioName": "GET.users.{username}.preferences.allocation-demand",
+      "scenarioName": "GET.users.__username__.preferences.allocation-demand",
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
         "urlPathTemplate": "/users/{username}/preferences/allocation-demand",
-        "pathParameters": {
-          "username": {
-            "matches": ".*"
-          }
-        }
+        "pathParameters": { "username": { "matches": ".*" } }
       },
       "response": {
         "status": 200,
         "headers": { "Content-Type": "application/json;charset=UTF-8" },
-        "jsonBody": { "items": ["{\"pdu\":\"WPTNWS\",\"ldu\":\"WPTNWS\",\"team\":\"N03F01\"}"] }
+        "jsonBody": {
+          "items": [
+            "{\"pdu\":\"WPTNWS\",\"ldu\":\"WPTNWS\",\"team\":\"N03F01\"}"
+          ]
+        }
       }
     }
   ]

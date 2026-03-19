@@ -3,8 +3,15 @@
     {
       "scenarioName": "POST.allocations.contact.logging",
       "requiredScenarioState": "Started",
-      "request": { "method": "POST", "urlPath": "/allocations/contact/logging" },
-      "response": { "status": 200, "headers": { "Content-Type": "application/json;charset=UTF-8" }, "jsonBody": true }
+      "request": {
+        "method": "POST",
+        "urlPath": "/allocations/contact/logging"
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": true
+      }
     }
   ]
 }
