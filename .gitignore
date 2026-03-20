@@ -11,3 +11,4 @@ envConfig.d.json
 .DS_Store
 .idea/
 dist/
+dist
