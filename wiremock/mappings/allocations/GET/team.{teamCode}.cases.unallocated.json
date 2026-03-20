@@ -1,7 +1,7 @@
 {
   "mappings": [
     {
-      "scenarioName": "GET.team.{teamCode}.cases.unallocated",
+      "scenarioName": "GET.team.__teamCode__.cases.unallocated",
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
@@ -1480,6 +1480,24 @@
           }
         ]
       }
+    },
+    {
+      "scenarioName": "GET.team.__teamCode__.cases.unallocated",
+      "requiredScenarioState": "error-504",
+      "request": {
+        "method": "GET",
+        "urlPathTemplate": "/team/{teamCode}/cases/unallocated",
+        "pathParameters": {
+          "teamCode": {
+            "matches": ".*"
+          }
+        }
+      },
+      "response": {
+        "status": 504,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": []
+      }
     }
-  ]
+    ]
 }

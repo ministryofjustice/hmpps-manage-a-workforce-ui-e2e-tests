@@ -9,3 +9,4 @@ node_modules/
 envConfig.json
 envConfig.d.json
 .DS_Store
+.idea/

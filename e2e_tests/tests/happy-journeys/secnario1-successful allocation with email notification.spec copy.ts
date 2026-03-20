@@ -22,6 +22,5 @@ describe('Happy path - Scenario 1 - Successful allocation with email notificatio
     await reviewYourAllocationNotesPage.completeReviewYourAllocationNotesPage(page);
     await allocateTheCasePage.completeAllocateTheCasePage(mode, page);
     await caseAllocatedPage.completeCaseAllocatedPage(page);
-    
   });
 });
