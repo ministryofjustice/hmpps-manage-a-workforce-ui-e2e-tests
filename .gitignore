@@ -8,4 +8,10 @@ node_modules/
 /playwright/.cache/
 envConfig.json
 envConfig.d.json
+/dist/
+
+### IntelliJ IDEA ###
+.idea/
+
+### MacOS ###
 .DS_Store

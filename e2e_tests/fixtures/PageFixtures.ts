@@ -12,6 +12,7 @@ import { selectYourTeamsPage } from '@pages/03-selectYourTeamsPage';
 import { unallocatedCasesPage } from '@pages/05-unallocatedCasesPage';
 import { youAreAllocatingPage } from '@pages/08-youAreAllocatingPage';
 import { yourTeamsPage } from '@pages/04-yourTeamsPage';
+import { serviceTemporarilyUnavailablePage } from '../pages/error504-serviceTemporarilyUnavailablePage';
 
 type PageFixtures = {
   context: BrowserContext;
@@ -28,6 +29,7 @@ type PageFixtures = {
   reviewYourAllocationNotesPage: reviewYourAllocationNotesPage;
   allocateTheCasePage: allocateTheCasePage;
   caseAllocatedPage: caseAllocatedPage;
+  serviceTemporarilyUnavailablePage: serviceTemporarilyUnavailablePage;
 };
 
 export const test = baseTest.extend<PageFixtures>({
@@ -96,5 +98,9 @@ export const test = baseTest.extend<PageFixtures>({
 
   caseAllocatedPage: async ({ page }, use) => {
     await use(new caseAllocatedPage(page));
+  },
+
+  serviceTemporarilyUnavailablePage: async ({ page }, use) => {
+    await use(new serviceTemporarilyUnavailablePage(page));
   }
 });
