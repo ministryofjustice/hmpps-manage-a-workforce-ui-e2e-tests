@@ -57,8 +57,10 @@ This repository contains automated E2E UI tests for the hmpps-manage-a-workforce
   npm run test:chrome:headed        - Runs tests only in Chromium headed mode and Cleans old reports
                                       Generates fresh Allure results
 
-  npm run update:chrome:screenshots - After running the above command(npm run test:chrome) it runs in headless mode and captures the
-                                      screenshot of the page into the default folder and then if you run this, it runs only the Chromium tests, Update only the Chromium-specific snapshots (e.g. xxPage-chromium-darwin.png).
+  npm run update:chrome:screenshots - After running the above command(npm run test:chrome) it runs in headless mode
+                                      and captures the screenshot of the page into the default folder and then if you run
+                                      this, it runs only the Chromium tests, Update only the Chromium-specific snapshots
+                                      (eg. xxPage-chromium-darwin.png).
                                       
 
   npx playwright test                           - To update snapshots for just one test file.

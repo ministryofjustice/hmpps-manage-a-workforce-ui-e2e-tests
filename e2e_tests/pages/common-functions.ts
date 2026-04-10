@@ -38,12 +38,12 @@ export async function verifyLinkIsVisibleByName(page: Page, linkName: string) {
     await expect(page.getByRole('link', { name: `${linkName}` })).toBeVisible();
 }
 
-export async function fillTextInTextArea(page: Page) {
+export async function fillTextInTextArea(page: Page, text: string = "AUTO-TESTING") {
     const textArea = page.locator('xpath=//*[@id="instructions"]');
     await textArea.click();
     await expect(textArea).toBeEditable();
     await textArea.clear();
-    await textArea.fill("AUTO-TESTING");
+    await textArea.fill(text);
 }
 
 
