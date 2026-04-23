@@ -19,3 +19,11 @@ export class youAreAllocatingPage {
         await commonLocators.clickOnButtonByName(this.page, 'Continue');    
     }
 }
+
+
+
+
+
+
+
+
