@@ -63,7 +63,3 @@ export class allocateTheCasePage {
         await commonLocators.clickOnButtonByName(this.page, 'Save and allocate case');
     }
 }
-
-
-
-
