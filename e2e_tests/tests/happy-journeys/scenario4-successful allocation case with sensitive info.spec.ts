@@ -3,7 +3,7 @@ import { getRunMode } from '@utils/testMode';
 import { test } from '@fixtures/PageFixtures';
 
 describe('Happy path - Scenario 4 -  Successful allocation after editing notes with sensitive info', () => {
-    test.only(`As SPO allocate a case to practitioner & edit notes for
+    test(`As SPO allocate a case to practitioner & edit notes for
          the (SPO Oversight Contact) with sensitive information before they are sent.
         @smoke @regression @e2e @wfp-3282`, async({regionsPage,pduPage,
             selectYourTeamsPage, yourTeamsPage,
@@ -24,4 +24,4 @@ describe('Happy path - Scenario 4 -  Successful allocation after editing notes w
             await allocateTheCasePage.editNotesAndCompleteAllocateTheCaseWithSensitiveInfoPage(mode, page);
             await caseAllocatedPage.completeCaseAllocatedPage(page);
         })
-})
+});
