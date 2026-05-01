@@ -20,18 +20,32 @@
           "tier": "D0",
           "activeRegistrations": [],
           "inactiveRegistrations": [],
-          "roshRisk": {
-            "overallRisk": "NOT_FOUND",
-            "assessedOn": null,
-            "riskInCommunity": {}
-          },
-          "rsr": {
-            "level": "NOT_FOUND",
-            "lastUpdatedOn": null,
-            "percentage": -2147483648
-          },
-          "ogrs": null,
-          "convictionNumber": 2
+          "convictionNumber": 2,
+          "riskVersion": "1",
+          "risk": {
+            "roshRisk": {
+              "overallRisk": "VERY_HIGH",
+              "assessedOn": "2025-12-01",
+              "riskInCommunity": {
+                "Children": "VERY_HIGH",
+                "Public": "VERY_HIGH",
+                "Known Adult": "VERY_HIGH",
+                "Staff": "VERY_HIGH"
+              }
+            },
+            "groupReconvictionScore": {
+              "oneYear": 15,
+              "twoYears": 26,
+              "scoreLevel": "LOW"
+            },
+            "riskOfSeriousRecidivismScore": {
+              "percentageScore": 8.47,
+              "staticOrDynamic": "DYNAMIC",
+              "source": "OASYS",
+              "algorithmVersion": "5",
+              "scoreLevel": "HIGH"
+            }
+          }
         }
       }
     }
