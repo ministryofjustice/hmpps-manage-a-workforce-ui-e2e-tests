@@ -18,4 +18,19 @@ export class youAreAllocatingPage {
         await commonLocators.verifyFilledTextArea(page);
         await commonLocators.clickOnButtonByName(this.page, 'Continue');    
     }
+
+        async editTextAndCompleteYouAreAllocatingPage(mode: 'headless' | 'headed', page: Page = this.page): Promise<void> {
+        if (mode === 'headless') {
+            await expect(page).toHaveScreenshot('actual-youAreAllocatingPage.png', {
+                fullPage: true,
+                threshold: 0.2,
+            });
+        } else {
+            console.log('YouAreAllocatingPage - Skipping screenshot assertion in headed mode');
+        }
+        await commonLocators.verifyPageHeadingsByName(this.page, `You\'re allocating`);
+        await commonLocators.verifyFilledTextArea(page);
+        await commonLocators.fillTextInTextArea(page, "Text 5 Edited on you're allocating page");
+        await commonLocators.clickOnButtonByName(this.page, 'Continue');
+    }
 }

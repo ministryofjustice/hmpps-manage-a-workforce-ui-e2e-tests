@@ -9,9 +9,9 @@ describe('Happy Path - Scenario 5 - Successful allocation after editing notes an
      @smoke @regression @e2e @wfp-3288`, async( {regionsPage,pduPage,
             selectYourTeamsPage, yourTeamsPage,
             unallocatedCasesPage, caseSummaryPage,
-            // allocateToAProbationPractitionerPage,
-            // youAreAllocatingPage,reviewYourAllocationNotesPage,
-            // allocateTheCasePage, caseAllocatedPage,
+            allocateToAProbationPractitionerPage,
+            youAreAllocatingPage,reviewYourAllocationNotesPage,
+            allocateTheCasePage, caseAllocatedPage,
             page}, testInfo) => {
             const mode = getRunMode(testInfo);
             await regionsPage.completeRegionsPage(mode, page);
@@ -19,7 +19,12 @@ describe('Happy Path - Scenario 5 - Successful allocation after editing notes an
             await selectYourTeamsPage.completeSelectYourTeamsPage(mode, page);
             await yourTeamsPage.completeYourTeamsPage(mode, page);
             await unallocatedCasesPage.completeUnallocatedCasesPage(mode, page);
-            await caseSummaryPage.editTabsOnSummaryPageAndDownloadAttachment(mode, page);
-
+            await caseSummaryPage.editTabsOnSummaryPageAndVerifyDownloadLink(mode, page);
+            await allocateToAProbationPractitionerPage.completeAllocateToAProbationPractitionerPage(mode, page);
+            await youAreAllocatingPage.editTextAndCompleteYouAreAllocatingPage(mode, page);
+            await reviewYourAllocationNotesPage.completeReviewYourAllocationNotesPage(page);
+            await allocateTheCasePage.editNotesAndCompleteAllocateTheCaseWithSensitiveInfoPage(mode, page);
+            await caseAllocatedPage.completeCaseAllocatedPage(page);
             });
     });
+    
