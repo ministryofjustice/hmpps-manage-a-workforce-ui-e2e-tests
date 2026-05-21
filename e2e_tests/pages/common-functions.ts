@@ -38,6 +38,16 @@ export async function verifyLinkIsVisibleByName(page: Page, linkName: string) {
     await expect(page.getByRole('link', { name: `${linkName}` })).toBeVisible();
 }
 
+export async function verifyRadioButtonByNameIsDisabled(page: Page, radioButtonName: string) {
+    const radioButton = page.getByRole('radio', { name: ` ${radioButtonName}` });
+    await expect(radioButton).toBeDisabled();
+}
+
+export async function verifyRadioButtonByNameIsEnabled(page: Page, radioButtonName: string) {
+    const radioButton = page.getByRole('radio', { name: ` ${radioButtonName}` });
+    await expect(radioButton).toBeEnabled();
+}
+
 export async function fillTextInTextArea(page: Page, text: string = "AUTO-TESTING") {
     const textArea = page.locator('xpath=//*[@id="instructions"]');
     await textArea.click();
@@ -101,6 +111,8 @@ export const commonLocators = {
     selectCheckBoxByName,
     verifyButtonIsVisibleByName,
     verifyLinkIsVisibleByName,
+    verifyRadioButtonByNameIsDisabled,
+    verifyRadioButtonByNameIsEnabled,
     fillTextInTextArea,
     verifyFilledTextArea,
     enterEmailAddressInCombobox
