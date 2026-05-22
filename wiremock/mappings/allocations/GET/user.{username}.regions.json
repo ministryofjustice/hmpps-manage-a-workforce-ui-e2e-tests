@@ -91,6 +91,24 @@
           ]
         }
       }
+    },
+       {
+      "scenarioName": "GET.user.__username__.regions",
+      "requiredScenarioState": "london-only",
+      "request": {
+        "method": "GET",
+        "urlPathTemplate": "/user/{username}/regions",
+        "pathParameters": { "username": { "matches": ".*" } }
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {
+          "regions": [
+            "N07"
+          ]
+        }
+      }
     }
   ]
 }
