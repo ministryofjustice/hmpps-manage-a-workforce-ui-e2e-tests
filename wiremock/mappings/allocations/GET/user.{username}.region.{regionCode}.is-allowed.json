@@ -16,6 +16,23 @@
         "headers": { "Content-Type": "application/json;charset=UTF-8" },
         "jsonBody": "Ok"
       }
+    },
+    {
+      "scenarioName": "GET.user.__username__.region.__regionCode__.is-allowed",
+      "requiredScenarioState": "error-403",
+      "request": {
+        "method": "GET",
+        "urlPathTemplate": "/user/{username}/region/{regionCode}/is-allowed",
+        "pathParameters": {
+          "username": { "matches": ".*" },
+          "regionCode": { "matches": ".*" }
+        }
+      },
+      "response": {
+        "status": 403,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": []
+      }
     }
   ]
 }
