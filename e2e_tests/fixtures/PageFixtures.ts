@@ -13,6 +13,7 @@ import { unallocatedCasesPage } from '@pages/05-unallocatedCasesPage';
 import { youAreAllocatingPage } from '@pages/08-youAreAllocatingPage';
 import { yourTeamsPage } from '@pages/04-yourTeamsPage';
 import { serviceTemporarilyUnavailablePage } from '../pages/error504-serviceTemporarilyUnavailablePage';
+import { noPermissionToViewThisPage } from '../pages/error403-noPermissionToViewThisPage';
 
 type PageFixtures = {
   context: BrowserContext;
@@ -30,6 +31,7 @@ type PageFixtures = {
   allocateTheCasePage: allocateTheCasePage;
   caseAllocatedPage: caseAllocatedPage;
   serviceTemporarilyUnavailablePage: serviceTemporarilyUnavailablePage;
+  noPermissionToViewThisPage: noPermissionToViewThisPage;
 };
 
 export const test = baseTest.extend<PageFixtures>({
@@ -102,5 +104,9 @@ export const test = baseTest.extend<PageFixtures>({
 
   serviceTemporarilyUnavailablePage: async ({ page }, use) => {
     await use(new serviceTemporarilyUnavailablePage(page));
+  },
+
+  noPermissionToViewThisPage: async({ page }, use) => {
+    await use(new noPermissionToViewThisPage(page));
   }
 });

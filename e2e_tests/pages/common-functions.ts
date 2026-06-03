@@ -2,6 +2,10 @@ import { Page, expect } from "@playwright/test";
 
 import emailData from '@test-data/email.json';
 
+export async function verifyPageTitle(page: Page, pageTitle: string) {
+    await expect(page).toHaveTitle(new RegExp(`.*${pageTitle}.*`));
+}
+
 export async function verifyPageHeadingsByName(page: Page, pageHeadingName: string) {
     await expect(page.getByRole('heading', { name: `${pageHeadingName}` })).toBeVisible();
 }
@@ -103,6 +107,7 @@ export async function enterEmailAddressInCombobox(page: Page, count: number = 1)
 }
 
 export const commonLocators = {
+    verifyPageTitle,
     verifyPageHeadingsByName,
     verifyPageByText,
     clickOnButtonByName,
