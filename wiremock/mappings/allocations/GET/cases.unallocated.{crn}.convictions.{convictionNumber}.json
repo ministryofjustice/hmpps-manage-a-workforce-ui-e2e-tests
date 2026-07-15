@@ -47,6 +47,53 @@
           "outOfAreaTransfer": false
         }
       }
+    },
+    {
+      "scenarioName": "GET.cases.unallocated.X961887.convictions.__convictionNumber__",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "GET",
+        "urlPathTemplate": "/cases/unallocated/X961887/convictions/{convictionNumber}",
+        "pathParameters": {
+          "convictionNumber": { "matches": ".*" }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {
+          "name": "Pearl Gorczany",
+          "crn": "X961887",
+          "tier": "D0",
+          "sentenceDate": "2025-10-01",
+          "gender": "Female",
+          "dateOfBirth": "2002-01-20",
+          "age": 23,
+          "offences": [
+            {
+              "mainOffence": true,
+              "mainCategory": "Explosives Acts",
+              "subCategory": "Explosives Acts"
+            }
+          ],
+          "expectedSentenceEndDate": "2026-03-31",
+          "sentenceDescription": "ORA Community Order",
+          "requirements": [],
+          "pncNumber": "2002/1452720Y",
+          "courtReport": null,
+          "assessment": null,
+          "cpsPack": null,
+          "preConvictionDocument": null,
+          "address": null,
+          "sentenceLength": "6 Months",
+          "convictionNumber": 2,
+          "roshLevel": "NOT_FOUND",
+          "rsrLevel": "NOT_FOUND",
+          "ogrsScore": null,
+          "activeRiskRegistration": null,
+          "outOfAreaTransfer": false
+        }
+      }
     }
   ]
 }
