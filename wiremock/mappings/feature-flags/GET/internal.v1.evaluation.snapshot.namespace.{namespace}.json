@@ -1,0 +1,48 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "internal.v1.evaluation.snapshot.namespace.__namespace__",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "GET",
+        "urlPathTemplate": "/internal/v1/evaluation/snapshot/namespace/{namespace}",
+        "pathParameters": { "namespace": { "matches": ".*" } }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json;charset=UTF-8"
+        },
+        "jsonBody": {
+          "namespace": {
+            "key": "ManageAWorkforce"
+          },
+          "flags": [
+            {
+              "key": "Reallocations",
+              "name": "Reallocations",
+              "description": "Flag for reallocations work",
+              "enabled": true,
+              "type": "BOOLEAN_FLAG_TYPE",
+              "createdAt": "2025-10-13T12:59:53.136978Z",
+              "updatedAt": "2025-10-21T11:34:42.350567Z",
+              "rules": [],
+              "rollouts": []
+            },
+            {
+              "key": "enableEmailList",
+              "name": "enableEmailList",
+              "description": "Flag for rollout of email list",
+              "enabled": true,
+              "type": "BOOLEAN_FLAG_TYPE",
+              "createdAt": "2025-10-13T12:59:53.136978Z",
+              "updatedAt": "2025-10-21T11:34:42.350567Z",
+              "rules": [],
+              "rollouts": []
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

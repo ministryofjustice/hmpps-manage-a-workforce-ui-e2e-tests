@@ -53,7 +53,27 @@
                 "workload": 0,
                 "casesPastWeek": 2,
                 "communityCases": 0,
-                "custodyCases": 0
+                "custodyCases": 0,
+                "licenseCases": 3,
+                "allocatedCasesPastWeek": 3,
+                "reallocatedCasesPastWeek": 4,
+                "ispsDueInNext14Days": 1,
+                "activeCases": 15,
+                "contactSuspendedCases": 2,
+                "custodyReleasesInNext7Days": 1,
+                "paroleReportsInNext28Days": 4,
+                "otherReportsInNext14Days": 2,
+                "tierCaseTotals": {
+                  "untiered": 3,
+                  "a": 1,
+                  "b": 4,
+                  "c": 2,
+                  "d": 0,
+                  "as": 1,
+                  "bs": 0,
+                  "cs": 2,
+                  "ds": 0
+                }
               }
             ],
             "N03D01": [],
@@ -72,7 +92,27 @@
                 "workload": 0,
                 "casesPastWeek": 7,
                 "communityCases": 0,
-                "custodyCases": 0
+                "custodyCases": 0,
+                "licenseCases": 3,
+                "allocatedCasesPastWeek": 3,
+                "reallocatedCasesPastWeek": 4,
+                "ispsDueInNext14Days": 1,
+                "activeCases": 15,
+                "contactSuspendedCases": 2,
+                "custodyReleasesInNext7Days": 1,
+                "paroleReportsInNext28Days": 4,
+                "otherReportsInNext14Days": 2,
+                "tierCaseTotals": {
+                  "untiered": 3,
+                  "a": 1,
+                  "b": 4,
+                  "c": 2,
+                  "d": 0,
+                  "as": 1,
+                  "bs": 0,
+                  "cs": 2,
+                  "ds": 0
+                }
               },
               {
                 "code": "N03A016",
@@ -86,7 +126,27 @@
                 "workload": 0,
                 "casesPastWeek": 0,
                 "communityCases": 0,
-                "custodyCases": 0
+                "custodyCases": 0,
+                "licenseCases": 3,
+                "allocatedCasesPastWeek": 3,
+                "reallocatedCasesPastWeek": 4,
+                "ispsDueInNext14Days": 1,
+                "activeCases": 15,
+                "contactSuspendedCases": 2,
+                "custodyReleasesInNext7Days": 1,
+                "paroleReportsInNext28Days": 4,
+                "otherReportsInNext14Days": 2,
+                "tierCaseTotals": {
+                  "untiered": 3,
+                  "a": 1,
+                  "b": 4,
+                  "c": 2,
+                  "d": 0,
+                  "as": 1,
+                  "bs": 0,
+                  "cs": 2,
+                  "ds": 0
+                }
               },
               {
                 "code": "N01A022",
@@ -100,7 +160,27 @@
                 "workload": 0,
                 "casesPastWeek": 0,
                 "communityCases": 0,
-                "custodyCases": 0
+                "custodyCases": 0,
+                "licenseCases": 3,
+                "allocatedCasesPastWeek": 3,
+                "reallocatedCasesPastWeek": 4,
+                "ispsDueInNext14Days": 1,
+                "activeCases": 15,
+                "contactSuspendedCases": 2,
+                "custodyReleasesInNext7Days": 1,
+                "paroleReportsInNext28Days": 4,
+                "otherReportsInNext14Days": 2,
+                "tierCaseTotals": {
+                  "untiered": 3,
+                  "a": 1,
+                  "b": 4,
+                  "c": 2,
+                  "d": 0,
+                  "as": 1,
+                  "bs": 0,
+                  "cs": 2,
+                  "ds": 0
+                }
               },
               {
                 "code": "N03A034",
@@ -114,7 +194,27 @@
                 "workload": 0,
                 "casesPastWeek": 0,
                 "communityCases": 0,
-                "custodyCases": 0
+                "custodyCases": 0,
+                "licenseCases": 3,
+                "allocatedCasesPastWeek": 3,
+                "reallocatedCasesPastWeek": 4,
+                "ispsDueInNext14Days": 1,
+                "activeCases": 15,
+                "contactSuspendedCases": 2,
+                "custodyReleasesInNext7Days": 1,
+                "paroleReportsInNext28Days": 4,
+                "otherReportsInNext14Days": 2,
+                "tierCaseTotals": {
+                  "untiered": 3,
+                  "a": 1,
+                  "b": 4,
+                  "c": 2,
+                  "d": 0,
+                  "as": 1,
+                  "bs": 0,
+                  "cs": 2,
+                  "ds": 0
+                }
               },
               {
                 "code": "N03A033",
@@ -128,7 +228,27 @@
                 "workload": 0,
                 "casesPastWeek": 0,
                 "communityCases": 0,
-                "custodyCases": 0
+                "custodyCases": 0,
+                "licenseCases": 3,
+                "allocatedCasesPastWeek": 3,
+                "reallocatedCasesPastWeek": 4,
+                "ispsDueInNext14Days": 1,
+                "activeCases": 15,
+                "contactSuspendedCases": 2,
+                "custodyReleasesInNext7Days": 1,
+                "paroleReportsInNext28Days": 4,
+                "otherReportsInNext14Days": 2,
+                "tierCaseTotals": {
+                  "untiered": 3,
+                  "a": 1,
+                  "b": 4,
+                  "c": 2,
+                  "d": 0,
+                  "as": 1,
+                  "bs": 0,
+                  "cs": 2,
+                  "ds": 0
+                }
               },
               {
                 "code": "N04A135",
@@ -141,7 +261,27 @@
                 "workload": 0,
                 "casesPastWeek": 0,
                 "communityCases": 0,
-                "custodyCases": 0
+                "custodyCases": 0,
+                "licenseCases": 3,
+                "allocatedCasesPastWeek": 3,
+                "reallocatedCasesPastWeek": 4,
+                "ispsDueInNext14Days": 1,
+                "activeCases": 15,
+                "contactSuspendedCases": 2,
+                "custodyReleasesInNext7Days": 1,
+                "paroleReportsInNext28Days": 4,
+                "otherReportsInNext14Days": 2,
+                "tierCaseTotals": {
+                  "untiered": 3,
+                  "a": 1,
+                  "b": 4,
+                  "c": 2,
+                  "d": 0,
+                  "as": 1,
+                  "bs": 0,
+                  "cs": 2,
+                  "ds": 0
+                }
               },
               {
                 "code": "N03A029",
@@ -155,7 +295,27 @@
                 "workload": 0,
                 "casesPastWeek": 0,
                 "communityCases": 0,
-                "custodyCases": 0
+                "custodyCases": 0,
+                "licenseCases": 3,
+                "allocatedCasesPastWeek": 3,
+                "reallocatedCasesPastWeek": 4,
+                "ispsDueInNext14Days": 1,
+                "activeCases": 15,
+                "contactSuspendedCases": 2,
+                "custodyReleasesInNext7Days": 1,
+                "paroleReportsInNext28Days": 4,
+                "otherReportsInNext14Days": 2,
+                "tierCaseTotals": {
+                  "untiered": 3,
+                  "a": 1,
+                  "b": 4,
+                  "c": 2,
+                  "d": 0,
+                  "as": 1,
+                  "bs": 0,
+                  "cs": 2,
+                  "ds": 0
+                }
               },
               {
                 "code": "N07B743",
@@ -169,7 +329,27 @@
                 "workload": 0,
                 "casesPastWeek": 0,
                 "communityCases": 0,
-                "custodyCases": 0
+                "custodyCases": 0,
+                "licenseCases": 3,
+                "allocatedCasesPastWeek": 3,
+                "reallocatedCasesPastWeek": 4,
+                "ispsDueInNext14Days": 1,
+                "activeCases": 15,
+                "contactSuspendedCases": 2,
+                "custodyReleasesInNext7Days": 1,
+                "paroleReportsInNext28Days": 4,
+                "otherReportsInNext14Days": 2,
+                "tierCaseTotals": {
+                  "untiered": 3,
+                  "a": 1,
+                  "b": 4,
+                  "c": 2,
+                  "d": 0,
+                  "as": 1,
+                  "bs": 0,
+                  "cs": 2,
+                  "ds": 0
+                }
               },
               {
                 "code": "N01A025",
@@ -183,7 +363,27 @@
                 "workload": 0,
                 "casesPastWeek": 0,
                 "communityCases": 0,
-                "custodyCases": 0
+                "custodyCases": 0,
+                "licenseCases": 3,
+                "allocatedCasesPastWeek": 3,
+                "reallocatedCasesPastWeek": 4,
+                "ispsDueInNext14Days": 1,
+                "activeCases": 15,
+                "contactSuspendedCases": 2,
+                "custodyReleasesInNext7Days": 1,
+                "paroleReportsInNext28Days": 4,
+                "otherReportsInNext14Days": 2,
+                "tierCaseTotals": {
+                  "untiered": 3,
+                  "a": 1,
+                  "b": 4,
+                  "c": 2,
+                  "d": 0,
+                  "as": 1,
+                  "bs": 0,
+                  "cs": 2,
+                  "ds": 0
+                }
               },
               {
                 "code": "N07B656",
@@ -197,7 +397,27 @@
                 "workload": 0,
                 "casesPastWeek": 0,
                 "communityCases": 0,
-                "custodyCases": 0
+                "custodyCases": 0,
+                "licenseCases": 3,
+                "allocatedCasesPastWeek": 3,
+                "reallocatedCasesPastWeek": 4,
+                "ispsDueInNext14Days": 1,
+                "activeCases": 15,
+                "contactSuspendedCases": 2,
+                "custodyReleasesInNext7Days": 1,
+                "paroleReportsInNext28Days": 4,
+                "otherReportsInNext14Days": 2,
+                "tierCaseTotals": {
+                  "untiered": 3,
+                  "a": 1,
+                  "b": 4,
+                  "c": 2,
+                  "d": 0,
+                  "as": 1,
+                  "bs": 0,
+                  "cs": 2,
+                  "ds": 0
+                }
               },
               {
                 "code": "N54A022",
@@ -211,7 +431,27 @@
                 "workload": 0,
                 "casesPastWeek": 1,
                 "communityCases": 0,
-                "custodyCases": 0
+                "custodyCases": 0,
+                "licenseCases": 3,
+                "allocatedCasesPastWeek": 3,
+                "reallocatedCasesPastWeek": 4,
+                "ispsDueInNext14Days": 1,
+                "activeCases": 15,
+                "contactSuspendedCases": 2,
+                "custodyReleasesInNext7Days": 1,
+                "paroleReportsInNext28Days": 4,
+                "otherReportsInNext14Days": 2,
+                "tierCaseTotals": {
+                  "untiered": 3,
+                  "a": 1,
+                  "b": 4,
+                  "c": 2,
+                  "d": 0,
+                  "as": 1,
+                  "bs": 0,
+                  "cs": 2,
+                  "ds": 0
+                }
               },
               {
                 "code": "N03A022",
@@ -225,7 +465,27 @@
                 "workload": 0,
                 "casesPastWeek": 0,
                 "communityCases": 0,
-                "custodyCases": 0
+                "custodyCases": 0,
+                "licenseCases": 3,
+                "allocatedCasesPastWeek": 3,
+                "reallocatedCasesPastWeek": 4,
+                "ispsDueInNext14Days": 1,
+                "activeCases": 15,
+                "contactSuspendedCases": 2,
+                "custodyReleasesInNext7Days": 1,
+                "paroleReportsInNext28Days": 4,
+                "otherReportsInNext14Days": 2,
+                "tierCaseTotals": {
+                  "untiered": 3,
+                  "a": 1,
+                  "b": 4,
+                  "c": 2,
+                  "d": 0,
+                  "as": 1,
+                  "bs": 0,
+                  "cs": 2,
+                  "ds": 0
+                }
               },
               {
                 "code": "N03F030",
@@ -239,7 +499,27 @@
                 "workload": 0,
                 "casesPastWeek": 0,
                 "communityCases": 0,
-                "custodyCases": 0
+                "custodyCases": 0,
+                "licenseCases": 3,
+                "allocatedCasesPastWeek": 3,
+                "reallocatedCasesPastWeek": 4,
+                "ispsDueInNext14Days": 1,
+                "activeCases": 15,
+                "contactSuspendedCases": 2,
+                "custodyReleasesInNext7Days": 1,
+                "paroleReportsInNext28Days": 4,
+                "otherReportsInNext14Days": 2,
+                "tierCaseTotals": {
+                  "untiered": 3,
+                  "a": 1,
+                  "b": 4,
+                  "c": 2,
+                  "d": 0,
+                  "as": 1,
+                  "bs": 0,
+                  "cs": 2,
+                  "ds": 0
+                }
               },
               {
                 "code": "N57A029",
@@ -253,7 +533,27 @@
                 "workload": 0,
                 "casesPastWeek": 0,
                 "communityCases": 0,
-                "custodyCases": 0
+                "custodyCases": 0,
+                "licenseCases": 3,
+                "allocatedCasesPastWeek": 3,
+                "reallocatedCasesPastWeek": 4,
+                "ispsDueInNext14Days": 1,
+                "activeCases": 15,
+                "contactSuspendedCases": 2,
+                "custodyReleasesInNext7Days": 1,
+                "paroleReportsInNext28Days": 4,
+                "otherReportsInNext14Days": 2,
+                "tierCaseTotals": {
+                  "untiered": 3,
+                  "a": 1,
+                  "b": 4,
+                  "c": 2,
+                  "d": 0,
+                  "as": 1,
+                  "bs": 0,
+                  "cs": 2,
+                  "ds": 0
+                }
               },
               {
                 "code": "N03A019",
@@ -267,7 +567,27 @@
                 "workload": 0,
                 "casesPastWeek": 0,
                 "communityCases": 0,
-                "custodyCases": 0
+                "custodyCases": 0,
+                "licenseCases": 3,
+                "allocatedCasesPastWeek": 3,
+                "reallocatedCasesPastWeek": 4,
+                "ispsDueInNext14Days": 1,
+                "activeCases": 15,
+                "contactSuspendedCases": 2,
+                "custodyReleasesInNext7Days": 1,
+                "paroleReportsInNext28Days": 4,
+                "otherReportsInNext14Days": 2,
+                "tierCaseTotals": {
+                  "untiered": 3,
+                  "a": 1,
+                  "b": 4,
+                  "c": 2,
+                  "d": 0,
+                  "as": 1,
+                  "bs": 0,
+                  "cs": 2,
+                  "ds": 0
+                }
               },
               {
                 "code": "N57A046",
@@ -281,7 +601,27 @@
                 "workload": 0,
                 "casesPastWeek": 0,
                 "communityCases": 0,
-                "custodyCases": 0
+                "custodyCases": 0,
+                "licenseCases": 3,
+                "allocatedCasesPastWeek": 3,
+                "reallocatedCasesPastWeek": 4,
+                "ispsDueInNext14Days": 1,
+                "activeCases": 15,
+                "contactSuspendedCases": 2,
+                "custodyReleasesInNext7Days": 1,
+                "paroleReportsInNext28Days": 4,
+                "otherReportsInNext14Days": 2,
+                "tierCaseTotals": {
+                  "untiered": 3,
+                  "a": 1,
+                  "b": 4,
+                  "c": 2,
+                  "d": 0,
+                  "as": 1,
+                  "bs": 0,
+                  "cs": 2,
+                  "ds": 0
+                }
               },
               {
                 "code": "N57A042",
@@ -295,7 +635,27 @@
                 "workload": 0,
                 "casesPastWeek": 0,
                 "communityCases": 0,
-                "custodyCases": 0
+                "custodyCases": 0,
+                "licenseCases": 3,
+                "allocatedCasesPastWeek": 3,
+                "reallocatedCasesPastWeek": 4,
+                "ispsDueInNext14Days": 1,
+                "activeCases": 15,
+                "contactSuspendedCases": 2,
+                "custodyReleasesInNext7Days": 1,
+                "paroleReportsInNext28Days": 4,
+                "otherReportsInNext14Days": 2,
+                "tierCaseTotals": {
+                  "untiered": 3,
+                  "a": 1,
+                  "b": 4,
+                  "c": 2,
+                  "d": 0,
+                  "as": 1,
+                  "bs": 0,
+                  "cs": 2,
+                  "ds": 0
+                }
               },
               {
                 "code": "N57A024",
@@ -309,7 +669,27 @@
                 "workload": 0,
                 "casesPastWeek": 0,
                 "communityCases": 0,
-                "custodyCases": 0
+                "custodyCases": 0,
+                "licenseCases": 3,
+                "allocatedCasesPastWeek": 3,
+                "reallocatedCasesPastWeek": 4,
+                "ispsDueInNext14Days": 1,
+                "activeCases": 15,
+                "contactSuspendedCases": 2,
+                "custodyReleasesInNext7Days": 1,
+                "paroleReportsInNext28Days": 4,
+                "otherReportsInNext14Days": 2,
+                "tierCaseTotals": {
+                  "untiered": 3,
+                  "a": 1,
+                  "b": 4,
+                  "c": 2,
+                  "d": 0,
+                  "as": 1,
+                  "bs": 0,
+                  "cs": 2,
+                  "ds": 0
+                }
               },
               {
                 "code": "N07B725",
@@ -323,7 +703,27 @@
                 "workload": 0,
                 "casesPastWeek": 0,
                 "communityCases": 0,
-                "custodyCases": 0
+                "custodyCases": 0,
+                "licenseCases": 3,
+                "allocatedCasesPastWeek": 3,
+                "reallocatedCasesPastWeek": 4,
+                "ispsDueInNext14Days": 1,
+                "activeCases": 15,
+                "contactSuspendedCases": 2,
+                "custodyReleasesInNext7Days": 1,
+                "paroleReportsInNext28Days": 4,
+                "otherReportsInNext14Days": 2,
+                "tierCaseTotals": {
+                  "untiered": 3,
+                  "a": 1,
+                  "b": 4,
+                  "c": 2,
+                  "d": 0,
+                  "as": 1,
+                  "bs": 0,
+                  "cs": 2,
+                  "ds": 0
+                }
               },
               {
                 "code": "N03A032",
@@ -337,7 +737,27 @@
                 "workload": 0,
                 "casesPastWeek": 1,
                 "communityCases": 0,
-                "custodyCases": 0
+                "custodyCases": 0,
+                "licenseCases": 3,
+                "allocatedCasesPastWeek": 3,
+                "reallocatedCasesPastWeek": 4,
+                "ispsDueInNext14Days": 1,
+                "activeCases": 15,
+                "contactSuspendedCases": 2,
+                "custodyReleasesInNext7Days": 1,
+                "paroleReportsInNext28Days": 4,
+                "otherReportsInNext14Days": 2,
+                "tierCaseTotals": {
+                  "untiered": 3,
+                  "a": 1,
+                  "b": 4,
+                  "c": 2,
+                  "d": 0,
+                  "as": 1,
+                  "bs": 0,
+                  "cs": 2,
+                  "ds": 0
+                }
               }
             ],
             "N03A01": []

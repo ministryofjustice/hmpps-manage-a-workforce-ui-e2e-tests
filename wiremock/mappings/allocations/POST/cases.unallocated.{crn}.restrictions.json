@@ -1,0 +1,36 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "cases.unallocated.__crn__.restrictions",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "POST",
+        "urlPathTemplate": "/cases/unallocated/{crn}/restrictions",
+        "pathParameters": {
+          "crn": { "matches": ".*" }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {
+          "crn": "678910",
+          "staffRestrictions": [
+            {
+              "staffCode": "OM1",
+              "isExcluded": true
+            },
+            {
+              "staffCode": "OM2",
+              "isExcluded": false
+            },
+            {
+              "staffCode": "OM3",
+              "isExcluded": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
