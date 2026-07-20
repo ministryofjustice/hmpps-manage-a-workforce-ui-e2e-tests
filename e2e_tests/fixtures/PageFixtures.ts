@@ -1,8 +1,8 @@
 import { BrowserContext, Page, test as baseTest } from '@playwright/test';
 
-import { allocateTheCasePage } from '@pages/10-allocateTheCasePage';
+import { allocateTheCasePage } from 'root/e2e_tests/pages/11-allocateTheCasePage';
 import { allocateToAProbationPractitionerPage } from '@pages/07-allocateToAProbationPractitionerPage';
-import { caseAllocatedPage } from '@pages/11-caseAllocatedPage';
+import { caseAllocatedPage } from 'root/e2e_tests/pages/12-caseAllocatedPage';
 import { caseSummaryPage } from '@pages/06-caseSummaryPage';
 import envConfig from '@env-config/envConfig.json';
 import { pduPage } from '@pages/02-pduPage';
@@ -14,6 +14,7 @@ import { youAreAllocatingPage } from '@pages/08-youAreAllocatingPage';
 import { yourTeamsPage } from '@pages/04-yourTeamsPage';
 import { serviceTemporarilyUnavailablePage } from '../pages/error504-serviceTemporarilyUnavailablePage';
 import { noPermissionToViewThisPage } from '../pages/error403-noPermissionToViewThisPage';
+import { emailRecepientsPage } from '../pages/10-emailRecepientsPage';
 
 type PageFixtures = {
   context: BrowserContext;
@@ -28,6 +29,7 @@ type PageFixtures = {
   allocateToAProbationPractitionerPage: allocateToAProbationPractitionerPage;
   youAreAllocatingPage: youAreAllocatingPage;
   reviewYourAllocationNotesPage: reviewYourAllocationNotesPage;
+  emailRecepientsPage: emailRecepientsPage;
   allocateTheCasePage: allocateTheCasePage;
   caseAllocatedPage: caseAllocatedPage;
   serviceTemporarilyUnavailablePage: serviceTemporarilyUnavailablePage;
@@ -92,6 +94,10 @@ export const test = baseTest.extend<PageFixtures>({
 
   reviewYourAllocationNotesPage: async ({ page }, use) => {
     await use(new reviewYourAllocationNotesPage(page));
+  },
+
+  emailRecepientsPage: async ({ page }, use) => {
+    await use(new emailRecepientsPage(page));
   },
 
   allocateTheCasePage: async ({ page }, use) => {

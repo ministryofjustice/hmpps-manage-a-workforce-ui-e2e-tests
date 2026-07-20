@@ -48,6 +48,54 @@
           }
         }
       }
+    },
+    {
+      "scenarioName": "GET.cases.unallocated.X961887.convictions.__convictionNumber__.risks",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "GET",
+        "urlPathTemplate": "/cases/unallocated/{crn}/convictions/{convictionNumber}/risks",
+        "pathParameters": {
+          "convictionNumber": { "matches": ".*" }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {
+          "name": "Pearl Gorczany",
+          "crn": "X961887",
+          "tier": "D0",
+          "activeRegistrations": [],
+          "inactiveRegistrations": [],
+          "convictionNumber": 2,
+          "riskVersion": "1",
+          "risk": {
+            "roshRisk": {
+              "overallRisk": "VERY_HIGH",
+              "assessedOn": "2025-12-01",
+              "riskInCommunity": {
+                "Children": "VERY_HIGH",
+                "Public": "VERY_HIGH",
+                "Known Adult": "VERY_HIGH",
+                "Staff": "VERY_HIGH"
+              }
+            },
+            "groupReconvictionScore": {
+              "oneYear": 15,
+              "twoYears": 26,
+              "scoreLevel": "LOW"
+            },
+            "riskOfSeriousRecidivismScore": {
+              "percentageScore": 8.47,
+              "staticOrDynamic": "DYNAMIC",
+              "source": "OASYS",
+              "algorithmVersion": "5",
+              "scoreLevel": "HIGH"
+            }
+          }
+        }
+      }
     }
   ]
 }

@@ -16,10 +16,10 @@ export class youAreAllocatingPage {
         }
         await commonLocators.verifyPageHeadingsByName(this.page, `You\'re allocating`);
         await commonLocators.verifyFilledTextArea(page);
-        await commonLocators.clickOnButtonByName(this.page, 'Continue');    
+        await commonLocators.clickOnButtonByName(this.page, 'Continue');
     }
 
-        async editTextAndCompleteYouAreAllocatingPage(mode: 'headless' | 'headed', page: Page = this.page): Promise<void> {
+    async editTextAndCompleteYouAreAllocatingPage(mode: 'headless' | 'headed', page: Page = this.page): Promise<void> {
         if (mode === 'headless') {
             await expect(page).toHaveScreenshot('actual-youAreAllocatingPage.png', {
                 fullPage: true,
