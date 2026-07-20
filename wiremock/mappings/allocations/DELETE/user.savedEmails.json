@@ -1,0 +1,20 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "user.savedEmails",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "DELETE",
+        "urlPath": "/user/savedEmails"
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {
+            "userId": "USER1",
+            "email": "first@justice.gov.uk"
+        }
+      }
+    }
+  ]
+}
