@@ -52,6 +52,7 @@ export async function verifyRadioButtonByNameIsEnabled(page: Page, radioButtonNa
     await expect(radioButton).toBeEnabled();
 }
 
+
 export async function fillTextInTextArea(page: Page, text: string = "AUTO-TESTING") {
     const textArea = page.locator('xpath=//*[@id="instructions"]');
     await textArea.click();
@@ -76,6 +77,15 @@ export async function verifyFilledTextArea(page: Page, expectedText: string = "A
     }
 }
 
+export async function clickOnRestrictedCase(page: Page, personName: string) {
+    const restrictedCell = page.locator(`xpath=//a[text()="${personName}"]//..//..//span`);
+    await expect(restrictedCell).toHaveText('Restricted access');
+    await clickOnLinkByName(page, personName);
+}
+
+export async function verifyRestrictedTagOnThePage(page: Page, tagName: string) {
+    await expect(page.getByText(`${tagName}`)).toBeVisible();
+}
 
 export async function enterEmailAddressInCombobox(page: Page, count: number = 1) {
 
@@ -104,6 +114,7 @@ export async function enterEmailAddressInCombobox(page: Page, count: number = 1)
         await page.getByRole('option', { name: `${email}` }).click();
         console.log(`Filled email ${index + 1}: ${email}`);
     }
+    await clickOnButtonByName(page, 'Add recipient');
 }
 
 export const commonLocators = {
@@ -120,5 +131,7 @@ export const commonLocators = {
     verifyRadioButtonByNameIsEnabled,
     fillTextInTextArea,
     verifyFilledTextArea,
+    clickOnRestrictedCase,
+    verifyRestrictedTagOnThePage,
     enterEmailAddressInCombobox
 };

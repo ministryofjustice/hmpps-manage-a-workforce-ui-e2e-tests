@@ -2,7 +2,6 @@ import { describe } from "node:test";
 import { getRunMode } from "@utils/testMode";
 import { test } from "@fixtures/PageFixtures";
 import { resetAllScenarios, setupScenario } from '@utils/setup-wiremock-scenario-state';
-import { noPermissionToViewThisPage } from "root/e2e_tests/pages/error403-noPermissionToViewThisPage";
 
 describe('Unhappy path - Scenario 7 - Error 403 upon navigating to PDU page', () => {
     test.beforeAll(async () => {

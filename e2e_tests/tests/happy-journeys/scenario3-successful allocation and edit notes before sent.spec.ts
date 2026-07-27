@@ -9,19 +9,19 @@ describe('Happy path - Scenario 3 - Successful allocation after editing notes', 
             selectYourTeamsPage, yourTeamsPage,
              unallocatedCasesPage, caseSummaryPage,
              allocateToAProbationPractitionerPage, youAreAllocatingPage,
-             reviewYourAllocationNotesPage, allocateTheCasePage,
+             reviewYourAllocationNotesPage, emailRecepientsPage,
              caseAllocatedPage, page}, testInfo) => { 
-            const mode = getRunMode(testInfo);
-            await regionsPage.completeRegionsPage(mode, page);
-            await pduPage.completePduPage(mode, page);
-            await selectYourTeamsPage.completeSelectYourTeamsPage(mode, page);
-            await yourTeamsPage.completeYourTeamsPage(mode, page);
-            await unallocatedCasesPage.completeUnallocatedCasesPage(mode, page);
-            await caseSummaryPage.completeCaseSummaryPage(mode, page);
-            await allocateToAProbationPractitionerPage.completeAllocateToAProbationPractitionerPage(mode, page);
-            await youAreAllocatingPage.completeYouAreAllocatingPage(mode, page);
-            await reviewYourAllocationNotesPage.completeReviewYourAllocationNotesPage(page);
-            await allocateTheCasePage.editNotesAndCompleteAllocateTheCasePage(mode, page);
-            await caseAllocatedPage.completeCaseAllocatedPage(page);
+        const mode = getRunMode(testInfo);
+        await regionsPage.completeRegionsPage(mode, page);
+        await pduPage.completePduPage(mode, page);
+        await selectYourTeamsPage.completeSelectYourTeamsPage(mode, page);
+        await yourTeamsPage.completeYourTeamsPage(mode, page);
+        await unallocatedCasesPage.completeUnallocatedCasesPage(mode, page);
+        await caseSummaryPage.completeCaseSummaryPage(mode, page);
+        await allocateToAProbationPractitionerPage.completeAllocateToAProbationPractitionerPage(mode, page);
+        await youAreAllocatingPage.completeYouAreAllocatingPage(mode, page);
+        await reviewYourAllocationNotesPage.completeReviewYourAllocationNotesPage(page);
+        await emailRecepientsPage.completeEmailRecepientsPage(page);
+        await caseAllocatedPage.completeCaseAllocatedPage(page);
     });
 });

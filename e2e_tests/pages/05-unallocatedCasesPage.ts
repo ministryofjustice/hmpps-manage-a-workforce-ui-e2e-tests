@@ -5,7 +5,7 @@ import { commonLocators } from "./common-functions";
 export class unallocatedCasesPage {
     constructor(public page: Page) { }
 
-    async completeUnallocatedCasesPage(mode: 'headless' | 'headed', page: Page = this.page) {
+    async completeUnallocatedCasesPage(mode: 'headless' | 'headed', page: Page = this.page, caseName?: string) {
         if (mode === 'headless') {
             await expect(page).toHaveScreenshot('actual-unallocatedCasesPage.png', {
                 fullPage: true,
@@ -15,6 +15,10 @@ export class unallocatedCasesPage {
             console.log('unallocatedCasesPage - Skipping screenshot assertion in headed mode');
         }
         await commonLocators.verifyPageHeadingsByName(this.page, "Unallocated cases");
+
+        // if (caseName) {
+        // commonLocators.clickOnLinkByName(page, caseName)
+        // }
 
         const rows = page.locator('tbody.govuk-table__body > tr.govuk-table__row');
         const rowCount = await rows.count();
@@ -29,5 +33,19 @@ export class unallocatedCasesPage {
                 break;
             }
         }
+    }
+
+    async completeUnallocatedCasesWithResrictedCase(mode: 'headless' | 'headed', page: Page = this.page, caseName: string) {
+        if (mode === 'headless') {
+            await expect(page).toHaveScreenshot('actual-unallocatedCasesPage.png', {
+                fullPage: true,
+                threshold: 0.2,
+            });
+        } else {
+            console.log('unallocatedCasesPage - Skipping screenshot assertion in headed mode');
+        }
+        await commonLocators.verifyPageHeadingsByName(this.page, "Unallocated cases");
+
+        await commonLocators.clickOnRestrictedCase(page, caseName);
     }
 }

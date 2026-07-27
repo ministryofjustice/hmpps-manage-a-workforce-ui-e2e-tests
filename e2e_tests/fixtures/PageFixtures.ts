@@ -1,8 +1,7 @@
 import { BrowserContext, Page, test as baseTest } from '@playwright/test';
 
-import { allocateTheCasePage } from 'root/e2e_tests/pages/11-allocateTheCasePage';
 import { allocateToAProbationPractitionerPage } from '@pages/07-allocateToAProbationPractitionerPage';
-import { caseAllocatedPage } from 'root/e2e_tests/pages/12-caseAllocatedPage';
+import { caseAllocatedPage } from '@pages/11-caseAllocatedPage';
 import { caseSummaryPage } from '@pages/06-caseSummaryPage';
 import envConfig from '@env-config/envConfig.json';
 import { pduPage } from '@pages/02-pduPage';
@@ -30,7 +29,6 @@ type PageFixtures = {
   youAreAllocatingPage: youAreAllocatingPage;
   reviewYourAllocationNotesPage: reviewYourAllocationNotesPage;
   emailRecepientsPage: emailRecepientsPage;
-  allocateTheCasePage: allocateTheCasePage;
   caseAllocatedPage: caseAllocatedPage;
   serviceTemporarilyUnavailablePage: serviceTemporarilyUnavailablePage;
   noPermissionToViewThisPage: noPermissionToViewThisPage;
@@ -98,10 +96,6 @@ export const test = baseTest.extend<PageFixtures>({
 
   emailRecepientsPage: async ({ page }, use) => {
     await use(new emailRecepientsPage(page));
-  },
-
-  allocateTheCasePage: async ({ page }, use) => {
-    await use(new allocateTheCasePage(page));
   },
 
   caseAllocatedPage: async ({ page }, use) => {

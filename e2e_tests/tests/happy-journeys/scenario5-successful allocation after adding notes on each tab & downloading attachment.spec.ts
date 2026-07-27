@@ -6,25 +6,24 @@ describe('Happy Path - Scenario 5 - Successful allocation after editing notes an
     test(`As a SPO navigate to different tabs(
     RISK, Document, Summary, and PR) and add a note on each tab and try
      to open up a document attached, continue to allocate a case.
-     @smoke @regression @e2e @wfp-3288`, async( {regionsPage,pduPage,
+     @smoke @regression @e2e @wfp-3288`, async ({ regionsPage, pduPage,
             selectYourTeamsPage, yourTeamsPage,
             unallocatedCasesPage, caseSummaryPage,
             allocateToAProbationPractitionerPage,
-            youAreAllocatingPage,reviewYourAllocationNotesPage,
-            allocateTheCasePage, caseAllocatedPage,
-            page}, testInfo) => {
-            const mode = getRunMode(testInfo);
-            await regionsPage.completeRegionsPage(mode, page);
-            await pduPage.completePduPage(mode, page);
-            await selectYourTeamsPage.completeSelectYourTeamsPage(mode, page);
-            await yourTeamsPage.completeYourTeamsPage(mode, page);
-            await unallocatedCasesPage.completeUnallocatedCasesPage(mode, page);
-            await caseSummaryPage.editTabsOnSummaryPageAndVerifyDownloadLink(mode, page);
-            await allocateToAProbationPractitionerPage.completeAllocateToAProbationPractitionerPage(mode, page);
-            await youAreAllocatingPage.editTextAndCompleteYouAreAllocatingPage(mode, page);
-            await reviewYourAllocationNotesPage.completeReviewYourAllocationNotesPage(page);
-            await allocateTheCasePage.editNotesAndCompleteAllocateTheCaseWithSensitiveInfoPage(mode, page);
-            await caseAllocatedPage.completeCaseAllocatedPage(page);
-            });
+            youAreAllocatingPage, reviewYourAllocationNotesPage,
+            emailRecepientsPage, caseAllocatedPage,
+            page }, testInfo) => {
+        const mode = getRunMode(testInfo);
+        await regionsPage.completeRegionsPage(mode, page);
+        await pduPage.completePduPage(mode, page);
+        await selectYourTeamsPage.completeSelectYourTeamsPage(mode, page);
+        await yourTeamsPage.completeYourTeamsPage(mode, page);
+        await unallocatedCasesPage.completeUnallocatedCasesPage(mode, page);
+        await caseSummaryPage.editTabsOnSummaryPageAndVerifyDownloadLink(mode, page);
+        await allocateToAProbationPractitionerPage.completeAllocateToAProbationPractitionerPage(mode, page);
+        await youAreAllocatingPage.editTextAndCompleteYouAreAllocatingPage(mode, page);
+        await reviewYourAllocationNotesPage.completeReviewYourAllocationNotesPage(page);
+        await emailRecepientsPage.completeEmailRecepientsPage(page);
+        await caseAllocatedPage.completeCaseAllocatedPage(page);
     });
-    
+});

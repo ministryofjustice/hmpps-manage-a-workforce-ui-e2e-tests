@@ -10,7 +10,7 @@ describe('Happy path - Scenario 4 -  Successful allocation after editing notes w
             unallocatedCasesPage, caseSummaryPage,
             allocateToAProbationPractitionerPage,
             youAreAllocatingPage,reviewYourAllocationNotesPage,
-            allocateTheCasePage, caseAllocatedPage, page}, testInfo) => {
+            emailRecepientsPage, caseAllocatedPage, page}, testInfo) => {
             const mode = getRunMode(testInfo);
             await regionsPage.completeRegionsPage(mode, page);
             await pduPage.completePduPage(mode, page);
@@ -20,8 +20,8 @@ describe('Happy path - Scenario 4 -  Successful allocation after editing notes w
             await caseSummaryPage.completeCaseSummaryPage(mode, page);
             await allocateToAProbationPractitionerPage.completeAllocateToAProbationPractitionerPage(mode, page);
             await youAreAllocatingPage.completeYouAreAllocatingPage(mode, page);  
-            await reviewYourAllocationNotesPage.completeReviewYourAllocationNotesPage(page);
-            await allocateTheCasePage.editNotesAndCompleteAllocateTheCaseWithSensitiveInfoPage(mode, page);
+            await reviewYourAllocationNotesPage.completeReviewYourAllocationNotesWithSensitiveInformationPage(page);
+            await emailRecepientsPage.completeEmailRecepientsPage(page);
             await caseAllocatedPage.completeCaseAllocatedPage(page);
         })
 });

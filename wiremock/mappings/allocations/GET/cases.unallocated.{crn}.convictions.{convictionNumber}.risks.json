@@ -54,7 +54,7 @@
       "requiredScenarioState": "Started",
       "request": {
         "method": "GET",
-        "urlPathTemplate": "/cases/unallocated/{crn}/convictions/{convictionNumber}/risks",
+        "urlPathTemplate": "/cases/unallocated/X961887/convictions/{convictionNumber}/risks",
         "pathParameters": {
           "convictionNumber": { "matches": ".*" }
         }
