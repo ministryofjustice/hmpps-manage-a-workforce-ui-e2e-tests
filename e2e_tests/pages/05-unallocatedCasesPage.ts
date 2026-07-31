@@ -16,10 +16,6 @@ export class unallocatedCasesPage {
         }
         await commonLocators.verifyPageHeadingsByName(this.page, "Unallocated cases");
 
-        // if (caseName) {
-        // commonLocators.clickOnLinkByName(page, caseName)
-        // }
-
         const rows = page.locator('tbody.govuk-table__body > tr.govuk-table__row');
         const rowCount = await rows.count();
 
