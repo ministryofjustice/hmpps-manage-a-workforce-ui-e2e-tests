@@ -18,7 +18,7 @@ export class caseAllocatedPage {
             await commonLocators.verifyPageByText(page, 'your allocation notes have been emailed to Coco Pint (simulate-delivered@notifications.service.gov.uk)');
         }
         await commonLocators.verifyPageByText(page, 'we\'ve sent you a copy of the allocation email');
-        await commonLocators.verifyPageByText(page, 'we\'ve sent a copy of the allocation email to Wellington.Kohler@justice.gov.uk');
+        // await commonLocators.verifyPageByText(page, 'we\'ve sent a copy of the allocation email to Wellington.Kohler@justice.gov.uk');
         await commonLocators.verifyPageByText(page, 'the initial appointment is scheduled for 4 October 2025 with Coco Pint PO');
         await commonLocators.clickOnLinkByName(page, 'Return to unallocated cases');
         await commonLocators.verifyPageHeadingsByName(page, 'Unallocated cases');

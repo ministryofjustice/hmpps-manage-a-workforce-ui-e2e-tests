@@ -5,10 +5,10 @@ import { commonLocators } from "./common-functions";
 export class reviewYourAllocationNotesPage {
     constructor(private page: Page) { }
 
-    async completeReviewYourAllocationNotesPage(page: Page = this.page, restricted?: string) {
+    async completeReviewYourAllocationNotesPage(page: Page = this.page, tagName?: string) {
 
-        if (restricted) {
-            await commonLocators.verifyRestrictedTagOnThePage(page, restricted);
+        if (tagName) {
+            await commonLocators.verifyTagOnThePage(page, tagName);
         }
 
         await commonLocators.verifyPageHeadingsByName(page, 'Review your allocation notes');

@@ -5,7 +5,7 @@ import { commonLocators } from "./common-functions";
 export class allocateTheCasePage {
     constructor(private page: Page) { }
 
-    async completeAllocateTheCasePage(mode: 'headless' | 'headed', page: Page = this.page): Promise<void> {
+    async completeAllocateTheCasePage(mode: 'headless' | 'headed', page: Page = this.page, tagName?: string): Promise<void> {
         if (mode === 'headless') {
             await expect(page).toHaveScreenshot('actual-allocateTheCasePage.png', {
                 fullPage: true,
@@ -14,6 +14,10 @@ export class allocateTheCasePage {
         } else {
             console.log('allocateTheCasePage - Skipping screenshot assertion in headed mode');
         }
+         if (tagName) {
+            await commonLocators.verifyTagOnThePage(page, tagName);
+        }
+
         await commonLocators.verifyPageHeadingsByName(this.page, 'Save your notes as an');
         await commonLocators.verifyPageByText(this.page, 'Your allocation notes will be');
         await commonLocators.verifyButtonIsVisibleByName(this.page, 'Edit my notes before');

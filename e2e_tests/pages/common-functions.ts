@@ -83,8 +83,8 @@ export async function clickOnRestrictedCase(page: Page, personName: string) {
     await clickOnLinkByName(page, personName);
 }
 
-export async function verifyRestrictedTagOnThePage(page: Page, tagName: string) {
-    await expect(page.getByText(`${tagName}`)).toBeVisible();
+export async function verifyTagOnThePage(page: Page, tagName: string) {
+    await expect(page.getByText(`${tagName}`, {exact: true})).toBeVisible();
 }
 
 export async function enterEmailAddressInCombobox(page: Page, count: number = 1) {
@@ -132,6 +132,6 @@ export const commonLocators = {
     fillTextInTextArea,
     verifyFilledTextArea,
     clickOnRestrictedCase,
-    verifyRestrictedTagOnThePage,
+    verifyTagOnThePage,
     enterEmailAddressInCombobox
 };

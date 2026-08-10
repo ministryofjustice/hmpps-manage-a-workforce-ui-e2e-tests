@@ -13,7 +13,7 @@ describe('Happy Path - Scenario 8 - Successful allocation of LAO case on the Res
         unallocatedCasesPage, caseSummaryPage,
         allocateToAProbationPractitionerPage,
         youAreAllocatingPage, reviewYourAllocationNotesPage,
-        emailRecepientsPage, caseAllocatedPage, page }, testInfo) => {
+        allocateTheCasePage, caseAllocatedPage, page }, testInfo) => {
 
         const mode = getRunMode(testInfo);
         await regionsPage.completeRegionsPage(mode, page);
@@ -25,7 +25,7 @@ describe('Happy Path - Scenario 8 - Successful allocation of LAO case on the Res
         await allocateToAProbationPractitionerPage.completeAllocateToAProbationPractitionerPage(mode, page, 'Restricted access');
         await youAreAllocatingPage.completeYouAreAllocatingPage(mode, page, 'Restricted access');
         await reviewYourAllocationNotesPage.completeReviewYourAllocationNotesPage(page, 'Restricted access');
-        await emailRecepientsPage.completeEmailRecepientsPage(page, 'Restricted access');
+        await allocateTheCasePage.completeAllocateTheCasePage(mode, page, 'Restricted access');
         await caseAllocatedPage.completeCaseAllocatedPage(page, 'X961887', true);
     });
         test.afterAll(async () => {

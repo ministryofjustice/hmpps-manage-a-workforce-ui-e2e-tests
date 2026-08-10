@@ -5,7 +5,7 @@ import { commonLocators } from "./common-functions";
 export class caseSummaryPage {
     constructor(private page: Page) { }
 
-    async completeCaseSummaryPage(mode: 'headless' | 'headed', page: Page = this.page, restricted?: string): Promise<void> {
+    async completeCaseSummaryPage(mode: 'headless' | 'headed', page: Page = this.page, tagName?: string): Promise<void> {
         if (mode === 'headless') {
             await expect(page).toHaveScreenshot('actual-caseSummaryPage.png', {
                 fullPage: true,
@@ -15,8 +15,8 @@ export class caseSummaryPage {
             console.log('caseSummaryPage - Skipping screenshot assertion in headed mode');
         }
 
-        if (restricted) {
-            await commonLocators.verifyRestrictedTagOnThePage(page, restricted);
+        if (tagName) {
+            await commonLocators.verifyTagOnThePage(page, tagName);
         }
         
         await commonLocators.verifyPageHeadingsByName(this.page, 'Summary');

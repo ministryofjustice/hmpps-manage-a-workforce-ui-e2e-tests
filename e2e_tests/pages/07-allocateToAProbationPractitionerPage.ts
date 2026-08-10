@@ -6,7 +6,7 @@ export class allocateToAProbationPractitionerPage {
     constructor(private page: Page) { }
 
     async completeAllocateToAProbationPractitionerPage(mode: 'headless' | 'headed', page: Page = this.page,
-         restricted?:string): Promise<void> {
+         tagName?:string): Promise<void> {
         if (mode === 'headless') {
             await expect(page).toHaveScreenshot('actual-allocateToAProbationPractitionerPage.png', {
                 fullPage: true,
@@ -16,8 +16,8 @@ export class allocateToAProbationPractitionerPage {
             console.log('allocateToAProbationPractitionerPage - Skipping screenshot assertion in headed mode');
         }
 
-        if (restricted) {
-            await commonLocators.verifyRestrictedTagOnThePage(page, restricted);
+        if (tagName) {
+            await commonLocators.verifyTagOnThePage(page, tagName);
         }
         
         await commonLocators.verifyPageHeadingsByName(this.page, 'Allocate to a probation');

@@ -16,7 +16,7 @@ export class youAreAllocatingPage {
         }
 
         if (restricted) {
-            await commonLocators.verifyRestrictedTagOnThePage(page, restricted);
+            await commonLocators.verifyTagOnThePage(page, restricted);
         }
         
         await commonLocators.verifyPageHeadingsByName(this.page, `You\'re allocating`);

@@ -5,7 +5,7 @@ import { commonLocators } from "./common-functions";
 export class unallocatedCasesPage {
     constructor(public page: Page) { }
 
-    async completeUnallocatedCasesPage(mode: 'headless' | 'headed', page: Page = this.page, caseName?: string) {
+    async completeUnallocatedCasesPage(mode: 'headless' | 'headed', page: Page = this.page) {
         if (mode === 'headless') {
             await expect(page).toHaveScreenshot('actual-unallocatedCasesPage.png', {
                 fullPage: true,
