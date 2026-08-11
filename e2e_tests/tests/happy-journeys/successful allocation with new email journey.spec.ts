@@ -4,18 +4,17 @@ import { test } from "@fixtures/PageFixtures";
 import { resetAllScenarios, setupScenario } from '@utils/setup-wiremock-scenario-state';
 
 describe('Happy Path - Case allocation with new Email functionality', () => {
-    // test.beforeAll(async () => {
-    //     await setupScenario('internal.v1.evaluation.snapshot.namespace.__namespace__', 'email-recipient-list');
-    // })
-    test.only(`As a SPO able to see and allocate the case with new email functinality.
+    test.beforeAll(async () => {
+        await setupScenario('internal.v1.evaluation.snapshot.namespace.__namespace__', 'email-recipient-list');
+    })
+    test(`As a SPO able to see and allocate the case with new email functionality.
         @smoke @regression @e2e`, async ({ regionsPage, pduPage,
         selectYourTeamsPage, yourTeamsPage,
         unallocatedCasesPage, caseSummaryPage,
         allocateToAProbationPractitionerPage,
         youAreAllocatingPage, reviewYourAllocationNotesPage,
         emailRecepientsPage, caseAllocatedPage, page }, testInfo) => {
-     
-        await setupScenario('internal.v1.evaluation.snapshot.namespace.__namespace__', 'email-recipient-list');
+
         const mode = getRunMode(testInfo);
         await regionsPage.completeRegionsPage(mode, page);
         await pduPage.completePduPage(mode, page);

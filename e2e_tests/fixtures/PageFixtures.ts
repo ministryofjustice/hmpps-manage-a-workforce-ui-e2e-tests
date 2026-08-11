@@ -2,7 +2,7 @@ import { BrowserContext, Page, test as baseTest } from '@playwright/test';
 
 import { allocateTheCasePage } from '@pages/10-allocateTheCasePage';
 import { allocateToAProbationPractitionerPage } from '@pages/07-allocateToAProbationPractitionerPage';
-import { caseAllocatedPage } from 'root/e2e_tests/pages/12-caseAllocatedPage';
+import { caseAllocatedPage } from '@pages/12-caseAllocatedPage';
 import { caseSummaryPage } from '@pages/06-caseSummaryPage';
 import envConfig from '@env-config/envConfig.json';
 import { pduPage } from '@pages/02-pduPage';
@@ -14,7 +14,7 @@ import { youAreAllocatingPage } from '@pages/08-youAreAllocatingPage';
 import { yourTeamsPage } from '@pages/04-yourTeamsPage';
 import { serviceTemporarilyUnavailablePage } from '@pages/error504-serviceTemporarilyUnavailablePage';
 import { noPermissionToViewThisPage } from '@pages/error403-noPermissionToViewThisPage';
-import { emailRecepientsPage } from 'root/e2e_tests/pages/11-emailRecepientsPage';
+import { emailRecepientsPage } from '@pages/11-emailRecepientsPage';
 
 type PageFixtures = {
   context: BrowserContext;
