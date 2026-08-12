@@ -1,0 +1,22 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "allocation.person.__crn__.event.__eventId__.details",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "GET",
+        "urlPathTemplate": "/allocation/person/{crn}/event/{eventId}/details",
+        "pathParameters": { "crn": { "matches": ".*" }, "eventId": { "matches": ".*" } }
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {
+          "tier": "A3",
+          "personOnProbationFirstName": "Sally",
+          "personOnProbationSurname": "Smith"
+        }
+      }
+    }
+  ]
+}

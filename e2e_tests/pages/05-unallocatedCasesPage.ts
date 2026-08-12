@@ -30,4 +30,18 @@ export class unallocatedCasesPage {
             }
         }
     }
+
+    async completeUnallocatedCasesWithResrictedCase(mode: 'headless' | 'headed', page: Page = this.page, caseName: string) {
+        if (mode === 'headless') {
+            await expect(page).toHaveScreenshot('actual-unallocatedCasesPage.png', {
+                fullPage: true,
+                threshold: 0.2,
+            });
+        } else {
+            console.log('unallocatedCasesPage - Skipping screenshot assertion in headed mode');
+        }
+        await commonLocators.verifyPageHeadingsByName(this.page, "Unallocated cases");
+
+        await commonLocators.clickOnRestrictedCase(page, caseName);
+    }
 }

@@ -2,7 +2,7 @@ import { BrowserContext, Page, test as baseTest } from '@playwright/test';
 
 import { allocateTheCasePage } from '@pages/10-allocateTheCasePage';
 import { allocateToAProbationPractitionerPage } from '@pages/07-allocateToAProbationPractitionerPage';
-import { caseAllocatedPage } from '@pages/11-caseAllocatedPage';
+import { caseAllocatedPage } from '@pages/12-caseAllocatedPage';
 import { caseSummaryPage } from '@pages/06-caseSummaryPage';
 import envConfig from '@env-config/envConfig.json';
 import { pduPage } from '@pages/02-pduPage';
@@ -12,8 +12,9 @@ import { selectYourTeamsPage } from '@pages/03-selectYourTeamsPage';
 import { unallocatedCasesPage } from '@pages/05-unallocatedCasesPage';
 import { youAreAllocatingPage } from '@pages/08-youAreAllocatingPage';
 import { yourTeamsPage } from '@pages/04-yourTeamsPage';
-import { serviceTemporarilyUnavailablePage } from '../pages/error504-serviceTemporarilyUnavailablePage';
-import { noPermissionToViewThisPage } from '../pages/error403-noPermissionToViewThisPage';
+import { serviceTemporarilyUnavailablePage } from '@pages/error504-serviceTemporarilyUnavailablePage';
+import { noPermissionToViewThisPage } from '@pages/error403-noPermissionToViewThisPage';
+import { emailRecepientsPage } from '@pages/11-emailRecepientsPage';
 
 type PageFixtures = {
   context: BrowserContext;
@@ -29,6 +30,7 @@ type PageFixtures = {
   youAreAllocatingPage: youAreAllocatingPage;
   reviewYourAllocationNotesPage: reviewYourAllocationNotesPage;
   allocateTheCasePage: allocateTheCasePage;
+  emailRecepientsPage: emailRecepientsPage;
   caseAllocatedPage: caseAllocatedPage;
   serviceTemporarilyUnavailablePage: serviceTemporarilyUnavailablePage;
   noPermissionToViewThisPage: noPermissionToViewThisPage;
@@ -100,6 +102,10 @@ export const test = baseTest.extend<PageFixtures>({
 
   caseAllocatedPage: async ({ page }, use) => {
     await use(new caseAllocatedPage(page));
+  },
+
+  emailRecepientsPage: async ({ page }, use) => {
+    await use(new emailRecepientsPage(page));
   },
 
   serviceTemporarilyUnavailablePage: async ({ page }, use) => {

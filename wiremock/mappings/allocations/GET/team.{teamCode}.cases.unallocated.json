@@ -1706,7 +1706,7 @@
             "sentenceLength": "6 Months",
             "convictionNumber": 2,
             "outOfAreaTransfer": false,
-            "excluded": false,
+            "excluded": true,
             "apopExcluded": false
           }
         ]

@@ -5,7 +5,8 @@ import { commonLocators } from "./common-functions";
 export class allocateToAProbationPractitionerPage {
     constructor(private page: Page) { }
 
-    async completeAllocateToAProbationPractitionerPage(mode: 'headless' | 'headed', page: Page = this.page): Promise<void> {
+    async completeAllocateToAProbationPractitionerPage(mode: 'headless' | 'headed', page: Page = this.page,
+         tagName?:string): Promise<void> {
         if (mode === 'headless') {
             await expect(page).toHaveScreenshot('actual-allocateToAProbationPractitionerPage.png', {
                 fullPage: true,
@@ -14,6 +15,11 @@ export class allocateToAProbationPractitionerPage {
         } else {
             console.log('allocateToAProbationPractitionerPage - Skipping screenshot assertion in headed mode');
         }
+
+        if (tagName) {
+            await commonLocators.verifyTagOnThePage(page, tagName);
+        }
+        
         await commonLocators.verifyPageHeadingsByName(this.page, 'Allocate to a probation');
 
         const radios = await page.getByRole('radio').elementHandles();

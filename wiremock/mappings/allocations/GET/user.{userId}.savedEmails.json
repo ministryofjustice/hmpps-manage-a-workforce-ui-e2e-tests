@@ -1,0 +1,20 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "user.__userId__.savedEmails",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "GET",
+        "urlPathTemplate": "/user/{userId}/savedEmails",
+        "pathParameters": {
+          "userId": { "matches": ".*" }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": ["first@justice.gov.uk", "second@justice.gov.uk", "third@justice.gov.uk"]
+      }
+    }
+  ]
+}

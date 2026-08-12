@@ -21,6 +21,27 @@
           "convictionNumber": 2
         }
       }
+    },
+    {
+      "scenarioName": "GET.cases.unallocated.X961887.convictions.__convictionNumber__.overview",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "GET",
+        "urlPathTemplate": "/cases/unallocated/X961887/convictions/{convictionNumber}/overview",
+        "pathParameters": {
+          "convictionNumber": { "matches": ".*" }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": {
+          "name": "Pearl Gorczany",
+          "crn": "X961887",
+          "tier": "D0",
+          "convictionNumber": 2
+        }
+      }
     }
   ]
 }

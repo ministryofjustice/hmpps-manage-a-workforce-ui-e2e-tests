@@ -13,6 +13,19 @@
         "headers": { "Content-Type": "application/json;charset=UTF-8" },
         "jsonBody": false
       }
+    },
+        {
+      "scenarioName": "GET.cases.unallocated.X961887.restricted",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "GET",
+        "urlPath": "/cases/unallocated/X961887/restricted"
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json;charset=UTF-8" },
+        "jsonBody": true
+      }
     }
   ]
 }

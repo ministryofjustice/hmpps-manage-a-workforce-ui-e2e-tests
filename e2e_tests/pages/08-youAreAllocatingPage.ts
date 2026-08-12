@@ -5,7 +5,7 @@ import { commonLocators } from "./common-functions";
 export class youAreAllocatingPage {
     constructor(private page: Page) { }
 
-    async completeYouAreAllocatingPage(mode: 'headless' | 'headed', page: Page = this.page): Promise<void> {
+    async completeYouAreAllocatingPage(mode: 'headless' | 'headed', page: Page = this.page, restricted?: string): Promise<void> {
         if (mode === 'headless') {
             await expect(page).toHaveScreenshot('actual-youAreAllocatingPage.png', {
                 fullPage: true,
@@ -14,12 +14,17 @@ export class youAreAllocatingPage {
         } else {
             console.log('YouAreAllocatingPage - Skipping screenshot assertion in headed mode');
         }
+
+        if (restricted) {
+            await commonLocators.verifyTagOnThePage(page, restricted);
+        }
+        
         await commonLocators.verifyPageHeadingsByName(this.page, `You\'re allocating`);
         await commonLocators.verifyFilledTextArea(page);
-        await commonLocators.clickOnButtonByName(this.page, 'Continue');    
+        await commonLocators.clickOnButtonByName(this.page, 'Continue');
     }
 
-        async editTextAndCompleteYouAreAllocatingPage(mode: 'headless' | 'headed', page: Page = this.page): Promise<void> {
+    async editTextAndCompleteYouAreAllocatingPage(mode: 'headless' | 'headed', page: Page = this.page): Promise<void> {
         if (mode === 'headless') {
             await expect(page).toHaveScreenshot('actual-youAreAllocatingPage.png', {
                 fullPage: true,
