@@ -3,11 +3,12 @@ import { getRunMode } from "@utils/testMode";
 import { test } from "@fixtures/PageFixtures";
 import { resetAllScenarios, setupScenario } from '@utils/setup-wiremock-scenario-state';
 
+// Skipping this test as part of the suite until Email functionality is rolled out to all the PDUs
 describe('Happy Path - Case allocation with new Email functionality', () => {
     test.beforeAll(async () => {
         await setupScenario('internal.v1.evaluation.snapshot.namespace.__namespace__', 'email-recipient-list');
     })
-    test(`As a SPO able to see and allocate the case with new email functionality.
+    test.skip(`As a SPO able to see and allocate the case with new email functionality.
         @smoke @regression @e2e`, async ({ regionsPage, pduPage,
         selectYourTeamsPage, yourTeamsPage,
         unallocatedCasesPage, caseSummaryPage,
