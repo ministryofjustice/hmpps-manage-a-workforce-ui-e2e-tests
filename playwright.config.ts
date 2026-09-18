@@ -18,7 +18,7 @@ export default defineConfig({
   testDir: './e2e_tests/tests',
   expect: {
    toHaveScreenshot: {
-     pathTemplate: '{testDir}/{testFileDir}/{arg}{ext}',
+     pathTemplate: '{testDir}/{testFileDir}/{testName}/{arg}-{projectName}-{platform}{ext}',
    },
  },
   /* Run tests in files in parallel */
