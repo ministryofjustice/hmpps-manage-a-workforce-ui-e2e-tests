@@ -16,6 +16,12 @@ console.log('Running in HEADLESS mode:', isHeadless);
  */
 export default defineConfig({
   testDir: './e2e_tests/tests',
+  expect: {
+   toHaveScreenshot: {
+     pathTemplate: '{testDir}/{testFileDir}/{testFileName}-snapshots/{arg}-{projectName}-darwin{ext}',
+     maxDiffPixelRatio: 0.3
+   },
+ },
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -27,10 +33,13 @@ export default defineConfig({
   workers: 1,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
-    ['html'],
     ['list'],
-    ['allure-playwright', { resultsDir: 'allure-results' }]
+    ['html', { outputFolder: 'test_results/playwright/report', open: process.env.CI ? 'never' : 'on-failure' }],
+    ['junit', { outputFile: 'test_results/playwright/junit.xml' }],
+    ['allure-playwright', { resultsDir: 'allure-results' }],
+    ...(process.env.CI ? [['blob', { outputDir: 'test_results/blob-report' }] as const] : []),
   ],
+  outputDir: './test_results/playwright/test-output',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
@@ -52,10 +61,10 @@ export default defineConfig({
         ...devices['Desktop Chrome'] },
     },
 
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] },
+    // },
 
     // {
     //   name: 'webkit',
