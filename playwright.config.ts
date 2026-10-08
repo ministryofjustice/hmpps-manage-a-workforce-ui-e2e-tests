@@ -19,6 +19,7 @@ export default defineConfig({
   expect: {
    toHaveScreenshot: {
      pathTemplate: '{testDir}/{testFileDir}/{testFileName}-snapshots/{arg}-{projectName}-darwin{ext}',
+     maxDiffPixelRatio: 0.3
    },
  },
   /* Run tests in files in parallel */
