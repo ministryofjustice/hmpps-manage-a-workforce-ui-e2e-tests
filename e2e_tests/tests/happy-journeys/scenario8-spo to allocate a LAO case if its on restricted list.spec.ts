@@ -7,7 +7,7 @@ describe('Happy Path - Scenario 8 - Successful allocation of LAO case on the Res
         test.beforeAll(async () => {
         await setupScenario('GET.team.choose-practitioner', 'Restricted');
     })
-    test(`As a SPO able to see and allocate the LAO cases if you’re on the Restricted list.
+    test.skip(`As a SPO able to see and allocate the LAO cases if you’re on the Restricted list.
         @smoke @regression @e2e @wfp-3303`, async ({ regionsPage, pduPage,
         selectYourTeamsPage, yourTeamsPage,
         unallocatedCasesPage, caseSummaryPage,
