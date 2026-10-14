@@ -8,8 +8,7 @@ export class selectYourTeamsPage {
     async completeSelectYourTeamsPage(mode: 'headless' | 'headed', page: Page = this.page) {
         if (mode === 'headless') {
             await expect(page).toHaveScreenshot('actual-selectYourTeamsPage.png', {
-                fullPage: true,
-                threshold: 0.2,
+                fullPage: true
             });
         } else {
             console.log('selectYourTeamsPage - Skipping screenshot assertion in headed mode');

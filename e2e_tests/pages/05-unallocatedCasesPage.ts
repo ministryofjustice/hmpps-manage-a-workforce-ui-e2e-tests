@@ -8,8 +8,7 @@ export class unallocatedCasesPage {
     async completeUnallocatedCasesPage(mode: 'headless' | 'headed', page: Page = this.page) {
         if (mode === 'headless') {
             await expect(page).toHaveScreenshot('actual-unallocatedCasesPage.png', {
-                fullPage: true,
-                threshold: 0.2,
+                fullPage: true
             });
         } else {
             console.log('unallocatedCasesPage - Skipping screenshot assertion in headed mode');
@@ -31,11 +30,11 @@ export class unallocatedCasesPage {
         }
     }
 
-    async completeUnallocatedCasesWithResrictedCase(mode: 'headless' | 'headed', page: Page = this.page, caseName: string) {
+    async completeUnallocatedCasesWithResrictedCase(mode: 'headless' | 'headed', page: Page = this.page,
+         caseName: string) {
         if (mode === 'headless') {
             await expect(page).toHaveScreenshot('actual-unallocatedCasesPage.png', {
-                fullPage: true,
-                threshold: 0.2,
+                fullPage: true
             });
         } else {
             console.log('unallocatedCasesPage - Skipping screenshot assertion in headed mode');

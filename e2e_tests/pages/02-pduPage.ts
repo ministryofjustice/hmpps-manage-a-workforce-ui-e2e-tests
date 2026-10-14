@@ -8,8 +8,7 @@ export class pduPage {
     async completePduPage(mode: 'headless' | 'headed', page: Page = this.page) {
         if (mode === 'headless') {
             await expect(page).toHaveScreenshot('actual-pduPage.png', {
-                fullPage: true,
-                threshold: 0.2,
+                fullPage: true
             });
         } else {
             console.log('pduPage - Skipping screenshot assertion in headed mode');

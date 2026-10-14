@@ -10,8 +10,7 @@ export class noPermissionToViewThisPage {
         page: Page = this.page) {
         if (mode === 'headless') {
             await expect(page).toHaveScreenshot('actual-noPermissionToViewThisPage.png', {
-                fullPage: true,
-                threshold: 0.2
+                fullPage: true
             });
         } else {
             console.log('noPermissionToViewThisPage - Skipping screenshot assertion in headed mode');

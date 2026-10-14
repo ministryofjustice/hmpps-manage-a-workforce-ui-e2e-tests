@@ -9,8 +9,7 @@ export class allocateToAProbationPractitionerPage {
          tagName?:string): Promise<void> {
         if (mode === 'headless') {
             await expect(page).toHaveScreenshot('actual-allocateToAProbationPractitionerPage.png', {
-                fullPage: true,
-                threshold: 0.2,
+                fullPage: true
             });
         } else {
             console.log('allocateToAProbationPractitionerPage - Skipping screenshot assertion in headed mode');

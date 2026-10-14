@@ -10,8 +10,7 @@ export class serviceTemporarilyUnavailablePage {
                                                     page: Page = this.page) {
         if (mode === 'headless') {
             await expect(page).toHaveScreenshot('actual-serviceTemporarilyUnavailablePage.png', {
-                fullPage: true,
-                threshold: 0.2
+                fullPage: true
             });
         } else {
             console.log('serviceTemporarilyUnavailablePage - Skipping screenshot assertion in headed mode');

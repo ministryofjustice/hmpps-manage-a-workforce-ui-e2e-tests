@@ -22,8 +22,8 @@ describe('Happy Path - Scenario 5 - Successful allocation after editing notes an
         await caseSummaryPage.editTabsOnSummaryPageAndVerifyDownloadLink(mode, page);
         await allocateToAProbationPractitionerPage.completeAllocateToAProbationPractitionerPage(mode, page);
         await youAreAllocatingPage.editTextAndCompleteYouAreAllocatingPage(mode, page);
-        await reviewYourAllocationNotesPage.completeReviewYourAllocationNotesPage(page);
+        await reviewYourAllocationNotesPage.completeReviewYourAllocationNotesPage(mode, page);
         await allocateTheCasePage.editNotesAndCompleteAllocateTheCaseWithSensitiveInfoPage(mode, page);
-        await caseAllocatedPage.completeCaseAllocatedPage(page);
+        await caseAllocatedPage.completeCaseAllocatedPage(mode, page);
     });
 });

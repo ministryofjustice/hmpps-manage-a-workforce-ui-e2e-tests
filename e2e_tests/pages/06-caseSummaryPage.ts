@@ -5,11 +5,11 @@ import { commonLocators } from "./common-functions";
 export class caseSummaryPage {
     constructor(private page: Page) { }
 
-    async completeCaseSummaryPage(mode: 'headless' | 'headed', page: Page = this.page, tagName?: string): Promise<void> {
+    async completeCaseSummaryPage(mode: 'headless' | 'headed', page: Page = this.page,
+         tagName?: string): Promise<void> {
         if (mode === 'headless') {
             await expect(page).toHaveScreenshot('actual-caseSummaryPage.png', {
-                fullPage: true,
-                threshold: 0.2,
+                fullPage: true
             });
         } else {
             console.log('caseSummaryPage - Skipping screenshot assertion in headed mode');
@@ -24,11 +24,11 @@ export class caseSummaryPage {
         await commonLocators.clickOnButtonByName(this.page, 'Continue');
     }
 
-    async editTabsOnSummaryPageAndVerifyDownloadLink(mode: 'headless' | 'headed', page: Page = this.page): Promise<void> {
+    async editTabsOnSummaryPageAndVerifyDownloadLink(mode: 'headless' | 'headed',
+         page: Page = this.page): Promise<void> {
         if (mode === 'headless') {
             await expect(page).toHaveScreenshot('actual-caseSummaryPageWithAttachment.png'), {
-                fullPage: true,
-                threshold: 0.2
+                fullPage: true
             };
         } else {
             console.log('caseSummaryPage - Skipping screenshot assertion in headed mode');

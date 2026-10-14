@@ -8,8 +8,7 @@ export class yourTeamsPage {
     async completeYourTeamsPage(mode: 'headless' | 'headed', page: Page = this.page) {
         if (mode === 'headless') {
             await expect(page).toHaveScreenshot('actual-yourTeamsPage.png', {
-                fullPage: true,
-                threshold: 0.2,
+                fullPage: true
             });
         } else {
             console.log('yourTeamsPage - Skipping screenshot assertion in headed mode');
