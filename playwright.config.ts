@@ -18,7 +18,7 @@ export default defineConfig({
   testDir: './e2e_tests/tests',
   expect: {
    toHaveScreenshot: {
-     pathTemplate: '{testDir}/{testFileDir}/{testFileName}-snapshots/{arg}-{projectName}-darwin{ext}',
+     pathTemplate: '{testDir}/{testFileDir}/{testFileName}-snapshots/{arg}-{projectName}-{platform}{ext}',
      maxDiffPixelRatio: 0.3
    },
  },
