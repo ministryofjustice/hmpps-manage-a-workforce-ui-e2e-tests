@@ -21,7 +21,7 @@
     "test:firefox:headed": "npm run clean:reports && npx playwright test --project=firefox --headed --reporter=allure-playwright",
     "test:webkit:headed": "npm run clean:reports && npx playwright test --project=webkit --headed --reporter=allure-playwright",
     "test:ignore": "npx playwright test --reporter=allure-playwright",
-    "test:all": "npx playwright test --update-snapshots --reporter=allure-playwright",
+    "test:all": "npx playwright test --reporter=allure-playwright",
     "test:all:headed": "npx playwright test --headed --reporter=allure-playwright",
     "test:debug": "npx playwright test --project=chromium --headed --debug",
     "test:ui": "npx playwright test --project=chromium --headed --ui",
