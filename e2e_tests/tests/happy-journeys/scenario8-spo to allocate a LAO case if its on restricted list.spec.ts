@@ -24,9 +24,9 @@ describe('Happy Path - Scenario 8 - Successful allocation of LAO case on the Res
         await caseSummaryPage.completeCaseSummaryPage(mode, page, 'Restricted access');
         await allocateToAProbationPractitionerPage.completeAllocateToAProbationPractitionerPage(mode, page, 'Restricted access');
         await youAreAllocatingPage.completeYouAreAllocatingPage(mode, page, 'Restricted access');
-        await reviewYourAllocationNotesPage.completeReviewYourAllocationNotesPage(page, 'Restricted access');
+        await reviewYourAllocationNotesPage.completeReviewYourAllocationNotesPage(mode, page, 'Restricted access');
         await allocateTheCasePage.completeAllocateTheCasePage(mode, page, 'Restricted access');
-        await caseAllocatedPage.completeCaseAllocatedPage(page, 'X961887', true);
+        await caseAllocatedPage.completeCaseAllocatedPage(mode, page, 'X961887', true);
     });
         test.afterAll(async () => {
         await resetAllScenarios();
