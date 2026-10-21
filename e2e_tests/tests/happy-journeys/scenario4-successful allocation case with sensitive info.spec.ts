@@ -20,8 +20,8 @@ describe('Happy path - Scenario 4 -  Successful allocation after editing notes w
         await caseSummaryPage.completeCaseSummaryPage(mode, page);
         await allocateToAProbationPractitionerPage.completeAllocateToAProbationPractitionerPage(mode, page);
         await youAreAllocatingPage.completeYouAreAllocatingPage(mode, page);
-        await reviewYourAllocationNotesPage.completeReviewYourAllocationNotesPage(page);
+        await reviewYourAllocationNotesPage.completeReviewYourAllocationNotesPage(mode, page);
         await allocateTheCasePage.editNotesAndCompleteAllocateTheCaseWithSensitiveInfoPage(mode, page);
-        await caseAllocatedPage.completeCaseAllocatedPage(page);
+        await caseAllocatedPage.completeCaseAllocatedPage(mode, page);
     })
 });
