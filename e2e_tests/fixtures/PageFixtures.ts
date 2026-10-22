@@ -48,7 +48,7 @@ export const test = baseTest.extend<PageFixtures>({
 
   baseURL: async ({ }, use) => {
     const env = process.env.TEST_ENV || 'local';
-    const url = process.env.BASE_URL ?? (envConfig as Record<string, { baseURL: string }>)[env].baseURL;
+    const url = (envConfig as Record<string, { baseURL: string }>)[env].baseURL;
     console.log(`Running tests against environment: ${env} - ${url}`);
     await use(url);
   },

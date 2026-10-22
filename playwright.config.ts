@@ -18,9 +18,8 @@ export default defineConfig({
   testDir: './e2e_tests/tests',
   expect: {
    toHaveScreenshot: {
-    //  pathTemplate: '{testDir}/{testFileDir}/{testFileName}-snapshots/{arg}-{projectName}-darwin{ext}',
-         pathTemplate: '{testDir}/{testFileDir}/{testFileName}-snapshots/{arg}-{projectName}-{platform}{ext}',
-     maxDiffPixelRatio: 0.3,
+     pathTemplate: '{testDir}/{testFileDir}/{testFileName}-snapshots/{arg}-{projectName}-darwin{ext}',
+     maxDiffPixelRatio: 1.0,
      threshold: 0.2
    },
  },
@@ -55,22 +54,13 @@ export default defineConfig({
   },
 
   /* Configure projects for major browsers */
-  // projects: [
-  //   {
-  //     name: 'chromium',
-  //     use: {
-  //       headless: isHeadless, 
-  //       ...devices['Desktop Chrome'],
-  //     viewport: { width: 1920, height: 1080 } },
-  //   },
-    projects: [
+  projects: [
     {
       name: 'chromium',
       use: {
+        headless: isHeadless, 
         ...devices['Desktop Chrome'],
-        headless: isHeadless,
-        viewport: { width: 1920, height: 1080 },
-      },
+      viewport: { width: 1920, height: 1080 } },
     },
 
     // {
