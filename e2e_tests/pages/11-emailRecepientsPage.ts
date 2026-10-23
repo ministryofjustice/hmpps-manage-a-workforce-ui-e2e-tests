@@ -4,7 +4,15 @@ import { commonLocators } from './common-functions'
 export class emailRecepientsPage {
     constructor(private page: Page) { }
 
-    async completeEmailRecepientsPage(page: Page = this.page, tagName?: string) {
+    async completeEmailRecepientsPage(mode: 'headless' | 'headed', page: Page = this.page,
+         tagName?: string): Promise<void> {
+                if (mode === 'headless') {
+            await expect(page).toHaveScreenshot('actual-emailRecepientsPage.png', {
+                fullPage: true
+            });
+        } else {
+            console.log('emailRecepientsPage - Skipping screenshot assertion in headed mode');
+        }
         if (tagName) {
             await commonLocators.verifyTagOnThePage(page, tagName);
         }

@@ -25,9 +25,9 @@ describe('Happy Path - Case allocation with new Email functionality', () => {
         await caseSummaryPage.completeCaseSummaryPage(mode, page);
         await allocateToAProbationPractitionerPage.completeAllocateToAProbationPractitionerPage(mode, page);
         await youAreAllocatingPage.completeYouAreAllocatingPage(mode, page);
-        await reviewYourAllocationNotesPage.completeReviewYourAllocationNotesPage(page)
-        await emailRecepientsPage.completeEmailRecepientsPage(page);
-        await caseAllocatedPage.completeCaseAllocatedPage(page);
+        await reviewYourAllocationNotesPage.completeReviewYourAllocationNotesPage(mode, page)
+        await emailRecepientsPage.completeEmailRecepientsPage(mode, page);
+        await caseAllocatedPage.completeCaseAllocatedPage(mode, page);
     });
     test.afterAll(async () => {
         await resetAllScenarios();

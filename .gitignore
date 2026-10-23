@@ -16,3 +16,5 @@ envConfig.d.json
 
 ### MacOS ###
 .DS_Store
+/e2e_tests/tests/.DS_Store
+/e2e_tests/tests/happy-journeys/.DS_Store

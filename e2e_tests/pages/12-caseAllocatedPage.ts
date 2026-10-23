@@ -5,7 +5,15 @@ import { commonLocators } from "./common-functions";
 export class caseAllocatedPage {
     constructor(private page: Page) { }
 
-    async completeCaseAllocatedPage(page: Page = this.page, crn: String = 'X960926', restricted?: boolean): Promise<void> {
+    async completeCaseAllocatedPage(mode: 'headless' | 'headed', page: Page = this.page, crn: String = 'X960926',
+         restricted?: boolean): Promise<void> {
+                            if (mode === 'headless') {
+            await expect(page).toHaveScreenshot('actual-caseAllocatedPage.png', {
+                fullPage: true
+            });
+        } else {
+            console.log('caseAllocatedPage - Skipping screenshot assertion in headed mode');
+        }
         await commonLocators.verifyPageHeadingsByName(page, 'Case allocated');
         await commonLocators.verifyPageByText(page, `Tricia Langosh (${crn}) has been allocated to Coco Pint (PO)`);
         await commonLocators.verifyPageHeadingsByName(page, 'What happens next');

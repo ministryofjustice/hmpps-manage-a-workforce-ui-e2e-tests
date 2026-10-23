@@ -5,7 +5,15 @@ import { commonLocators } from "./common-functions";
 export class reviewYourAllocationNotesPage {
     constructor(private page: Page) { }
 
-    async completeReviewYourAllocationNotesPage(page: Page = this.page, tagName?: string) {
+    async completeReviewYourAllocationNotesPage(mode: 'headless' | 'headed', page: Page = this.page,
+         tagName?: string) {
+        if (mode === 'headless') {
+            await expect(page).toHaveScreenshot('actual-reviewYourAllocationNotesPage.png', {
+                fullPage: true
+            });
+        } else {
+            console.log('reviewYourAllocationNotesPage - Skipping screenshot assertion in headed mode');
+        }
 
         if (tagName) {
             await commonLocators.verifyTagOnThePage(page, tagName);
@@ -17,7 +25,15 @@ export class reviewYourAllocationNotesPage {
         await commonLocators.clickOnButtonByName(page, 'Continue');
     }
 
-    async completeReviewYourAllocationNotesWithSensitiveInformationPage(page: Page = this.page) {
+    async completeReviewYourAllocationNotesWithSensitiveInformationPage(mode: 'headless' | 'headed',
+         page: Page = this.page) {
+        if (mode === 'headless') {
+            await expect(page).toHaveScreenshot('actual-reviewYourAllocationNotesWithSensitiveInformationPage.png', {
+                fullPage: true
+            });
+        } else {
+            console.log('reviewYourAllocationNotesWithSensitiveInformationPage - Skipping screenshot assertion in headed mode');
+        }
         await commonLocators.verifyPageHeadingsByName(page, 'Review your allocation notes');
         await commonLocators.verifyFilledTextArea(page);
         await commonLocators.fillTextInTextArea(page, 'EDITED-SENSITIVE-INFO');

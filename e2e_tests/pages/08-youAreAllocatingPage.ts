@@ -5,14 +5,14 @@ import { commonLocators } from "./common-functions";
 export class youAreAllocatingPage {
     constructor(private page: Page) { }
 
-    async completeYouAreAllocatingPage(mode: 'headless' | 'headed', page: Page = this.page, restricted?: string): Promise<void> {
+    async completeYouAreAllocatingPage(mode: 'headless' | 'headed', page: Page = this.page,
+         restricted?: string): Promise<void> {
         if (mode === 'headless') {
             await expect(page).toHaveScreenshot('actual-youAreAllocatingPage.png', {
-                fullPage: true,
-                threshold: 0.2,
+                fullPage: true
             });
         } else {
-            console.log('YouAreAllocatingPage - Skipping screenshot assertion in headed mode');
+            console.log('youAreAllocatingPage - Skipping screenshot assertion in headed mode');
         }
 
         if (restricted) {
@@ -24,14 +24,14 @@ export class youAreAllocatingPage {
         await commonLocators.clickOnButtonByName(this.page, 'Continue');
     }
 
-    async editTextAndCompleteYouAreAllocatingPage(mode: 'headless' | 'headed', page: Page = this.page): Promise<void> {
+    async editTextAndCompleteYouAreAllocatingPage(mode: 'headless' | 'headed',
+         page: Page = this.page): Promise<void> {
         if (mode === 'headless') {
-            await expect(page).toHaveScreenshot('actual-youAreAllocatingPage.png', {
-                fullPage: true,
-                threshold: 0.2,
+            await expect(page).toHaveScreenshot('actual-youAreAllocatingPageEditedText.png', {
+                fullPage: true
             });
         } else {
-            console.log('YouAreAllocatingPage - Skipping screenshot assertion in headed mode');
+            console.log('youAreAllocatingPageEditedText - Skipping screenshot assertion in headed mode');
         }
         await commonLocators.verifyPageHeadingsByName(this.page, `You\'re allocating`);
         await commonLocators.verifyFilledTextArea(page);

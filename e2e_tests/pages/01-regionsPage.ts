@@ -8,8 +8,7 @@ export class regionsPage {
     async completeRegionsPage(mode: 'headless' | 'headed', page: Page = this.page) {
         if (mode === 'headless') {
             await expect(page).toHaveScreenshot('actual-regionsPage.png', {
-                fullPage: true,
-                threshold: 0.2,
+                fullPage: true
             });
         } else {
             console.log('regionsPage - Skipping screenshot assertion in headed mode');
@@ -22,8 +21,7 @@ export class regionsPage {
     async verifyAccessibleRegionsOnly(mode: 'headless' | 'headed', page: Page = this.page) {
         if (mode === 'headless') {
             await expect(page).toHaveScreenshot('actual-regionsPage.png', {
-                fullPage: true,
-                threshold: 0.2,
+                fullPage: true
             });
         } else {
             console.log('regionsPage - Skipping screenshot assertion in headed mode');
