@@ -1,5 +1,17 @@
 name: Scheduled Build Job UI e2e tests
 on:
+  workflow_call:
+    inputs:
+      node_version_file:
+        description: 'Passed to setup-node action to specify where to source the version of node from'
+        required: false
+        type: string
+        default: '.nvmrc'
+      npm_version:
+        description: "Passed to npm install so it knows which version of npm to install"
+        required: false
+        type: string
+        default: "^12"
   schedule:
     - cron: "36 6 * * MON-FRI"
   workflow_dispatch:        
@@ -17,18 +29,16 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
         with:
-          node-version-file: ${{ inputs.node_version_file }} 
-
-      - name: Cache node_modules
-        uses: actions/cache@v4
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          node-version-file: ${{ inputs.node_version_file }}
+      - name: Update npm
+        shell: bash
+        env:
+          NPM_VERSION: ${{ inputs.npm_version }}
+        run: |
+          npm install -g "npm@$NPM_VERSION"
 
       - name: Install e2e dependencies
-        run: npm install        
+        run: npm install     
 
       - name: Checkout manage-a-workforce-ui
         uses: actions/checkout@v5
