@@ -10,33 +10,29 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout hmpps-manage-a-workforce-ui-e2e-tests 
-        uses: actions/checkout@v5
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
           fetch-depth: 0
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '24'    
-
-      - name: Cache node_modules
-        uses: actions/cache@v4
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
-      - name: Install e2e dependencies
-        run: npm install        
-
       - name: Checkout manage-a-workforce-ui
-        uses: actions/checkout@v5
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
           repository: ministryofjustice/manage-a-workforce-ui
           path: manage-a-workforce-ui
           token: ${{ secrets.GITHUB_TOKEN }}
           ref: main
+
+      - name: Set up Node.js
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version-file: .nvmrc
+      - name: Update npm
+        shell: bash
+        run: |
+          npm install -g "npm@12"
+
+      - name: Install e2e dependencies
+        run: npm install     
 
       - name: Start manage-a-workforce-ui
         run: |
@@ -63,7 +59,7 @@ jobs:
 
       - name: Archive test results
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
         with:
          name: e2e-test-results
          path: allure-results
@@ -72,3 +68,4 @@ jobs:
         if: always()
         run: |
           docker compose down
+          
