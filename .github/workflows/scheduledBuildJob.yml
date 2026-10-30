@@ -1,17 +1,5 @@
 name: Scheduled Build Job UI e2e tests
 on:
-  workflow_call:
-    inputs:
-      node_version_file:
-        description: 'Passed to setup-node action to specify where to source the version of node from'
-        required: false
-        type: string
-        default: '.nvmrc'
-      npm_version:
-        description: "Passed to npm install so it knows which version of npm to install"
-        required: false
-        type: string
-        default: "^12"
   schedule:
     - cron: "36 6 * * MON-FRI"
   workflow_dispatch:        
