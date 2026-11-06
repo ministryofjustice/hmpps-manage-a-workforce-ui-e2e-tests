@@ -14,7 +14,7 @@ import { youAreAllocatingPage } from '@pages/08-youAreAllocatingPage';
 import { yourTeamsPage } from '@pages/04-yourTeamsPage';
 import { serviceTemporarilyUnavailablePage } from '@pages/error504-serviceTemporarilyUnavailablePage';
 import { noPermissionToViewThisPage } from '@pages/error403-noPermissionToViewThisPage';
-import { emailRecepientsPage } from '@pages/11-emailRecepientsPage';
+import { emailRecipientsPage } from '@pages/11-emailRecipientsPage';
 
 type PageFixtures = {
   context: BrowserContext;
@@ -30,7 +30,7 @@ type PageFixtures = {
   youAreAllocatingPage: youAreAllocatingPage;
   reviewYourAllocationNotesPage: reviewYourAllocationNotesPage;
   allocateTheCasePage: allocateTheCasePage;
-  emailRecepientsPage: emailRecepientsPage;
+  emailRecipientsPage: emailRecipientsPage;
   caseAllocatedPage: caseAllocatedPage;
   serviceTemporarilyUnavailablePage: serviceTemporarilyUnavailablePage;
   noPermissionToViewThisPage: noPermissionToViewThisPage;
@@ -104,8 +104,8 @@ export const test = baseTest.extend<PageFixtures>({
     await use(new caseAllocatedPage(page));
   },
 
-  emailRecepientsPage: async ({ page }, use) => {
-    await use(new emailRecepientsPage(page));
+  emailRecipientsPage: async ({ page }, use) => {
+    await use(new emailRecipientsPage(page));
   },
 
   serviceTemporarilyUnavailablePage: async ({ page }, use) => {

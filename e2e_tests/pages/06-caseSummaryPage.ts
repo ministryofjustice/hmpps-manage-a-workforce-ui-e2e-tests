@@ -27,9 +27,9 @@ export class caseSummaryPage {
     async editTabsOnSummaryPageAndVerifyDownloadLink(mode: 'headless' | 'headed',
          page: Page = this.page): Promise<void> {
         if (mode === 'headless') {
-            await expect(page).toHaveScreenshot('actual-caseSummaryPageWithAttachment.png'), {
+            await expect(page).toHaveScreenshot('actual-caseSummaryPageWithAttachment.png', {
                 fullPage: true
-            };
+            });
         } else {
             console.log('caseSummaryPage - Skipping screenshot assertion in headed mode');
         }
