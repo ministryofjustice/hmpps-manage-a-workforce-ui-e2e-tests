@@ -40,6 +40,8 @@ This repository contains automated E2E UI tests for the hmpps-manage-a-workforce
 
 - run `docker compose up` from the root of this project to instantiate an instance of Redis and the wiremock containers
 - in the `manage-a-workforce-ui` project, run `npm run start-external-test:dev` to run the project under test
+- Found that it works best when in the `manage-a-workforce-ui` project you only have `redis` up on docker, 
+and on here you only have `wiremockk` on `9090:8080` up. Otherwise, it gets confused with the duplicated ports.
 
 For updating the tests once changes have been made on the front end, run the following commands:
 
