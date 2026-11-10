@@ -30,7 +30,7 @@ export class regionsPage {
         await commonLocators.verifyRadioButtonByNameIsDisabled(this.page, "Greater Manchester");
         await commonLocators.verifyRadioButtonByNameIsEnabled(this.page, "London");
         await commonLocators.verifyRadioButtonByNameIsDisabled(this.page, "North East Region");
-        await commonLocators.verifyRadioButtonByNameIsDisabled(this.page, "North East Region");
+        await commonLocators.verifyRadioButtonByNameIsDisabled(this.page, "North West Region");
         await commonLocators.verifyRadioButtonByNameIsDisabled(this.page, "Wales");
     }
 }

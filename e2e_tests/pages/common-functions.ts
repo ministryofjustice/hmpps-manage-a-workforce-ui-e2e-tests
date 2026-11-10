@@ -52,6 +52,11 @@ export async function verifyRadioButtonByNameIsEnabled(page: Page, radioButtonNa
     await expect(radioButton).toBeEnabled();
 }
 
+export async function verifyCheckboxByNameIsDisabled(page: Page, checkboxName: string) {
+    const checkbox = page.getByRole('checkbox', { name: ` ${checkboxName}` });
+    await expect(checkbox).toBeDisabled();
+}
+
 
 export async function fillTextInTextArea(page: Page, text: string = "AUTO-TESTING") {
     const textArea = page.locator('xpath=//*[@id="instructions"]');
