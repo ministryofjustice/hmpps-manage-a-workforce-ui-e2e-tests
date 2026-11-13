@@ -1,17 +1,17 @@
 import { Page, expect } from '@playwright/test'
 import { commonLocators } from './common-functions'
 
-export class emailRecepientsPage {
+export class emailRecipientsPage {
     constructor(private page: Page) { }
 
-    async completeEmailRecepientsPage(mode: 'headless' | 'headed', page: Page = this.page,
+    async completeEmailRecipientsPage(mode: 'headless' | 'headed', page: Page = this.page,
          tagName?: string): Promise<void> {
                 if (mode === 'headless') {
-            await expect(page).toHaveScreenshot('actual-emailRecepientsPage.png', {
+            await expect(page).toHaveScreenshot('actual-emailRecipientsPage.png', {
                 fullPage: true
             });
         } else {
-            console.log('emailRecepientsPage - Skipping screenshot assertion in headed mode');
+            console.log('emailRecipientsPage - Skipping screenshot assertion in headed mode');
         }
         if (tagName) {
             await commonLocators.verifyTagOnThePage(page, tagName);

@@ -20,7 +20,7 @@ describe('Happy Path - Scenario 8 - Successful allocation of LAO case on the Res
         await pduPage.completePduPage(mode, page);
         await selectYourTeamsPage.completeSelectYourTeamsPage(mode, page);
         await yourTeamsPage.completeYourTeamsPage(mode, page);
-        await unallocatedCasesPage.completeUnallocatedCasesWithResrictedCase(mode, page, 'Pearl Gorczany');
+        await unallocatedCasesPage.completeUnallocatedCasesWithRestrictedCase(mode, page, 'Pearl Gorczany');
         await caseSummaryPage.completeCaseSummaryPage(mode, page, 'Restricted access');
         await allocateToAProbationPractitionerPage.completeAllocateToAProbationPractitionerPage(mode, page, 'Restricted access');
         await youAreAllocatingPage.completeYouAreAllocatingPage(mode, page, 'Restricted access');

@@ -19,7 +19,7 @@ export class youAreAllocatingPage {
             await commonLocators.verifyTagOnThePage(page, restricted);
         }
         
-        await commonLocators.verifyPageHeadingsByName(this.page, `You\'re allocating`);
+        await commonLocators.verifyPageHeadingsByName(this.page, `You're allocating`);
         await commonLocators.verifyFilledTextArea(page);
         await commonLocators.clickOnButtonByName(this.page, 'Continue');
     }
@@ -33,7 +33,7 @@ export class youAreAllocatingPage {
         } else {
             console.log('youAreAllocatingPageEditedText - Skipping screenshot assertion in headed mode');
         }
-        await commonLocators.verifyPageHeadingsByName(this.page, `You\'re allocating`);
+        await commonLocators.verifyPageHeadingsByName(this.page, `You're allocating`);
         await commonLocators.verifyFilledTextArea(page);
         await commonLocators.fillTextInTextArea(page, "Text 5 Edited on you're allocating page");
         await commonLocators.clickOnButtonByName(this.page, 'Continue');
