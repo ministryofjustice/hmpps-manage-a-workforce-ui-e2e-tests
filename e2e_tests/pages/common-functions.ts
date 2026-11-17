@@ -52,7 +52,6 @@ export async function verifyRadioButtonByNameIsEnabled(page: Page, radioButtonNa
     await expect(radioButton).toBeEnabled();
 }
 
-
 export async function fillTextInTextArea(page: Page, text: string = "AUTO-TESTING") {
     const textArea = page.locator('xpath=//*[@id="instructions"]');
     await textArea.click();

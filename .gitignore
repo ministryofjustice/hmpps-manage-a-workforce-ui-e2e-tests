@@ -18,3 +18,6 @@ envConfig.d.json
 .DS_Store
 /e2e_tests/tests/.DS_Store
 /e2e_tests/tests/happy-journeys/.DS_Store
+
+# Playwright
+/playwright/.auth/
