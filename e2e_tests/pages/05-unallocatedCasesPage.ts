@@ -30,7 +30,7 @@ export class unallocatedCasesPage {
         }
     }
 
-    async completeUnallocatedCasesWithResrictedCase(mode: 'headless' | 'headed', page: Page = this.page,
+    async completeUnallocatedCasesWithRestrictedCase(mode: 'headless' | 'headed', page: Page = this.page,
          caseName: string) {
         if (mode === 'headless') {
             await expect(page).toHaveScreenshot('actual-unallocatedCasesPage.png', {
