@@ -13,7 +13,7 @@ export class pduPage {
         } else {
             console.log('pduPage - Skipping screenshot assertion in headed mode');
         }
-        await commonLocators.verifyPageHeadingsByName(this.page, "Select your probation");
+        await commonLocators.verifyPageHeadingsByName(this.page, "Select your probation delivery unit (PDU)");
         await commonLocators.selectRadioButtonByName(this.page, "Cardiff and Vale");
         await commonLocators.clickOnButtonByName(this.page, "Continue");
     }
