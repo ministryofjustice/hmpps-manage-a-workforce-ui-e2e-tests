@@ -7,9 +7,6 @@ export class regionsPage {
 
     async completeRegionsPage(mode: 'headless' | 'headed', page: Page = this.page) {
 
-        const isCI = ['true', '1'].includes(process.env.CI?.toLowerCase()?? '');
-        console.log("\n\n\nRUNNING ON CI: ", isCI);
-
         if (mode === 'headless') {
             await expect(page).toHaveScreenshot('actual-regionsPage.png', {
                 fullPage: true
