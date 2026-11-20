@@ -3,7 +3,7 @@ import { defineConfig, devices } from '@playwright/test';
 const isHeadless = process.env.HEADLESS === 'true';
 console.log('Running in HEADLESS mode:', isHeadless);
 
-const isCI = ['true', '1'].includes(process.env.CI?.toLowerCase()?? '');
+const isCI = process.env.CI === 'true'
 
 /**
  * Read environment variables from file.
