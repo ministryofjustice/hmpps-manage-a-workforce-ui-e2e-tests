@@ -3,6 +3,8 @@ import { defineConfig, devices } from '@playwright/test';
 const isHeadless = process.env.HEADLESS === 'true';
 console.log('Running in HEADLESS mode:', isHeadless);
 
+const isCI = process.env.CI === 'true'
+
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
@@ -18,10 +20,12 @@ export default defineConfig({
   testDir: './e2e_tests/tests',
   expect: {
    toHaveScreenshot: {
-     pathTemplate: '{testDir}/{testFileDir}/{testFileName}-snapshots/{arg}-{projectName}-darwin{ext}',
+     pathTemplate: isCI
+      ? '{testDir}/screenshots/pipeline/{testFileDir}/{testFileName}-snapshots/{arg}-{projectName}-darwin{ext}'
+      : '{testDir}/screenshots/local/{testFileDir}/{testFileName}-snapshots/{arg}-{projectName}-darwin{ext}',
      maxDiffPixelRatio: 1.0,
      threshold: 0.2
-   },
+   }
  },
   /* Run tests in files in parallel */
   fullyParallel: true,
