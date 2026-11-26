@@ -6,6 +6,7 @@ export class regionsPage {
     constructor(public page: Page) { }
 
     async completeRegionsPage(mode: 'headless' | 'headed', page: Page = this.page) {
+
         if (mode === 'headless') {
             await expect(page).toHaveScreenshot('actual-regionsPage.png', {
                 fullPage: true

@@ -64,6 +64,13 @@ jobs:
          name: e2e-test-results
          path: allure-results
 
+      - name: Archive screenshots
+        if: always()
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
+        with:
+         name: screenshots
+         path: test_results/playwright/test-output/*
+
       - name: docker compose down
         if: always()
         run: |
